@@ -20,7 +20,6 @@ body {
 .navbar-expand-lg {
   padding: 0 60px;
   width: 100%;
-  position: absolute;
   z-index: 1;
 }
 
@@ -37,9 +36,9 @@ body {
 
 .navbar-expand-lg .navbar-nav .nav-item a,
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  color: var(--white-font);
+  color: var(--black-font);
   text-decoration: none;
 }
 
@@ -47,10 +46,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
   min-width: 250px;
-  background-color: var(--dark-blue-bg);
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
-  padding: 15px;
+  display: block;
+  padding: 10px;
 }
 
 .dropdown-item:focus,
@@ -60,39 +59,160 @@ body {
   color: var(--orange-font);
 }
 
+.desktop-navbar {
+  display: block;
+  background-color: var(--white-font);
+}
+
+.mobile-navbar {
+  display: none;
+  background-color: var(--white-font);
+}
+
+.mobile-navbar .navbar-toggler {
+  border: none;
+}
+
+.mobile-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.offcanvas-body .navbar-nav .nav-item {
+  padding: 10px 0;
+}
+
+.offcanvas-body .navbar-nav .nav-item a {
+  color: var(--black-font);
+  text-decoration: none;
+}
+
+.offcanvas-body .navbar-nav .dropdown-menu {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.offcanvas-body .navbar-nav .dropdown-menu li {
+  color: var(--black-font);
+  padding: 5px 10px;
+}
+
 /* HOME */
 
+.home-banner .slick-prev.custom-arrow,
+.home-banner .slick-next.custom-arrow {
+  display: block !important; /* Ensure arrows are displayed */
+  z-index: 1;
+  font-size: 25px;
+  color: var(--orange-font);
+  opacity: 0.75;
+}
+
+.home-banner .slick-prev.custom-arrow:hover,
+.home-banner .slick-prev.custom-arrow:focus,
+.home-banner .slick-next.custom-arrow:hover,
+.home-banner .slick-next.custom-arrow:focus {
+  opacity: 1;
+}
+
+.home-banner .slick-prev {
+  left: 20px;
+}
+
+.home-banner .slick-next {
+  right: 20px;
+}
+
+.home-banner .slick-prev:before,
+.home-banner .slick-next:before {
+  display: none;
+}
+
 .home-banner .slick-slide img {
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
   object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.home-banner .slick-slide {
+  position: relative;
+}
+
+.home-banner .home-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  text-align: center;
+  color: var(--white-font);
+}
+
+.home-banner-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--white-font);
+  text-transform: uppercase;
+}
+
+.home-banner-text button {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  background-color: var(--orange-font);
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+  color: var(--white-font);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.home-banner-text button:hover {
+  background-color: var(--white-font);
+  color: var(--orange-font);
+}
+
+.home-banner .slick-slider .slick-dots {
+  bottom: 25px;
+}
+
+.home-banner .slick-slider .slick-dots li {
+  background-color: var(--white-font);
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  color: var(--orange-font) !important;
+}
+
+.slick-dots li button:before {
+  color: var(--orange-font) !important;
 }
 
 @media screen and (max-width: 991px) {
-  .navbar.navbar-expand-lg {
-    padding: 0 20px;
+  .desktop-navbar {
+    display: none;
   }
 
-  .nav-item .dropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .mobile-navbar {
+    display: block;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-item {
-    padding: 8px 20px;
+  .home-banner .slick-slide img {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-banner-text h1 {
+    font-size: 25px;
+    line-height: 35px;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-item a,
-  .navbar-expand-lg .navbar-nav .dropdown-menu a {
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-item a {
-    color: var(--black-font);
-  }
-
-  .dropdown-menu li a {
-    color: var(--white-font) !important;
+  .home-banner-text button {
+    font-size: 18px;
   }
 }
