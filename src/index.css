@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --orange-font: rgb(244 100 4);
+  --black-font: black;
+  --white-font: white;
+  --dark-blue-bg: #080230;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+.navbar-expand-lg {
+  padding: 0 60px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item a,
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-font);
+  text-decoration: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  min-width: 250px;
+  background-color: var(--dark-blue-bg);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+  padding: 15px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover,
+.navbar-expand-lg .navbar-nav .nav-item a:hover {
+  background-color: transparent;
+  color: var(--orange-font);
+}
+
+/* HOME */
+
+.home-banner .slick-slide img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar.navbar-expand-lg {
+    padding: 0 20px;
+  }
+
+  .nav-item .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item {
+    padding: 8px 20px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item a,
+  .navbar-expand-lg .navbar-nav .dropdown-menu a {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item a {
+    color: var(--black-font);
+  }
+
+  .dropdown-menu li a {
+    color: var(--white-font) !important;
+  }
 }
