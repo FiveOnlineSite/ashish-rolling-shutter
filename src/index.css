@@ -9,6 +9,7 @@
   --black-font: black;
   --white-font: white;
   --dark-blue-bg: #080230;
+  --dark-gray-font: rgb(61, 61, 61);
 }
 
 body {
@@ -95,7 +96,18 @@ body {
   padding: 5px 10px;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: transparent;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
 /* HOME */
+
+/* BANNER */
 
 .home-banner .slick-prev.custom-arrow,
 .home-banner .slick-next.custom-arrow {
@@ -156,9 +168,9 @@ body {
 }
 
 .home-banner-text button {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 25px;
   background-color: var(--orange-font);
   padding: 10px 20px;
   border: none;
@@ -174,7 +186,7 @@ body {
 }
 
 .home-banner .slick-slider .slick-dots {
-  bottom: 25px;
+  bottom: 35px;
 }
 
 .home-banner .slick-slider .slick-dots li {
@@ -190,6 +202,143 @@ body {
 
 .slick-dots li button:before {
   color: var(--orange-font) !important;
+}
+
+/* ABOUT */
+
+.about-section {
+  padding: 80px 0 40px 0;
+}
+
+.about-section .about-img-div {
+  position: relative;
+}
+
+.about-section .about-img1 {
+  position: absolute;
+  left: 20px;
+  width: 50%;
+  z-index: 1;
+  bottom: 0;
+}
+
+.about-section .about-img2 {
+  position: relative;
+  left: 60px;
+  width: 80%;
+  height: 400px;
+
+  object-fit: cover;
+}
+
+.about-subtitle {
+  display: flex;
+  align-items: center;
+  color: var(--dark-blue-bg);
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.about-subtitle span {
+  height: 1px;
+  background-color: var(--dark-blue-bg);
+  width: 30px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--orange-font);
+  padding: 10px 0;
+}
+
+.about-text p {
+  color: var(--dark-gray-font);
+}
+
+/* PRODUCTS */
+
+.products-section {
+  padding: 40px 0;
+}
+
+.products-section .slick-slide img {
+  width: 100%;
+}
+
+.products-section .slick-slider .slick-slide {
+  padding: 0 20px;
+}
+
+.products-section .slick-slide {
+  position: relative;
+}
+
+.product-name {
+  position: absolute;
+  bottom: 30px;
+  padding: 0 20px;
+}
+
+.product-name h4 {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--white-font);
+}
+
+.product-name .discover-more-btn {
+  background-color: var(--white-font);
+  border: none;
+  color: var(--black-font);
+  padding: 10px;
+  border: 1.5px solid var(--white-font);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-name .discover-more-btn:hover {
+  background-color: transparent;
+  color: var(--white-font);
+  border: 1.5px solid var(--white-font);
+}
+.product-name .discover-more-btn i {
+  padding-left: 10px;
+}
+
+.products-section .element {
+  position: relative;
+}
+
+.overlay-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(31, 35, 44, 1) 100%
+  );
+}
+
+.overlay-bg img {
+  width: 25px !important;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none !important;
+}
+
+.products-section .element:hover .overlay-bg img {
+  display: block !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -214,5 +363,9 @@ body {
 
   .home-banner-text button {
     font-size: 18px;
+  }
+
+  .products-section .slick-slider .slick-slide {
+    padding: 0 10px;
   }
 }
