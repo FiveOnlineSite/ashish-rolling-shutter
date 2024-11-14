@@ -22,7 +22,7 @@ const Counter = ({ target }) => {
         format: "(,ddd)", // Format with commas if needed
       }).render();
     }
-  }, []); // Run only once on mount
+  }, [count]); // Run only once on mount
 
   // Update the Odometer display whenever count changes
   useEffect(() => {
