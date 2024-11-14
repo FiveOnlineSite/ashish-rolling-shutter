@@ -2,12 +2,21 @@ import React from "react";
 import Slider from "react-slick";
 import { NavLink } from "react-router-dom";
 
-const SlickSlider = ({ items, settings, hasText, showProductName }) => {
+const SlickSlider = ({
+  items,
+  settings,
+  hasText,
+  showProductName,
+  filterdProducts,
+}) => {
   return (
     <Slider {...settings}>
       {items.map((item, index) => (
         <div className="element" key={index}>
-          <img src={item.image} alt={`Slider item ${index}`} />
+          <img
+            src={item.image || item.productImg}
+            alt={`Slider item ${index}`}
+          />
           {hasText && item.text && (
             <div className="home-banner-text">
               <h1>{item.text}</h1>
@@ -28,6 +37,13 @@ const SlickSlider = ({ items, settings, hasText, showProductName }) => {
                 <NavLink to={"/about"}>
                   <button className="discover-more-btn">Discover more</button>
                 </NavLink>
+              </div>
+            </>
+          )}
+          {filterdProducts && (
+            <>
+              <div className="featured-product-name">
+                <h4>{item.productName}</h4>
               </div>
             </>
           )}
