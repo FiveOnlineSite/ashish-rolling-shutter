@@ -126,17 +126,22 @@ const Home = () => {
   const ProductsFilterSettings = {
     dots: filteredProducts.length > 3,
     arrows: false,
-    infinite: false, // Disable infinite sliding if there are fewer than 4 slides
+    infinite: filteredProducts.length > 3,
     speed: 500,
-    slidesToShow: filteredProducts.length < 4 ? filteredProducts.length : 3, // Show all items if fewer than 4
+    slidesToShow: filteredProducts.length < 4 ? filteredProducts.length : 3,
     slidesToScroll: 1,
     autoplay: false,
+    centerMode: false, // Ensure center mode is disabled
+    fade: filteredProducts.length === 1,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           dots: filteredProducts.length > 1,
           slidesToShow: 1,
+          centerMode: false,
+          infinite: filteredProducts.length > 1,
+          fade: filteredProducts.length === 1,
         },
       },
       {
@@ -144,6 +149,9 @@ const Home = () => {
         settings: {
           dots: filteredProducts.length > 1,
           slidesToShow: 1,
+          centerMode: false,
+          infinite: filteredProducts.length > 1,
+          fade: filteredProducts.length === 1,
         },
       },
     ],
