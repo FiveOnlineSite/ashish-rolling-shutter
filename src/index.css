@@ -585,14 +585,14 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .home-banner-text h1 {
+  /* .home-banner-text h1 {
     font-size: 25px;
     line-height: 35px;
   }
 
   .home-banner-text button {
     font-size: 18px;
-  }
+  } */
 
   .products-section .slick-slider .slick-slide {
     padding: 0 10px;
