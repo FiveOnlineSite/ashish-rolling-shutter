@@ -27,20 +27,24 @@ const Home = () => {
 
   const ProductsSlider = [
     {
-      image: "/images/products/product1.jpg",
-      productName: "Prime 2.0",
+      image: "/images/products/motorised-gates.jpg",
+      productName: "Motorized Gates",
     },
     {
-      image: "/images/products/product1.jpg",
-      productName: "Prime 2.0",
+      image: "/images/products/motorized-rolling-gates.jpg",
+      productName: "Motorized Rolling Gates",
     },
     {
-      image: "/images/products/product1.jpg",
-      productName: "Prime 2.0",
+      image: "/images/products/industrial-gates.jpg",
+      productName: "Industrial Gates",
     },
     {
-      image: "/images/products/product1.jpg",
-      productName: "Prime 2.0",
+      image: "/images/products/fire-rated-doors.jpg",
+      productName: "Fire Rated Shutters & Doors",
+    },
+    {
+      image: "/images/products/hangar-doors.jpg",
+      productName: "Hangar Doors",
     },
   ];
 
@@ -180,7 +184,7 @@ const Home = () => {
                     alt="about-img1"
                   />
                   <img
-                    src="/images/about1.jpg"
+                    src="/images/about2.jpg"
                     className="about-img2"
                     alt="about-img2"
                   />

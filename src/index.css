@@ -248,6 +248,8 @@ body {
   position: absolute;
   left: 20px;
   width: 50%;
+  height: 300px;
+  object-fit: cover;
   z-index: 1;
   bottom: 0;
   border-bottom-left-radius: 10px;
