@@ -178,6 +178,7 @@ body {
   line-height: 50px;
   color: var(--white-font);
   text-transform: uppercase;
+  padding: 0 25px;
 }
 
 .home-banner-text button {
