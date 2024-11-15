@@ -58,7 +58,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="row mt-5">
+            <div className="row mt-4 d-none">
               <div className="col">
                 <div className="collections-links">
                   <NavLink to="/">Motorized Gates</NavLink>
