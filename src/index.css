@@ -613,6 +613,7 @@ body {
   color: var(--white-font);
   text-decoration: none;
   transition: color ease 0.3s;
+  font-size: 13px;
 }
 
 .collections-links:hover {
@@ -625,6 +626,11 @@ body {
 
 .copyright-text p {
   color: var(--white-font);
+  font-size: 12px;
+}
+
+.copyright-text p span {
+  color: var(--orange-font);
 }
 
 .go-up-btn {

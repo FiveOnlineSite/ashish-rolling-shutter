@@ -86,9 +86,12 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="row mt-5">
-              <div className="copyright-text">
-                <p>© All Rights Reserved. 24/7 Support</p>
+            <div className="row mt-5 ">
+              <div className="copyright-text text-center">
+                <p>
+                  Copyright © 2024 <span>Ashish Rolling Shutter</span>. All
+                  Rights Reserved.
+                </p>
               </div>
             </div>
             {/* <div className="go-up-btn">
