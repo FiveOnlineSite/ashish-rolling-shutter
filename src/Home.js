@@ -48,12 +48,7 @@ const Home = () => {
     const { onClick } = props;
     return (
       <button className="slick-prev custom-arrow" onClick={onClick}>
-        <img
-          src="/images/left-chevron.png"
-          alt="left-arrow"
-          width={"50px"}
-          height={"50px"}
-        />
+        <img src="/images/left-chevron.png" alt="left-arrow" />
       </button>
     );
   };
@@ -62,12 +57,7 @@ const Home = () => {
     const { onClick } = props;
     return (
       <button className="slick-next custom-arrow" onClick={onClick}>
-        <img
-          src="/images/chevron.png"
-          alt="right-arrow"
-          width={"50px"}
-          height={"50px"}
-        />
+        <img src="/images/chevron.png" alt="right-arrow" />
       </button>
     );
   };
