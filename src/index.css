@@ -109,6 +109,10 @@ body {
   display: none;
 }
 
+.btn-close:focus {
+  outline: none;
+}
+
 /* HOME */
 
 /* BANNER */
