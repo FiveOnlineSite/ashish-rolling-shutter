@@ -560,7 +560,97 @@ body {
 /* FOOTER */
 
 .footer-div {
-  margin: 50px 0;
+  margin-top: 50px;
+  background-color: var(--dark-gray-font);
+  padding: 30px 0;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 80px;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+}
+
+.quick-links ul,
+.social-links ul {
+  display: flex;
+  padding: 0;
+}
+
+.quick-links ul li,
+.social-links ul li {
+  padding-right: 20px;
+  list-style: none;
+}
+
+.quick-links ul li {
+  padding-right: 35px;
+}
+
+.quick-links ul li a,
+.social-links ul li a {
+  text-decoration: none;
+  color: var(--white-font);
+  transition: color ease 0.3s;
+}
+
+.quick-links ul li:hover a,
+.social-links ul li:hover a {
+  color: var(--orange-font);
+}
+
+.collections-links {
+  border-left: 0.5px solid var(--white-font);
+  padding: 0 10px;
+  transition: border-left ease 0.3s;
+}
+
+.collections-links a {
+  color: var(--white-font);
+  text-decoration: none;
+  transition: color ease 0.3s;
+}
+
+.collections-links:hover {
+  border-left: 0.5px solid var(--orange-font);
+}
+
+.collections-links:hover a {
+  color: var(--orange-font);
+}
+
+.copyright-text p {
+  color: var(--white-font);
+}
+
+.go-up-btn {
+  position: relative;
+}
+
+.go-up-btn a {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+
+.go-up-btn a i {
+  font-size: 25px;
+  padding: 10px 13px;
+  border-radius: 50%;
+  background-color: var(--white-font);
+  color: var(--orange-font);
+  border: 1px solid transparent;
+  transition: color ease 0.3s, background-color ease 0.3s;
+}
+
+.go-up-btn a:hover i {
+  background-color: transparent;
+  color: var(--white-font);
+  border: 1px solid white;
 }
 
 @media screen and (max-width: 991px) {
@@ -585,6 +675,14 @@ body {
   .accreditations-section .col-lg-9 .col-lg-3:last-child {
     border-bottom: none;
   }
+
+  .footer-logo {
+    padding: 20px 0;
+  }
+
+  .quick-links {
+    justify-content: start;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -605,5 +703,10 @@ body {
   .home-banner .slick-next.custom-arrow img {
     width: 30px;
     height: 30px;
+  }
+
+  .quick-links ul li,
+  .social-links ul li {
+    padding-right: 10px;
   }
 }

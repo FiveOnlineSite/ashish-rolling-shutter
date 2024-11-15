@@ -163,7 +163,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="home-banner">
+      <section className="home-banner" id="home-page-banner">
         <SlickSlider
           items={BannerSlider}
           settings={BannerSettings}
