@@ -282,7 +282,7 @@ body {
 .title {
   font-size: 30px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dark-blue-bg);
   padding: 20px 0;
 }
@@ -365,7 +365,7 @@ body {
 .product-name img {
   width: 40px !important;
   height: 30px !important;
-  transition: transform 0.1 ease;
+  transition: 0.6s;
   transform: rotate(0deg);
 }
 
@@ -398,7 +398,7 @@ body {
 }
 
 .products-section .element:hover .product-name img {
-  transform: rotate(320deg);
+  transform: rotate(-45deg);
 }
 
 /* FEATURED PRODUCTS */
@@ -586,11 +586,11 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  /* .home-banner-text h1 {
-    font-size: 25px;
-    line-height: 35px;
+  .home-banner-text h1 {
+    font-size: 35px;
+    line-height: 45px;
   }
-
+  /*
   .home-banner-text button {
     font-size: 18px;
   } */
