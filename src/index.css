@@ -213,7 +213,7 @@ body {
   bottom: 15px;
 }
 
-.home-banner .slick-slider .slick-dots li {
+.home-banner .slick-slider .slick-dots li button {
   background-color: transparent;
   border: 1px solid var(--white-font);
   border-radius: 50%;
