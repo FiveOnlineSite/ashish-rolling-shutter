@@ -110,7 +110,7 @@ body {
 }
 
 .btn-close:focus {
-  outline: none;
+  box-shadow: none;
 }
 
 /* HOME */
