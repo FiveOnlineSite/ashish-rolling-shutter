@@ -22,21 +22,20 @@ const SlickSlider = ({
               <h1>{item.text}</h1>
               <NavLink to={"/"}>
                 <button className="know-more-btn">
-                  Know more <i className="fas fa-arrow-right"></i>
+                  Explore <i className="fas fa-arrow-right"></i>
                 </button>
               </NavLink>
             </div>
           )}
           {showProductName && (
             <>
-              <div className="overlay-bg">
-                <img src="/images/top-right.png" alt="arrow-up" />
-              </div>
+              <div className="overlay-bg"></div>
               <div className="product-name">
                 <h4>{item.productName}</h4>
-                <NavLink to={"/about"}>
+                {/* <NavLink to={"/about"}>
                   <button className="discover-more-btn">Discover more</button>
-                </NavLink>
+                </NavLink> */}
+                <img src="/images/right-arrow.png" />
               </div>
             </>
           )}

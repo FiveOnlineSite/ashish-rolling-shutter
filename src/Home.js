@@ -9,15 +9,15 @@ const Home = () => {
   const BannerSlider = [
     {
       image: "/images/home-banners/banner-1.jpg",
-      text: "Speed, safety, and seamless operations combined",
+      text: "We are rolling shutter manufacturer",
     },
     {
       image: "/images/home-banners/banner-2.jpg",
-      text: "Speed, safety, and seamless operations combined",
+      text: "Designed for Security,Built to Last",
     },
     {
       image: "/images/home-banners/banner-3.jpg",
-      text: "Speed, safety, and seamless operations combined",
+      text: "Engineered for Strength and Reliability",
     },
     {
       image: "/images/home-banners/banner-4.jpg",
@@ -48,7 +48,12 @@ const Home = () => {
     const { onClick } = props;
     return (
       <button className="slick-prev custom-arrow" onClick={onClick}>
-        <i className="fas fa-arrow-left"></i>
+        <img
+          src="/images/left-chevron.png"
+          alt="left-arrow"
+          width={"50px"}
+          height={"50px"}
+        />
       </button>
     );
   };
@@ -57,7 +62,12 @@ const Home = () => {
     const { onClick } = props;
     return (
       <button className="slick-next custom-arrow" onClick={onClick}>
-        <i className="fas fa-arrow-right"></i>
+        <img
+          src="/images/chevron.png"
+          alt="right-arrow"
+          width={"50px"}
+          height={"50px"}
+        />
       </button>
     );
   };
@@ -92,7 +102,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   };
 
   const ProductsSettings = {
@@ -192,13 +202,15 @@ const Home = () => {
                     <span></span> Since 1996
                   </h5>
                   <h2 className="title featured-title">
-                    Ashish Rolling Shutter
+                    About Ashish Rolling Shutter
                   </h2>
                   <p>
                     We take immense gratification in introducing ourselves as
-                    the pioneer manufacturers & Solution provider for all types
-                    of High End Automatic Entrance Doors & Loading Bay
-                    Equipments.
+                    pioneer manufacturers and solution providers for high-end
+                    automatic entrance doors. We specialize in delivering
+                    seamless operations with a wide range of products, including
+                    loading bay equipment designed for safety, speed, and
+                    efficiency.
                   </p>
                 </div>
               </div>
@@ -208,6 +220,9 @@ const Home = () => {
       </section>
 
       <section className="products-section">
+        <div className="container">
+          <h2 className="title featured-title ">Featured Products</h2>
+        </div>
         <NavLink to={"/"}>
           <SlickSlider
             items={ProductsSlider}
@@ -228,7 +243,7 @@ const Home = () => {
                   <h2 className="title featured-title">
                     Featured
                     <br />
-                    Products
+                    Collections
                   </h2>
                 </div>
               </div>
@@ -277,7 +292,7 @@ const Home = () => {
                       <div className="counter-div">
                         <div className="counter-nos">
                           <Counter target={28} />
-                          <span>+</span>
+                          <span className="counter-span">+</span>
                         </div>
                         <div className="counter-text">
                           {/* <img src="/images/review.png" alt="review" /> */}
@@ -290,7 +305,7 @@ const Home = () => {
                       <div className="counter-div">
                         <div className="counter-nos">
                           <Counter target={26} />
-                          <span>+</span>
+                          <span className="counter-span">+</span>
                         </div>
                         <div className="counter-text">
                           {/* <img src="/images/location (1).png" alt="review" /> */}
@@ -303,7 +318,7 @@ const Home = () => {
                       <div className="counter-div">
                         <div className="counter-nos">
                           <Counter target={70} />
-                          <span>+</span>
+                          <span className="counter-span">+</span>
                         </div>
                         <div className="counter-text">
                           {/* <img src="/images/planet-earth.png" alt="review" /> */}
@@ -316,7 +331,7 @@ const Home = () => {
                       <div className="counter-div">
                         <div className="counter-nos">
                           <Counter target={70} />
-                          <span>%</span>
+                          <span className="counter-span">%</span>
                         </div>
                         <div className="counter-text">
                           {/* <img src="/images/graph.png" alt="review" /> */}
@@ -350,8 +365,8 @@ const Home = () => {
                   Our Recognized Accreditations
                 </h2>
               </div>
-              <div className="col-lg-9">
-                <div className="row justify-content-end">
+              <div className="col-lg-9 mt-lg-0 mt-5">
+                <div className="row justify-content-lg-end justify-content-center">
                   <div className="col-lg-3">
                     <div className="accreditation-img">
                       <img src="/images/tuv.png" alt="tuv" />
