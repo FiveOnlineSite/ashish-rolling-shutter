@@ -135,16 +135,14 @@ const Home = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow:
-            filteredProducts.length < 4 ? filteredProducts.length : 3,
+          slidesToShow: 1,
           centerPadding: "20px",
         },
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow:
-            filteredProducts.length < 4 ? filteredProducts.length : 1,
+          slidesToShow: 1,
           centerPadding: "6px",
         },
       },
