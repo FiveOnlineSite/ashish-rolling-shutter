@@ -948,3 +948,15 @@ body {
     padding-right: 10px;
   }
 }
+
+@media screen and (max-width: 413px) {
+  .single-map-container.india-map img {
+    height: 388px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .single-map-container.india-map img {
+    height: 343px;
+  }
+}
