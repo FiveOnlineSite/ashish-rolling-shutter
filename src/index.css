@@ -966,7 +966,7 @@ body {
 
   .maps-container .nav-tabs .nav-item .nav-link {
     margin: 0 10px;
-    padding: 10px;
+    padding: 0px;
   }
 
   .maps-container .nav-tabs .nav-item {
