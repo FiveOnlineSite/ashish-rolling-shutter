@@ -4,6 +4,7 @@ import SlickSlider from "./components/SlickSlider";
 import { NavLink } from "react-router-dom";
 import ProductData from "./components/ProductData";
 import Counter from "./components/Counter";
+import MapsTabs from "./components/MapsTabs";
 
 const Home = () => {
   const BannerSlider = [
@@ -381,6 +382,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="maps-tab-section">
+        <MapsTabs />
       </section>
     </Layout>
   );
