@@ -667,6 +667,11 @@ body {
   overflow-x: auto;
 } */
 
+.maps-tab-section {
+  padding: 50px 0;
+  background-color: var(--light-gray-bg);
+}
+
 .single-map-container.india-map {
   position: relative;
   width: 57%;
