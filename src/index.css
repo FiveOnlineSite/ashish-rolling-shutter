@@ -964,6 +964,10 @@ body {
     padding-right: 10px;
   }
 
+  .maps-container .nav-tabs {
+    padding: 20px 0px;
+  }
+
   .maps-container .nav-tabs .nav-item .nav-link {
     margin: 0 10px;
     padding: 0px;
