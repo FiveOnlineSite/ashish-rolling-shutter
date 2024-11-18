@@ -976,6 +976,10 @@ body {
   .home-banner-text button {
     margin-top: 30px;
   }
+
+  .home-banner .home-banner-text {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 413px) {
