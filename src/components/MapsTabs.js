@@ -83,7 +83,9 @@ const MapsTabs = () => {
                         <div className="map-pin"></div>
                         <div className="location-data">
                           <h6>{location.name}</h6>
-                          <p>{location.tel}</p>
+                          <a href={`tel:${location.tel}`}>
+                            <p>{location.tel}</p>
+                          </a>
                         </div>
                       </div>
                     ))}

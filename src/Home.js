@@ -14,7 +14,7 @@ const Home = () => {
     },
     {
       image: "/images/home-banners/banner-2.jpg",
-      text: "Designed for Security,Built to Last",
+      text: "Designed for Security, Built to Last",
     },
     {
       image: "/images/home-banners/banner-3.jpg",
@@ -30,22 +30,27 @@ const Home = () => {
     {
       image: "/images/products/motorised-gates.jpg",
       productName: "Motorized Gates",
+      url: "/products/motorized-gates", // Add URL here
     },
     {
       image: "/images/products/motorized-rolling-gates.jpg",
       productName: "Motorized Rolling Gates",
+      url: "/products/motorized-rolling-gates",
     },
     {
       image: "/images/products/industrial-gates.jpg",
       productName: "Industrial Gates",
+      url: "/products/industrial-gates",
     },
     {
       image: "/images/products/fire-rated-doors.jpg",
       productName: "Fire Rated Shutters & Doors",
+      url: "/products/fire-rated-doors",
     },
     {
       image: "/images/products/hangar-doors.jpg",
       productName: "Hangar Doors",
+      url: "/products/hangar-doors",
     },
   ];
 
@@ -218,15 +223,13 @@ const Home = () => {
         <div className="container">
           <h2 className="title featured-title ">Featured Products</h2>
         </div>
-        <NavLink to={"/"}>
-          <SlickSlider
-            items={ProductsSlider}
-            settings={ProductsSettings}
-            hasText={false}
-            showProductName={true}
-            filterdProducts={false}
-          />
-        </NavLink>
+        <SlickSlider
+          items={ProductsSlider}
+          settings={ProductsSettings}
+          hasText={false}
+          showProductName={true}
+          filterdProducts={false}
+        />
       </section>
 
       <section className="featured-products-section">

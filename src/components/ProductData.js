@@ -39,7 +39,7 @@ const ProductData = [
       },
       {
         id: 7,
-        productImg: "/images/hangar-doors/sling-aircraft.jpg",
+        productImg: "/images/hangar-doors/sliding-aircraft.jpg",
         productName: "Sliding Aircraft Hangar Doors",
       },
     ],

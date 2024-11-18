@@ -167,7 +167,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 100%;
+  max-width: 43%;
   text-align: center;
   color: var(--white-font);
 }
@@ -298,8 +298,7 @@ body {
 .products-section,
 .featured-products-section,
 .counter-section,
-.accreditations-section,
-.maps-tab-section {
+.accreditations-section {
   padding: 50px 0;
 }
 
@@ -561,7 +560,6 @@ body {
 /* FOOTER */
 
 .footer-div {
-  margin-top: 50px;
   background-color: var(--dark-gray-font);
   padding: 30px 0;
 }
@@ -670,6 +668,7 @@ body {
 .maps-tab-section {
   padding: 50px 0;
   background-color: var(--light-gray-bg);
+  margin-top: 50px;
 }
 
 .single-map-container.india-map {
@@ -725,8 +724,8 @@ body {
   display: none;
   position: absolute;
   background-color: var(--light-gray-bg);
-  top: -28px;
-  left: 20px;
+  top: -29px;
+  left: 18px;
   width: auto;
   padding: 10px;
   border: 0.1rem solid #c5c5cc;
@@ -757,7 +756,11 @@ body {
   pointer-events: none;
 }
 
-.location-div .map-pin:hover + .location-data {
+/* .location-div .map-pin:hover + .location-data {
+  display: block;
+} */
+
+.location-div:hover .location-data {
   display: block;
 }
 
@@ -794,6 +797,7 @@ body {
   color: var(--dark-gray-font);
   border-bottom: 3px solid transparent;
   transition: color ease 0.3s, border-bottom ease 0.3s;
+  background-color: transparent;
 }
 
 .maps-container .nav-tabs .nav-item:first-child {
@@ -845,7 +849,7 @@ body {
 }
 
 .map-location-detail p {
-  margin: 0;
+  margin: 0 !important;
   font-size: 17px;
   transition: color ease 0.3s;
   line-height: 27px;
@@ -853,6 +857,16 @@ body {
 
 .map-detail-container a:hover .map-location-detail i,
 .map-detail-container a:hover .map-location-detail p {
+  color: var(--orange-font);
+}
+
+.location-data a {
+  color: var(--dark-gray-font);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.location-data a:hover {
   color: var(--orange-font);
 }
 
@@ -895,6 +909,12 @@ body {
   .quick-links {
     justify-content: start;
   }
+
+  .single-map-container.india-map img {
+    width: 100%;
+    height: 411px;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -905,7 +925,6 @@ body {
   .single-map-container.india-map img {
     width: 100%;
     height: 420px;
-    object-fit: contain;
   }
 
   .single-map-container.world-map img {
@@ -921,8 +940,9 @@ body {
 
 @media screen and (max-width: 508px) {
   .home-banner-text h1 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 0;
   }
   /*
   .home-banner-text button {
@@ -931,10 +951,6 @@ body {
 
   .products-section .slick-slider .slick-slide {
     padding: 0 10px;
-  }
-
-  .maps-container .nav-tabs .nav-item:first-child {
-    border-right: none;
   }
 
   .home-banner .slick-prev.custom-arrow img,
@@ -946,6 +962,19 @@ body {
   .quick-links ul li,
   .social-links ul li {
     padding-right: 10px;
+  }
+
+  .maps-container .nav-tabs .nav-item .nav-link {
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  .maps-container .nav-tabs .nav-item {
+    padding: 0;
+  }
+
+  .home-banner-text button {
+    margin-top: 30px;
   }
 }
 

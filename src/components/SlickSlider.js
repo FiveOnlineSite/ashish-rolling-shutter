@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const SlickSlider = ({
   items,
@@ -9,6 +9,8 @@ const SlickSlider = ({
   showProductName,
   filterdProducts,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <Slider {...settings}>
       {items.map((item, index) => (
@@ -29,13 +31,18 @@ const SlickSlider = ({
           )}
           {showProductName && (
             <>
-              <div className="overlay-bg"></div>
-              <div className="product-name">
-                <h4>{item.productName}</h4>
-                {/* <NavLink to={"/about"}>
+              <div
+                onClick={() => navigate(item.url)}
+                style={{ cursor: "pointer" }}
+              >
+                <div className="overlay-bg"></div>
+                <div className="product-name">
+                  <h4>{item.productName}</h4>
+                  {/* <NavLink to={"/about"}>
                   <button className="discover-more-btn">Discover more</button>
                 </NavLink> */}
-                <img src="/images/right-arrow.png" />
+                  <img src="/images/right-arrow.png" alt="right-arrow" />
+                </div>
               </div>
             </>
           )}
