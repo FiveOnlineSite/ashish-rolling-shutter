@@ -48,9 +48,11 @@ const SlickSlider = ({
           )}
           {filterdProducts && (
             <>
-              <div className="featured-product-name">
-                <h4>{item.productName}</h4>
-              </div>
+              <NavLink to={item.url}>
+                <div className="featured-product-name">
+                  <h4>{item.productName}</h4>
+                </div>
+              </NavLink>
             </>
           )}
         </div>

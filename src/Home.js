@@ -114,7 +114,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,
