@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SlickSlider = ({
   items,
@@ -9,8 +9,6 @@ const SlickSlider = ({
   showProductName,
   filterdProducts,
 }) => {
-  const navigate = useNavigate();
-
   return (
     <Slider {...settings}>
       {items.map((item, index) => (

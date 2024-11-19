@@ -268,6 +268,7 @@ const Home = () => {
             items={filteredProducts.map((product) => ({
               productImg: product.productImg,
               productName: product.productName,
+              url: product.url,
             }))}
             settings={ProductsFilterSettings}
             hasText={false}
