@@ -321,6 +321,7 @@ body {
 .products-section .slick-slide {
   position: relative;
   padding: 20px 0;
+  cursor: grab;
 }
 
 .product-name {
@@ -334,6 +335,10 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.product-name a {
+  text-decoration: none;
 }
 
 .product-name h4 {
@@ -984,6 +989,10 @@ body {
   .home-banner .home-banner-text {
     max-width: 100%;
   }
+
+  /* .products-section .slick-track {
+    padding-right: 20%;
+  } */
 }
 
 @media screen and (max-width: 413px) {

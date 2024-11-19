@@ -31,18 +31,18 @@ const SlickSlider = ({
           )}
           {showProductName && (
             <>
-              <div
-                onClick={() => navigate(item.url)}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="overlay-bg"></div>
-                <div className="product-name">
+              <div className="overlay-bg"></div>
+              <div className="product-name">
+                <NavLink to={item.url}>
                   <h4>{item.productName}</h4>
-                  {/* <NavLink to={"/about"}>
+                </NavLink>
+
+                {/* <NavLink to={"/about"}>
                   <button className="discover-more-btn">Discover more</button>
                 </NavLink> */}
+                <NavLink to={item.url}>
                   <img src="/images/right-arrow.png" alt="right-arrow" />
-                </div>
+                </NavLink>
               </div>
             </>
           )}
