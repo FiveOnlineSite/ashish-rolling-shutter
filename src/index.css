@@ -533,6 +533,7 @@ body {
   height: 100%; /* Match the image's height */
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .row.filter-products-slider .element:hover img {

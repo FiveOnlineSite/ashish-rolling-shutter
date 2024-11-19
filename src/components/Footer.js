@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row align-items-center">
               <div className="col-lg-2 ">
                 <div className="footer-logo">
-                  <img src="/images/logo.jpeg" alt="logo" />
+                  <img src="/images/logo 1.png" alt="logo" />
                 </div>
               </div>
               <div className="col-lg-8 mt-lg-0 mt-4">

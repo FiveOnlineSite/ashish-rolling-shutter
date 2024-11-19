@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/">
               <img
-                src="/images/logo.jpeg"
+                src="/images/logo 1.png"
                 width={"100px"}
                 height={"80px"}
                 alt="logo"
@@ -84,7 +84,7 @@ const Navbar = () => {
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/">
               <img
-                src="/images/logo.jpeg"
+                src="/images/logo 1.png"
                 width={"100px"}
                 height={"80px"}
                 alt="logo"
