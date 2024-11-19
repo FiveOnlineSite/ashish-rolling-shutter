@@ -289,52 +289,92 @@ const Home = () => {
                   <div className="row">
                     <div className="col-lg-6">
                       <div className="counter-div">
-                        <div className="counter-nos">
-                          <Counter target={28} />
-                          <span className="counter-span">+</span>
+                        <div className="counter-icon">
+                          <img
+                            src="/images/review.png"
+                            width={"50px"}
+                            height={"50px"}
+                            alt="review"
+                          />
                         </div>
-                        <div className="counter-text">
-                          {/* <img src="/images/review.png" alt="review" /> */}
-                          <h6>Years of Excellence</h6>
+                        <div className="counter-div-text">
+                          <div className="counter-nos">
+                            <Counter target={28} />
+                            <span className="counter-span">+</span>
+                          </div>
+                          <div className="counter-text">
+                            {/* <img src="/images/review.png" alt="review" /> */}
+                            <h6>Years of Excellence</h6>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <div className="col-lg-6">
                       <div className="counter-div">
-                        <div className="counter-nos">
-                          <Counter target={26} />
-                          <span className="counter-span">+</span>
+                        <div className="counter-icon">
+                          <img
+                            src="/images/location (1).png"
+                            width={"50px"}
+                            height={"50px"}
+                            alt="graph"
+                          />
                         </div>
-                        <div className="counter-text">
-                          {/* <img src="/images/location (1).png" alt="review" /> */}
-                          <h6>Cities with PAN india presence</h6>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 mt-lg-4">
-                      <div className="counter-div">
-                        <div className="counter-nos">
-                          <Counter target={70} />
-                          <span className="counter-span">+</span>
-                        </div>
-                        <div className="counter-text">
-                          {/* <img src="/images/planet-earth.png" alt="review" /> */}
-                          <h6>Countries delivered</h6>
+                        <div className="counter-div-text">
+                          <div className="counter-nos">
+                            <Counter target={26} />
+                            <span className="counter-span">+</span>
+                          </div>
+                          <div className="counter-text">
+                            {/* <img src="/images/location (1).png" alt="review" /> */}
+                            <h6>Cities with PAN india presence</h6>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <div className="col-lg-6 mt-lg-4">
                       <div className="counter-div">
-                        <div className="counter-nos">
-                          <Counter target={70} />
-                          <span className="counter-span">%</span>
+                        <div className="counter-icon">
+                          <img
+                            src="/images/planet-earth.png"
+                            width={"50px"}
+                            height={"50px"}
+                            alt="graph"
+                          />
                         </div>
-                        <div className="counter-text">
-                          {/* <img src="/images/graph.png" alt="review" /> */}
-                          <h6>Market share</h6>
+                        <div className="counter-div-text">
+                          <div className="counter-nos">
+                            <Counter target={70} />
+                            <span className="counter-span">+</span>
+                          </div>
+                          <div className="counter-text">
+                            {/* <img src="/images/planet-earth.png" alt="review" /> */}
+                            <h6>Countries delivered</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-6 mt-lg-4">
+                      <div className="counter-div">
+                        <div className="counter-icon">
+                          <img
+                            src="/images/graph.png"
+                            width={"50px"}
+                            height={"50px"}
+                            alt="graph"
+                          />
+                        </div>
+                        <div className="counter-div-text">
+                          <div className="counter-nos">
+                            <Counter target={70} />
+                            <span className="counter-span">%</span>
+                          </div>
+                          <div className="counter-text">
+                            {/* <img src="/images/graph.png" alt="review" /> */}
+                            <h6>Market share</h6>
+                          </div>
                         </div>
                       </div>
                     </div>
