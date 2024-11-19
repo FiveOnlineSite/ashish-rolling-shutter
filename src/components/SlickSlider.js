@@ -13,19 +13,37 @@ const SlickSlider = ({
     <Slider {...settings}>
       {items.map((item, index) => (
         <div className="element" key={index}>
-          <img
-            src={item.image || item.productImg}
-            alt={`Slider item ${index}`}
-          />
+          {item.video ? (
+            <video
+              className="slider-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster={item.image} // Use image as poster for video
+            >
+              <source src={item.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img
+              src={item.image || item.productImg}
+              alt={`Slider item ${index}`}
+            />
+          )}
+
           {hasText && item.text && (
-            <div className="home-banner-text">
-              <h1>{item.text}</h1>
-              <NavLink to={"/"}>
-                <button className="know-more-btn">
-                  Explore <i className="fas fa-arrow-right"></i>
-                </button>
-              </NavLink>
-            </div>
+            <>
+              <div className="banner-overlay"></div>
+              <div className="home-banner-text">
+                <h1>{item.text}</h1>
+                <NavLink to={"/"}>
+                  <button className="know-more-btn">
+                    Explore <i className="fas fa-arrow-right"></i>
+                  </button>
+                </NavLink>
+              </div>
+            </>
           )}
           {showProductName && (
             <>

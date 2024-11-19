@@ -5,11 +5,13 @@ import { NavLink } from "react-router-dom";
 import ProductData from "./components/ProductData";
 import Counter from "./components/Counter";
 import MapsTabs from "./components/MapsTabs";
+import ClientsData from "./components/ClientsData";
 
 const Home = () => {
   const BannerSlider = [
     {
       image: "/images/home-banners/banner-1.jpg",
+      video: "/videos/1097026515-preview.mp4",
       text: "We are rolling shutter manufacturer",
     },
     {
@@ -106,28 +108,24 @@ const Home = () => {
   };
 
   const ProductsSettings = {
-    centerMode: true,
     dots: true,
     arrows: false,
     infinite: true,
-    centerPadding: "50px",
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          centerPadding: "20px",
         },
       },
       {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
-          centerPadding: "6px",
         },
       },
     ],
@@ -167,6 +165,31 @@ const Home = () => {
     ],
   };
 
+  const ClientsSettings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    rows: 2,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <Layout>
       <section className="home-banner" id="home-page-banner">
@@ -199,7 +222,7 @@ const Home = () => {
               <div className="col-lg-6 mt-lg-0 mt-5">
                 <div className="about-text">
                   <h5 className="about-subtitle">
-                    <span></span> Since 1996
+                    <span></span> Since 1985
                   </h5>
                   <h2 className="title featured-title">
                     About Ashish Rolling Shutter
@@ -212,6 +235,12 @@ const Home = () => {
                     loading bay equipment designed for safety, speed, and
                     efficiency.
                   </p>
+
+                  <NavLink to={"/about"}>
+                    <button className="know-more-btn">
+                      About Us <i className="fas fa-arrow-right"></i>
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -327,7 +356,7 @@ const Home = () => {
                           </div>
                           <div className="counter-text">
                             {/* <img src="/images/location (1).png" alt="review" /> */}
-                            <h6>Cities with PAN india presence</h6>
+                            <h6>PAN India Cities</h6>
                           </div>
                         </div>
                       </div>
@@ -427,8 +456,26 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="maps-tab-section">
         <MapsTabs />
+      </section>
+
+      <section className="clients-section">
+        <div className="container">
+          <h2 className="title featured-title">Our Clients</h2>
+        </div>
+        <div className="row">
+          <SlickSlider
+            items={ClientsData.map((client) => ({
+              image: client.image_url,
+            }))}
+            settings={ClientsSettings}
+            hasText={false}
+            showProductName={false}
+            filterdProducts={false}
+          />
+        </div>
       </section>
     </Layout>
   );

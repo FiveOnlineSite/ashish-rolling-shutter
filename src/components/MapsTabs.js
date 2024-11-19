@@ -6,32 +6,41 @@ const MapsTabs = () => {
   return (
     <div>
       <div className="container">
-        <h2 className="title featured-title">
-          Serving <b>26 +</b> <br /> Indian Cities
-        </h2>
+        <div className="row">
+          <div className="col-lg-6">
+            <h2 className="title featured-title">
+              Serving <b>26 +</b> <br /> Indian Cities
+            </h2>
+          </div>
+          <div className="col-lg-6">
+            <div className="maps-container">
+              <ul className="nav nav-tabs">
+                <li className="nav-item">
+                  <a
+                    className="nav-link active"
+                    data-bs-toggle="tab"
+                    href="#pan-india"
+                    role="tab"
+                  >
+                    Pan India
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    data-bs-toggle="tab"
+                    href="#other-countries"
+                    role="tab"
+                  >
+                    Other Countries
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div className="maps-container">
-          <ul className="nav nav-tabs">
-            <li className="nav-item">
-              <a
-                className="nav-link active"
-                data-bs-toggle="tab"
-                href="#pan-india"
-                role="tab"
-              >
-                Pan India
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                data-bs-toggle="tab"
-                href="#other-countries"
-                role="tab"
-              >
-                Other Countries
-              </a>
-            </li>
-          </ul>
           <div className="tab-content">
             <div
               id="pan-india"
