@@ -948,6 +948,10 @@ body {
 
 /* CLIENTS */
 
+.clients-section .slick-slide img {
+  margin: 0 auto;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(236, 108, 3, 0.4);
