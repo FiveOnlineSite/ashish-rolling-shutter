@@ -108,12 +108,14 @@ const Home = () => {
   };
 
   const ProductsSettings = {
+    // centerMode: true,
     dots: true,
     arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    // centerPadding: "40px",
     autoplay: true,
     responsive: [
       {

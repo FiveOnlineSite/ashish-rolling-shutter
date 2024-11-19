@@ -9,7 +9,7 @@ const MapsTabs = () => {
         <div className="row">
           <div className="col-lg-6">
             <h2 className="title featured-title">
-              Serving <b>26 +</b> <br /> Indian Cities
+              <b>26 +</b> Cities in India, <br /> Global Reach
             </h2>
           </div>
           <div className="col-lg-6">

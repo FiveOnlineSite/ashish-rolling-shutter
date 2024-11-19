@@ -369,6 +369,10 @@ body {
   padding: 0 20px;
 }
 
+.products-section .slick-list {
+  padding: 0 15%;
+}
+
 .products-section .slick-slide {
   position: relative;
   padding: 20px 0;
@@ -932,7 +936,7 @@ body {
 
 .map-location-detail p {
   margin: 0 !important;
-  font-size: 17px;
+  font-size: 15px;
   transition: color ease 0.3s;
   line-height: 27px;
 }
