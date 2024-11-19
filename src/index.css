@@ -216,12 +216,13 @@ body {
   text-transform: uppercase;
   color: var(--white-font);
   margin-top: 60px;
-  border-radius: 20px;
+  border-radius: 24px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-text button {
+  margin-top: 25px;
   border: 1px solid transparent;
 }
 
@@ -475,7 +476,7 @@ body {
 }
 
 .featured-products-section .slick-slider .slick-slide {
-  padding: 0 20px 60px 20px;
+  padding: 0 20px 0 20px;
   cursor: grab;
 }
 
@@ -494,6 +495,7 @@ body {
   color: var(--dark-gray-font);
   border: 0.3px solid var(--dark-gray-font);
   outline: none;
+  border-radius: 10px;
 }
 
 .filter-dropdown select:focus-visible,
@@ -558,7 +560,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 5px;
   color: var(--dark-gray-font);
 }
 
@@ -569,17 +571,19 @@ body {
 
 .counter-section .counter-div {
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   padding: 20px 0;
-  margin: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
   background-color: var(--white-font);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .counter-div .counter-icon {
-  padding: 0 20px 0 45px;
+  padding: 0 20px 0 0;
 }
 
 .counter-div .counter-div-text {
@@ -594,7 +598,6 @@ body {
 }
 
 .counter-nos {
-  letter-spacing: 4px;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -799,12 +802,13 @@ body {
 .location-div .location-data {
   display: none;
   position: absolute;
-  background-color: var(--light-gray-bg);
+  background-color: var(--white-font);
   top: -29px;
   left: 18px;
   width: auto;
   padding: 10px;
   border: 0.1rem solid #c5c5cc;
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
 }
@@ -814,12 +818,12 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background-color: var(--light-gray-bg);
+  background-color: var(--white-font);
   left: -6px;
   top: 25px;
   transform: rotate(45deg);
-  border-bottom: 0.1rem solid #c5c5cc;
-  border-left: 0.1rem solid #c5c5cc;
+  border-bottom: 0.1rem solid #59595a;
+  border-left: 0.1rem solid #59595a;
 }
 
 .location-div .location-data::after {
@@ -892,10 +896,11 @@ body {
 }
 
 .map-detail-container {
-  background-color: var(--light-gray-bg);
+  background-color: var(--white-font);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 20px 15px;
+  padding: 20px 20px;
   margin: 20px 0;
+  border-radius: 10px;
 }
 
 .map-detail-container a {
@@ -944,6 +949,10 @@ body {
 
 .location-data a:hover {
   color: var(--orange-font);
+}
+
+.location-data p {
+  margin-bottom: 0;
 }
 
 /* CLIENTS */
