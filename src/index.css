@@ -226,7 +226,7 @@ body {
 .about-text button {
   margin-top: 25px;
   border: 2px solid transparent;
-  background-color: var(--white-font) !important;
+  background-color: var(--orange-font) !important;
 }
 
 .contact-btn a {
@@ -277,6 +277,7 @@ body {
 
 .about-text button:hover {
   border: 1px solid var(--orange-font);
+  background-color: transparent !important;
 }
 
 .home-banner .slick-slider .slick-dots {
