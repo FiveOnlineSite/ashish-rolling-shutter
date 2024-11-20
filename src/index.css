@@ -206,7 +206,9 @@ body {
 }
 
 .home-banner-text button,
-.about-text button {
+.about-text button,
+.contact-btn a,
+.contact-mb-btn a {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -223,7 +225,37 @@ body {
 
 .about-text button {
   margin-top: 25px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
+  background-color: var(--white-font) !important;
+}
+
+.contact-btn a {
+  margin-top: 0;
+  color: var(--black-font) !important;
+  border: 2px solid transparent;
+  background-color: var(--white-font);
+}
+
+.contact-mb-btn {
+  width: auto;
+  display: inline-flex;
+}
+
+.contact-mb-btn a {
+  margin-top: 10px;
+  color: var(--white-font) !important;
+  border: 2px solid transparent;
+}
+
+.contact-btn a:hover {
+  color: var(--orange-font) !important;
+  border: 2px solid var(--white-font);
+}
+
+.contact-mb-btn a:hover {
+  color: var(--orange-font) !important;
+  background-color: transparent;
+  border: 2px solid var(--orange-font);
 }
 
 .home-banner-text button i,

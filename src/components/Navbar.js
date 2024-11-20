@@ -70,7 +70,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item contact-btn">
                   <NavLink className="nav-link" to="/">
                     Contact Us
                   </NavLink>
@@ -176,7 +176,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
 
-                  <li className="nav-item">
+                  <li className="nav-item contact-mb-btn">
                     <NavLink className="nav-link" to="/">
                       Contact Us
                     </NavLink>
