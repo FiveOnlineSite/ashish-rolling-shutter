@@ -54,6 +54,26 @@ const Home = () => {
       productName: "Hangar Doors",
       url: "/products/hangar-doors",
     },
+    {
+      image: "/images/products/fire-rated-doors.jpg",
+      productName: "Fire Rated Shutters & Doors1",
+      url: "/products/fire-rated-doors1",
+    },
+    {
+      image: "/images/products/hangar-doors.jpg",
+      productName: "Hangar Doors1",
+      url: "/products/hangar-doors1",
+    },
+    {
+      image: "/images/products/fire-rated-doors.jpg",
+      productName: "Fire Rated Shutters & Doors2",
+      url: "/products/fire-rated-doors2",
+    },
+    {
+      image: "/images/products/hangar-doors.jpg",
+      productName: "Hangar Doors2",
+      url: "/products/hangar-doors2",
+    },
   ];
 
   const PrevArrow = (props) => {
@@ -114,7 +134,7 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     // centerPadding: "40px",
     autoplay: true,
     responsive: [
@@ -141,7 +161,7 @@ const Home = () => {
     infinite: filteredProducts.length > 3,
     speed: 500,
     slidesToShow: filteredProducts.length < 4 ? filteredProducts.length : 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: false,
     centerMode: false, // Ensure center mode is disabled
     fade: filteredProducts.length === 1,
@@ -150,7 +170,7 @@ const Home = () => {
         breakpoint: 768,
         settings: {
           dots: filteredProducts.length > 1,
-          slidesToShow: 1,
+          slidesToShow: 2,
           centerMode: false,
           infinite: filteredProducts.length > 1,
           fade: filteredProducts.length === 1,
