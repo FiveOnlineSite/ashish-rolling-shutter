@@ -3,14 +3,16 @@ import Layout from "./components/Layout";
 import SlickSlider from "./components/SlickSlider";
 import { NavLink } from "react-router-dom";
 import ProductData from "./components/ProductData";
-import Counter from "./components/Counter";
 import MapsTabs from "./components/MapsTabs";
 import ClientsData from "./components/ClientsData";
+import AOS from "aos";
+import WOW from "wowjs";
+import CounterSection from "./components/CounterSection";
 
 const Home = () => {
   const BannerSlider = [
     {
-      image: "/images/home-banners/banner-1.jpg",
+      // image: "/images/home-banners/banner-1.jpg",
       video: "/videos/1097026515-preview.mp4",
       text: "We are rolling shutter manufacturer",
     },
@@ -216,7 +218,11 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="home-banner" id="home-page-banner">
+      <section
+        className="home-banner slider-section wow"
+        data-wow-duration="2s"
+        id="home-page-banner"
+      >
         <SlickSlider
           items={BannerSlider}
           settings={BannerSettings}
@@ -230,7 +236,11 @@ const Home = () => {
           <div className="col-lg-12">
             <div className="row about-row align-items-center justify-content-center">
               <div className="col-lg-6">
-                <div className="about-img-div">
+                <div
+                  className="about-img-div wow"
+                  data-aos="fade-right" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
                   <img
                     src="/images/about1.jpg"
                     className="about-img1"
@@ -245,13 +255,24 @@ const Home = () => {
               </div>
               <div className="col-lg-6 mt-lg-0 mt-5">
                 <div className="about-text">
-                  <h5 className="about-subtitle">
+                  <h5
+                    className="about-subtitle wow"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <span></span> Since 1985
                   </h5>
-                  <h2 className="title featured-title">
+                  <h2
+                    className="title featured-title wow"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500" // Optional, adjust duration
+                  >
                     About Ashish Rolling Shutter
                   </h2>
-                  <p>
+                  <p
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-delay="500" // Optional, delay for the paragraph
+                  >
                     We take immense gratification in introducing ourselves as
                     pioneer manufacturers and solution providers for high-end
                     automatic entrance doors. We specialize in delivering
@@ -261,7 +282,11 @@ const Home = () => {
                   </p>
 
                   <NavLink to={"/about"}>
-                    <button className="know-more-btn">
+                    <button
+                      className="know-more-btn wow"
+                      data-aos="fade-up" // Fade in as you scroll
+                      data-aos-duration="1500"
+                    >
                       About Us <i className="fas fa-arrow-right"></i>
                     </button>
                   </NavLink>
@@ -272,9 +297,26 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="products-section">
+      <section
+        className="products-section wow slideInRight"
+        data-aos="fade-up" // Fade in as you scroll
+        data-aos-duration="1500"
+      >
         <div className="container">
-          <h2 className="title featured-title ">Featured Products</h2>
+          <h5
+            className="about-subtitle wow"
+            data-aos="fade-up" // Fade in as you scroll
+            data-aos-duration="1500"
+          >
+            <span></span> Curated For You
+          </h5>
+          <h2
+            className="title featured-title "
+            data-aos="fade-up" // Fade in as you scroll
+            data-aos-duration="1500"
+          >
+            Featured Products
+          </h2>
         </div>
         <SlickSlider
           items={ProductsSlider}
@@ -285,13 +327,24 @@ const Home = () => {
         />
       </section>
 
-      <section className="featured-products-section">
+      <section className="featured-products-section slider-section">
         <div className="container">
           <div className="col-lg-12">
             <div className="row align-items-center justify-content-center mt-5">
               <div className="col-lg-6">
                 <div className="featured-product-text">
-                  <h2 className="title featured-title">
+                  <h5
+                    className="about-subtitle wow"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
+                    <span></span> Exclusive Selection
+                  </h5>
+                  <h2
+                    className="title featured-title wow slideInLeft"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     Featured
                     <br />
                     Collections
@@ -299,7 +352,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="filter-dropdown">
+                <div
+                  className="filter-dropdown wow slideInRight"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
                   <select
                     onChange={(e) => setSelectedCategory(e.target.value)}
                     value={selectedCategory}
@@ -316,7 +373,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="row filter-products-slider">
+        <div className="row filter-products-slider slider-section">
           <SlickSlider
             items={filteredProducts.map((product) => ({
               productImg: product.productImg,
@@ -331,121 +388,7 @@ const Home = () => {
         </div>
       </section>
       <section className="counter-section">
-        <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-12">
-              <div className="row align-items-center justify-content-center">
-                <div className="col-lg-4">
-                  <h2 className="title featured-title">Every Count Matter</h2>
-                </div>
-                <div className="col-lg-8">
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <div className="counter-div">
-                        <div className="counter-icon">
-                          <img
-                            src="/images/review.png"
-                            width={"50px"}
-                            height={"50px"}
-                            alt="review"
-                          />
-                        </div>
-                        <div className="counter-div-text">
-                          <div className="counter-nos">
-                            <Counter target={28} />
-                            <span className="counter-span">+</span>
-                          </div>
-                          <div className="counter-text">
-                            {/* <img src="/images/review.png" alt="review" /> */}
-                            <h6>Years of Excellence</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6">
-                      <div className="counter-div">
-                        <div className="counter-icon">
-                          <img
-                            src="/images/location (1).png"
-                            width={"50px"}
-                            height={"50px"}
-                            alt="graph"
-                          />
-                        </div>
-                        <div className="counter-div-text">
-                          <div className="counter-nos">
-                            <Counter target={26} />
-                            <span className="counter-span">+</span>
-                          </div>
-                          <div className="counter-text">
-                            {/* <img src="/images/location (1).png" alt="review" /> */}
-                            <h6>PAN India Cities</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 mt-lg-4">
-                      <div className="counter-div">
-                        <div className="counter-icon">
-                          <img
-                            src="/images/planet-earth.png"
-                            width={"50px"}
-                            height={"50px"}
-                            alt="graph"
-                          />
-                        </div>
-                        <div className="counter-div-text">
-                          <div className="counter-nos">
-                            <Counter target={70} />
-                            <span className="counter-span">+</span>
-                          </div>
-                          <div className="counter-text">
-                            {/* <img src="/images/planet-earth.png" alt="review" /> */}
-                            <h6>Countries delivered</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 mt-lg-4">
-                      <div className="counter-div">
-                        <div className="counter-icon">
-                          <img
-                            src="/images/graph.png"
-                            width={"50px"}
-                            height={"50px"}
-                            alt="graph"
-                          />
-                        </div>
-                        <div className="counter-div-text">
-                          <div className="counter-nos">
-                            <Counter target={70} />
-                            <span className="counter-span">%</span>
-                          </div>
-                          <div className="counter-text">
-                            {/* <img src="/images/graph.png" alt="review" /> */}
-                            <h6>Market share</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className="col-lg-4">
-              <div className="counter-div">
-                <div className="counter-text">
-                  <img src="/images/support.png" alt="review" />
-                  <h6>Support</h6>
-                </div>
-                <div className="counter-nos">24/7</div>
-              </div>
-            </div> */}
-          </div>
-        </div>
+        <CounterSection />
       </section>
 
       <section className="accreditations-section">
@@ -453,23 +396,46 @@ const Home = () => {
           <div className="col-lg-12">
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-3">
-                <h2 className="title featured-title ">
+                <h5
+                  className="about-subtitle wow"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  <span></span> Trusted Recognition
+                </h5>
+                <h2
+                  className="title featured-title "
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   Our Recognized Accreditations
                 </h2>
               </div>
-              <div className="col-lg-9 mt-lg-0 mt-5">
+              <div className="col-lg-9 mt-lg-0 mt-5 ">
                 <div className="row justify-content-lg-end justify-content-center">
-                  <div className="col-lg-3">
+                  <div
+                    className="col-lg-3 slideInLeft"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
                     <div className="accreditation-img">
                       <img src="/images/tuv.png" alt="tuv" />
                     </div>
                   </div>
-                  <div className="col-lg-3">
+                  <div
+                    className="col-lg-3 slideInLeft"
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                  >
                     <div className="accreditation-img">
                       <img src="/images/IGBC.png" alt="IGBC" />
                     </div>
                   </div>
-                  <div className="col-lg-3">
+                  <div
+                    className="col-lg-3 slideInLeft"
+                    data-aos="fade-left"
+                    data-aos-delay="600"
+                  >
                     <div className="accreditation-img">
                       <img src="/images/seh-logo.png" alt="seh" />
                     </div>
@@ -485,9 +451,26 @@ const Home = () => {
         <MapsTabs />
       </section>
 
-      <section className="clients-section">
+      <section
+        className="clients-section slider-section"
+        data-aos="fade-up" // Fade in as you scroll
+        data-aos-duration="1500"
+      >
         <div className="container">
-          <h2 className="title featured-title">Our Clients</h2>
+          <h5
+            className="about-subtitle wow"
+            data-aos="fade-up" // Fade in as you scroll
+            data-aos-duration="1500"
+          >
+            <span></span> Partners in Success
+          </h5>
+          <h2
+            className="title featured-title"
+            data-aos="fade-right" // Fade in as you scroll
+            data-aos-duration="1500"
+          >
+            Our Clients
+          </h2>
         </div>
         <div className="row">
           <SlickSlider

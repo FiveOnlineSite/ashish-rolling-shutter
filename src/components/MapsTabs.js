@@ -8,11 +8,26 @@ const MapsTabs = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <h2 className="title featured-title">
+            <h5
+              className="about-subtitle wow"
+              data-aos="fade-up" // Fade in as you scroll
+              data-aos-duration="1500"
+            >
+              <span></span> Expanding Nationwide & Beyond
+            </h5>
+            <h2
+              className="title featured-title"
+              data-aos="fade-up" // Fade in as you scroll
+              data-aos-duration="1500"
+            >
               <b>26 +</b> Cities in India, <br /> Global Reach
             </h2>
           </div>
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up" // Fade in as you scroll
+            data-aos-duration="1500"
+          >
             <div className="maps-container">
               <ul className="nav nav-tabs">
                 <li className="nav-item">
@@ -49,7 +64,11 @@ const MapsTabs = () => {
             >
               <div className="row">
                 <div className="col-lg-3">
-                  <div className="map-detail-container">
+                  <div
+                    className="map-detail-container"
+                    data-aos="fade-right" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <h3>India</h3>
 
                     <div className="map-location-detail">
@@ -74,7 +93,11 @@ const MapsTabs = () => {
                 </div>
 
                 <div className="col-lg-9 indian-map-col">
-                  <div className="single-map-container india-map">
+                  <div
+                    className="single-map-container india-map"
+                    data-aos="fade-left" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <img src="/images/maps/indian-map.png" alt="pan-india" />
                     {/* <div className="location-div ahmedabad">
                       <div className="map-pin"></div>
@@ -106,7 +129,11 @@ const MapsTabs = () => {
             <div id="other-countries" className="tab-pane fade" role="tabpanel">
               <div className="row">
                 <div className="col-lg-3">
-                  <div className="map-detail-container">
+                  <div
+                    className="map-detail-container"
+                    data-aos="fade-right" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <h3>Global</h3>
 
                     <div className="map-location-detail">
@@ -131,7 +158,11 @@ const MapsTabs = () => {
                 </div>
 
                 <div className="col-lg-9 global-map-col">
-                  <div className="single-map-container world-map">
+                  <div
+                    className="single-map-container world-map "
+                    data-aos="fade-left" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <img
                       src="/images/maps/The_World_map 1.png"
                       alt="pan-india"

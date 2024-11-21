@@ -20,6 +20,63 @@ body {
   overflow-x: hidden;
 }
 
+/* TOP BAR */
+
+.topbar {
+  background-color: var(--dark-blue-bg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .topbar-title {
+  color: var(--white-font);
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.contact-links-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-links-div .contact-link a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--white-font);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-links-div .contact-link a:hover {
+  color: var(--orange-font);
+}
+
+.contact-links-div .contact-link a i {
+  padding-right: 5px;
+}
+
+.contact-links-div .contact-link a p {
+  margin-bottom: 0;
+}
+
+.contact-links-div .contact-link {
+  padding-left: 12px;
+}
+
+.social-links.top-bar-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links.top-bar-links ul {
+  margin-bottom: 0;
+}
+
 .navbar-expand-lg {
   padding: 0 60px;
   width: 100%;
@@ -227,6 +284,7 @@ body {
   margin-top: 25px;
   border: 2px solid transparent;
   background-color: var(--orange-font) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-btn a {
@@ -234,17 +292,20 @@ body {
   color: var(--black-font) !important;
   border: 2px solid transparent;
   background-color: var(--white-font);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-mb-btn {
   width: auto;
   display: inline-flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-mb-btn a {
   margin-top: 10px;
   color: var(--white-font) !important;
   border: 2px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-btn a:hover {
@@ -340,7 +401,7 @@ body {
   color: var(--dark-gray-font);
   font-size: 25px;
   line-height: 35px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .about-subtitle span {
@@ -585,8 +646,15 @@ body {
 /* COUNTER */
 
 .counter-section {
-  background-color: var(--light-gray-bg);
+  /* background-color: var(--light-gray-bg); */
   margin: 50px 0;
+  background-image: url("../public/images/counter-bg.png");
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.counter-overlay {
+  background: linear-gradient(rgb(124, 124, 124), white);
 }
 
 .counter-section .title.featured-title {
@@ -677,9 +745,38 @@ body {
 
 /* FOOTER */
 
+.footer-top-div {
+  position: absolute;
+  top: -50px;
+  width: 80%;
+  background-color: var(--white-font);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 30px;
+}
+
 .footer-div {
   background-color: var(--dark-gray-font);
-  padding: 30px 0;
+  margin-top: 80px;
+  padding: 120px 0 40px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top-div-text {
+  text-align: center;
+}
+
+.footer-top-div-text h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+}
+
+.footer-top-div-text h6 {
+  color: var(--orange-font);
 }
 
 .footer-logo img {
@@ -1008,13 +1105,31 @@ body {
   }
 }
 
+.top-bar-div {
+  display: block;
+}
+
+.mobile-top-bar-div {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
-  .desktop-navbar {
+  .desktop-navbar,
+  .top-bar-div {
     display: none;
   }
 
-  .mobile-navbar {
+  .mobile-navbar,
+  .mobile-top-bar-div {
     display: block;
+  }
+
+  .mobile-navbar {
+    padding-top: 130px;
+  }
+
+  .topbar {
+    align-items: start;
   }
 
   .home-banner .slick-slide img {
@@ -1041,8 +1156,16 @@ body {
 
   .single-map-container.india-map img {
     width: 100%;
-    height: 411px;
+    height: 445px;
     object-fit: contain;
+  }
+
+  .contact-links-div {
+    display: block;
+  }
+
+  .contact-links-div .contact-link {
+    margin: 0 0 5px 0;
   }
 }
 
@@ -1065,6 +1188,29 @@ body {
   /* .tab-content .col-lg-9.global-map-col {
     overflow-x: auto;
   } */
+
+  .top-bar-div {
+    display: none;
+  }
+
+  .mobile-top-bar-div {
+    display: block;
+  }
+
+  .mobile-navbar {
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-top-bar-div,
+  .top-bar-div {
+    display: none;
+  }
+
+  .mobile-navbar {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 508px) {

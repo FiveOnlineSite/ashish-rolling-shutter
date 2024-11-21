@@ -3,106 +3,131 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer-div">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="row align-items-center">
-              <div className="col-lg-2 ">
-                <div className="footer-logo">
-                  <img src="/images/logo 1.png" alt="logo" />
-                </div>
-              </div>
-              <div className="col-lg-8 mt-lg-0 mt-4">
-                <div className="quick-links">
-                  <ul>
-                    <li>
-                      <NavLink to="/">About Us</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Brochures</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Support</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Contact Us</NavLink>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-2 mt-lg-0 mt-4">
-                <div className="social-links">
-                  <ul>
-                    <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-facebook-f"></i>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-instagram"></i>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-youtube"></i>
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+    <>
+      <div className="footer-div">
+        <div className="footer-top-div">
+          <div className="container">
+            <div className="footer-top-div-text">
+              <h2>ASR</h2>
+              <h6>Providing premium rolling shutter solutions since 1985.</h6>
             </div>
-            <div className="row mt-4 d-none">
-              <div className="col">
-                <div className="collections-links">
-                  <NavLink to="/">Motorized Gates</NavLink>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="row align-items-center">
+                <div
+                  className="col-lg-2 "
+                  data-aos="fade-right" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  <div className="footer-logo">
+                    <img src="/images/logo 1.png" alt="logo" />
+                  </div>
+                </div>
+                <div
+                  className="col-lg-8 mt-lg-0 mt-4"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  <div className="quick-links">
+                    <ul>
+                      <li>
+                        <NavLink to="/">About Us</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/">Brochures</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/">Support</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/">Contact Us</NavLink>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-lg-2 mt-lg-0 mt-4"
+                  data-aos="fade-left" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  <div className="social-links">
+                    <ul>
+                      <li>
+                        <NavLink to="/">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/">
+                          <i class="fa-brands fa-instagram"></i>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/">
+                          <i class="fa-brands fa-youtube"></i>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div className="col">
-                <div className="collections-links">
-                  <NavLink to="/">Motorized Rolling Gates</NavLink>
+              <div className="row mt-4 d-none">
+                <div className="col">
+                  <div className="collections-links">
+                    <NavLink to="/">Motorized Gates</NavLink>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="collections-links">
+                    <NavLink to="/">Motorized Rolling Gates</NavLink>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="collections-links">
+                    <NavLink to="/">Industrial Gates</NavLink>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="collections-links">
+                    <NavLink to="/">Fire Rated Shutters & Doors</NavLink>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="collections-links">
+                    <NavLink to="/">Hangar Doors</NavLink>
+                  </div>
                 </div>
               </div>
-              <div className="col">
-                <div className="collections-links">
-                  <NavLink to="/">Industrial Gates</NavLink>
-                </div>
-              </div>
-              <div className="col">
-                <div className="collections-links">
-                  <NavLink to="/">Fire Rated Shutters & Doors</NavLink>
-                </div>
-              </div>
-              <div className="col">
-                <div className="collections-links">
-                  <NavLink to="/">Hangar Doors</NavLink>
-                </div>
-              </div>
-            </div>
 
-            <div className="row mt-5 ">
-              <div className="copyright-text text-center">
-                <p>
-                  Copyright © 2024 <span>Ashish Rolling Shutter</span>. All
-                  Rights Reserved.
-                </p>
+              <div
+                className="row mt-5 " // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <div className="copyright-text text-center">
+                  <p>
+                    Copyright © 2024 <span>Ashish Rolling Shutter</span>. All
+                    Rights Reserved.
+                  </p>
+                </div>
               </div>
-            </div>
-            {/* <div className="go-up-btn">
+              {/* <div className="go-up-btn">
               <NavLink to="/#home-banner">
                 <i class="fa-solid fa-arrow-up"></i>
               </NavLink>
             </div> */}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
