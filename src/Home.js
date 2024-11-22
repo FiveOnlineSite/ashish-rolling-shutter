@@ -17,15 +17,15 @@ const Home = () => {
       text: "We are rolling shutter manufacturer",
     },
     {
-      image: "/images/home-banners/banner-2.jpg",
+      image: "/images/home-banners/banner2 (2).jpg",
       text: "Designed for Security, Built to Last",
     },
     {
-      image: "/images/home-banners/banner-3.jpg",
+      image: "/images/home-banners/banner3.png",
       text: "Engineered for Strength and Reliability",
     },
     {
-      image: "/images/home-banners/banner-4.jpg",
+      image: "/images/home-banners/banner4.png",
       text: "Speed, safety, and seamless operations combined",
     },
   ];
@@ -282,12 +282,20 @@ const Home = () => {
                   </p>
 
                   <NavLink to={"/about"}>
-                    <button
+                    {/* <button
                       className="know-more-btn wow"
                       data-aos="fade-up" // Fade in as you scroll
                       data-aos-duration="1500"
                     >
                       About Us <i className="fas fa-arrow-right"></i>
+                    </button> */}
+
+                    <button
+                      className="explore-button about-btn wow"
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
+                    >
+                      About us
                     </button>
                   </NavLink>
                 </div>

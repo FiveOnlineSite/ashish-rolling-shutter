@@ -146,9 +146,13 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item contact-btn">
-                  <NavLink className="nav-link" to="/">
+                  {/* <NavLink className="nav-link" to="/">
                     Contact Us
-                  </NavLink>
+                  </NavLink> */}
+
+                  <button className="explore-button contact-btn wow">
+                    Contact us
+                  </button>
                 </li>
               </ul>
             </div>
@@ -329,7 +333,7 @@ const Navbar = () => {
                       </NavLink>
                     </li>
 
-                    <li className="nav-item contact-mb-btn">
+                    <li className="nav-item explore-button contact-mb-btn">
                       <NavLink className="nav-link" to="/">
                         Contact Us
                       </NavLink>

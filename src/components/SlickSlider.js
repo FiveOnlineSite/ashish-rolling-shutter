@@ -79,6 +79,7 @@ const SlickSlider = ({
                 </div>
 
                 <div className="col-lg-3 col-md-3 col-12">
+                  {/* <button className="explore-button">new button</button> */}
                   <div className="home-banner-btn">
                     <NavLink to={"/"}>
                       {/* <button
@@ -87,11 +88,11 @@ const SlickSlider = ({
                       > */}
 
                       <button
-                        className="know-more-btn wow"
+                        className="explore-button wow"
                         data-aos="fade-right"
                         data-aos-duration="1500"
                       >
-                        Explore <i className="fas fa-arrow-right"></i>
+                        Explore
                       </button>
                     </NavLink>
                   </div>
