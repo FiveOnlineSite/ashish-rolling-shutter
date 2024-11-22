@@ -99,8 +99,12 @@ body {
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   font-size: 16px;
   font-weight: 500;
-  color: var(--dark-blue-bg);
+  color: var(--white-font);
   text-decoration: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+  color: var(--dark-blue-bg);
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -148,6 +152,7 @@ body {
 .offcanvas-body .navbar-nav .nav-item a {
   color: var(--black-font);
   text-decoration: none;
+  padding: 10px;
 }
 
 .offcanvas-body .navbar-nav .dropdown-menu {
@@ -1378,6 +1383,9 @@ s .explore-button.contact-mb-btn a {
   color: var(--white-font); /* Change text color to white when hovered */
 }
 
+.navbar-toggler-icon {
+  background-image: url("../public/images/download\ 1.png");
+}
 @media screen and (max-width: 991px) {
   .desktop-navbar,
   .top-bar-div {

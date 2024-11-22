@@ -60,7 +60,7 @@ const SlickSlider = ({
 
           {hasText && item.text && (
             <>
-              <div className="banner-overlay"></div>
+              {/* <div className="banner-overlay"></div> */}
               <div className="row banner-text-row">
                 <div className="col-lg-12 banner-big-title">
                   <h2
