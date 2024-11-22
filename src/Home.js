@@ -220,7 +220,7 @@ const Home = () => {
     <Layout>
       <section
         className="home-banner slider-section wow"
-        data-wow-duration="2s"
+        // data-wow-duration="2s"
         id="home-page-banner"
       >
         <SlickSlider
@@ -345,9 +345,7 @@ const Home = () => {
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-duration="1500"
                   >
-                    Featured
-                    <br />
-                    Collections
+                    Featured Collections
                   </h2>
                 </div>
               </div>
@@ -373,7 +371,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="row filter-products-slider slider-section">
+        <div
+          className="row filter-products-slider slider-section wow"
+          data-aos="zoom-in" // Fade in as you scroll
+          data-aos-duration="1500"
+        >
           <SlickSlider
             items={filteredProducts.map((product) => ({
               productImg: product.productImg,

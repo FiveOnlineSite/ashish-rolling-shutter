@@ -48,30 +48,54 @@ const SlickSlider = ({
               className="slider-img wow fadeIn"
               src={item.image || item.productImg}
               alt={`Slider item ${index}`}
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
+              // data-wow-duration="1s"
+              // data-wow-delay="0.3s"
             />
           )}
 
           {hasText && item.text && (
             <>
               <div className="banner-overlay"></div>
-              <div className="home-banner-text">
-                <h1
-                  className="wow"
-                  data-aos="fade-up" // Fade in as you scroll
-                  data-aos-duration="1500" // Optional duration setting for AOS
-                >
-                  {item.text}
-                </h1>
-                <NavLink to={"/"}>
-                  <button
-                    className="know-more-btn wow fadeIn"
+              <div className="row banner-text-row">
+                <div className="col-lg-12 banner-big-title">
+                  <h2
+                    className="wow"
+                    data-aos="zoom-in"
                     data-aos-duration="1500"
                   >
-                    Explore <i className="fas fa-arrow-right"></i>
-                  </button>
-                </NavLink>
+                    ARS
+                  </h2>
+                </div>
+                <div className="col-lg-9 col-md-9 col-12">
+                  <div className="home-banner-text">
+                    <h1
+                      className="wow"
+                      data-aos="fade-left"
+                      data-aos-duration="1500"
+                    >
+                      {item.text}
+                    </h1>
+                  </div>
+                </div>
+
+                <div className="col-lg-3 col-md-3 col-12">
+                  <div className="home-banner-btn">
+                    <NavLink to={"/"}>
+                      {/* <button
+                        className="know-more-btn wow fadeIn"
+                        data-aos-duration="1500"
+                      > */}
+
+                      <button
+                        className="know-more-btn wow"
+                        data-aos="fade-right"
+                        data-aos-duration="1500"
+                      >
+                        Explore <i className="fas fa-arrow-right"></i>
+                      </button>
+                    </NavLink>
+                  </div>
+                </div>
               </div>
             </>
           )}

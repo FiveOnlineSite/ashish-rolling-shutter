@@ -26,12 +26,12 @@ const CounterSection = () => {
                 </div>
                 <div className="col-lg-8">
                   <div className="row">
-                    <div
-                      className="col-lg-6 wow"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
-                      <div className="counter-div">
+                    <div className="col-lg-6 ">
+                      <div
+                        className="counter-div wow"
+                        data-aos="fade-down"
+                        data-aos-delay="200"
+                      >
                         <div className="counter-icon">
                           <img
                             src="/images/review.png"
@@ -53,12 +53,12 @@ const CounterSection = () => {
                       </div>
                     </div>
 
-                    <div
-                      className="col-lg-6 wow"
-                      data-aos="fade-up"
-                      data-aos-delay="400"
-                    >
-                      <div className="counter-div">
+                    <div className="col-lg-6 ">
+                      <div
+                        className="counter-div wow"
+                        data-aos="fade-left"
+                        data-aos-delay="400"
+                      >
                         <div className="counter-icon">
                           <img
                             src="/images/location (1).png"
@@ -80,12 +80,12 @@ const CounterSection = () => {
                       </div>
                     </div>
 
-                    <div
-                      className="col-lg-6 mt-lg-4 wow"
-                      data-aos="fade-up"
-                      data-aos-delay="600"
-                    >
-                      <div className="counter-div">
+                    <div className="col-lg-6 mt-lg-4 ">
+                      <div
+                        className="counter-div wow"
+                        data-aos="fade-right"
+                        data-aos-delay="600"
+                      >
                         <div className="counter-icon">
                           <img
                             src="/images/planet-earth.png"
@@ -107,12 +107,12 @@ const CounterSection = () => {
                       </div>
                     </div>
 
-                    <div
-                      className="col-lg-6 mt-lg-4 wow"
-                      data-aos="fade-up"
-                      data-aos-delay="1200"
-                    >
-                      <div className="counter-div">
+                    <div className="col-lg-6 mt-lg-4 ">
+                      <div
+                        className="counter-div wow"
+                        data-aos="fade-up"
+                        data-aos-delay="1200"
+                      >
                         <div className="counter-icon">
                           <img
                             src="/images/graph.png"
