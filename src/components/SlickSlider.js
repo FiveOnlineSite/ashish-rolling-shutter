@@ -39,6 +39,11 @@ const SlickSlider = ({
               poster={item.image} // Use image as poster for video
               data-wow-duration="1s"
               data-wow-delay="0.3s"
+              ref={(video) => {
+                if (video) {
+                  video.playbackRate = 5.0; // Set the playback rate to 2x speed
+                }
+              }}
             >
               <source src={item.video} type="video/mp4" />
               Your browser does not support the video tag.

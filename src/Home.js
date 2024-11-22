@@ -13,7 +13,7 @@ const Home = () => {
   const BannerSlider = [
     {
       // image: "/images/home-banners/banner-1.jpg",
-      video: "/videos/1097026515-preview.mp4",
+      video: "/videos/video-banner.mp4",
       text: "We are rolling shutter manufacturer",
     },
     {
@@ -126,7 +126,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
   };
 
   const ProductsSettings = {
