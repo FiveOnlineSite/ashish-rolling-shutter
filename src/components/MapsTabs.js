@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import IndiaMapLocations from "./IndiaMapLocations";
 import GlobalMapLocations from "./GlobalMapLocations";
 
 const MapsTabs = () => {
+  const [activeTab, setActiveTab] = useState("pan-india");
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <div>
       <div className="container">
@@ -20,7 +25,10 @@ const MapsTabs = () => {
               data-aos="fade-up" // Fade in as you scroll
               data-aos-duration="1500"
             >
-              <b>26 +</b> Cities in India, <br /> Global Reach
+              <b>{activeTab === "pan-india" ? "26 + " : "10 + "}</b>
+              {activeTab === "pan-india"
+                ? "Cities In India"
+                : "Countries Globally"}
             </h2>
           </div>
           <div
@@ -32,20 +40,26 @@ const MapsTabs = () => {
               <ul className="nav nav-tabs">
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
+                    className={`nav-link ${
+                      activeTab === "pan-india" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#pan-india"
                     role="tab"
+                    onClick={() => handleTabChange("pan-india")}
                   >
                     Pan India
                   </a>
                 </li>
                 <li className="nav-item">
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "other-countries" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#other-countries"
                     role="tab"
+                    onClick={() => handleTabChange("other-countries")}
                   >
                     Other Countries
                   </a>

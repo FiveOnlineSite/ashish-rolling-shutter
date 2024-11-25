@@ -20,7 +20,7 @@ const CounterSection = () => {
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-duration="1500"
                   >
-                    <span></span> Making Every Count a Success
+                    <span></span> Achieving Every Success
                   </h5>
                   <h2 className="title featured-title ">Every Count Matter</h2>
                 </div>
