@@ -158,23 +158,22 @@ const Home = () => {
   };
 
   const ProductsFilterSettings = {
-    dots: filteredProducts.length > 3,
+    dots: filteredProducts.length > 2,
     arrows: false,
-    infinite: filteredProducts.length > 3,
+    infinite: false, // Disable infinite scrolling to control layout precisely
     speed: 500,
-    slidesToShow: filteredProducts.length < 4 ? filteredProducts.length : 3,
-    slidesToScroll: 3,
+    slidesToShow: 2.5, // Show 2 full slides and a half slide
+    slidesToScroll: 2, // Scroll 2 full slides at a time
     autoplay: false,
-    centerMode: false, // Ensure center mode is disabled
     fade: filteredProducts.length === 1,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           dots: filteredProducts.length > 1,
-          slidesToShow: 2,
-          centerMode: false,
-          infinite: filteredProducts.length > 1,
+          slidesToShow: 1.5, // Show 1.5 slides for tablets
+          slidesToScroll: 1, // Scroll one slide for smaller screens
+          infinite: false,
           fade: filteredProducts.length === 1,
         },
       },
@@ -182,9 +181,9 @@ const Home = () => {
         breakpoint: 500,
         settings: {
           dots: filteredProducts.length > 1,
-          slidesToShow: 1,
-          centerMode: false,
-          infinite: filteredProducts.length > 1,
+          slidesToShow: 1, // Show 1 slide for mobile
+          slidesToScroll: 1,
+          infinite: false,
           fade: filteredProducts.length === 1,
         },
       },
@@ -336,10 +335,10 @@ const Home = () => {
       </section>
 
       <section className="featured-products-section slider-section">
-        <div className="container">
+        <div className="container-fluid">
           <div className="col-lg-12">
             <div className="row align-items-center justify-content-center mt-5">
-              <div className="col-lg-6">
+              <div className="col-lg-4">
                 <div className="featured-product-text">
                   <h5
                     className="about-subtitle wow"
@@ -355,46 +354,46 @@ const Home = () => {
                   >
                     Featured Collections
                   </h2>
+
+                  <div
+                    className="filter-dropdown wow slideInRight"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
+                    <select
+                      onChange={(e) => setSelectedCategory(e.target.value)}
+                      value={selectedCategory}
+                    >
+                      {categories.map((category, index) => (
+                        <option key={index} value={category}>
+                          {category}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-8">
                 <div
-                  className="filter-dropdown wow slideInRight"
-                  data-aos="fade-up" // Fade in as you scroll
+                  className="row filter-products-slider slider-section wow"
+                  data-aos="zoom-in" // Fade in as you scroll
                   data-aos-duration="1500"
                 >
-                  <select
-                    onChange={(e) => setSelectedCategory(e.target.value)}
-                    value={selectedCategory}
-                  >
-                    {categories.map((category, index) => (
-                      <option key={index} value={category}>
-                        {category}
-                      </option>
-                    ))}
-                  </select>
+                  <SlickSlider
+                    items={filteredProducts.map((product) => ({
+                      productImg: product.productImg,
+                      productName: product.productName,
+                      url: product.url,
+                    }))}
+                    settings={ProductsFilterSettings}
+                    hasText={false}
+                    showProductName={false}
+                    filterdProducts={true}
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div
-          className="row filter-products-slider slider-section wow"
-          data-aos="zoom-in" // Fade in as you scroll
-          data-aos-duration="1500"
-        >
-          <SlickSlider
-            items={filteredProducts.map((product) => ({
-              productImg: product.productImg,
-              productName: product.productName,
-              url: product.url,
-            }))}
-            settings={ProductsFilterSettings}
-            hasText={false}
-            showProductName={false}
-            filterdProducts={true}
-          />
         </div>
       </section>
       <section className="counter-section">

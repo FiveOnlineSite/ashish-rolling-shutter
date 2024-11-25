@@ -119,7 +119,7 @@ const SlickSlider = ({
                     data-aos="fade-left" // Fade in as you scroll
                     data-aos-duration="1500"
                   >
-                    {item.productName}{" "}
+                    {item.productName}
                   </h4>
                 </NavLink>
                 <NavLink
