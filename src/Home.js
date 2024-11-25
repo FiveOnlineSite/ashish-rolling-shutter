@@ -162,17 +162,18 @@ const Home = () => {
     arrows: false,
     infinite: false, // Disable infinite scrolling to control layout precisely
     speed: 500,
-    slidesToShow: 2.5, // Show 2 full slides and a half slide
-    slidesToScroll: 2, // Scroll 2 full slides at a time
+    slidesToShow: filteredProducts.length < 3 ? filteredProducts.length : 2.5, // Show full slides when fewer than 3 items
+    slidesToScroll: filteredProducts.length < 3 ? 1 : 2, // Scroll one slide at a time for fewer items
     autoplay: false,
-    fade: filteredProducts.length === 1,
+    fade: filteredProducts.length === 1, // Enable fade if there's only one slide
     responsive: [
       {
         breakpoint: 768,
         settings: {
           dots: filteredProducts.length > 1,
-          slidesToShow: 1.5, // Show 1.5 slides for tablets
-          slidesToScroll: 1, // Scroll one slide for smaller screens
+          slidesToShow:
+            filteredProducts.length < 2 ? filteredProducts.length : 1.5, // Adjust for tablets
+          slidesToScroll: 1,
           infinite: false,
           fade: filteredProducts.length === 1,
         },
@@ -181,7 +182,7 @@ const Home = () => {
         breakpoint: 500,
         settings: {
           dots: filteredProducts.length > 1,
-          slidesToShow: 1, // Show 1 slide for mobile
+          slidesToShow: filteredProducts.length, // Show all slides for mobile
           slidesToScroll: 1,
           infinite: false,
           fade: filteredProducts.length === 1,

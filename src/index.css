@@ -297,7 +297,7 @@ body {
 
 .banner-overlay {
   position: absolute;
-  height: 100%;
+  height: 90vh;
   width: 100%;
   opacity: 1;
   top: 0;
