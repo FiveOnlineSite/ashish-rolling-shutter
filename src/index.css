@@ -259,9 +259,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 22222 !important;
 }
 
-.banner-big-title h2 {
+.banner-big-title img {
+  width: 500px !important;
+  height: 330px !important;
+  object-fit: contain;
+}
+
+/* .banner-big-title h2 {
   font-size: 250px;
   font-weight: 300;
   line-height: 300px;
@@ -270,11 +277,11 @@ body {
     rgba(255, 255, 255, 0.582),
     rgba(231, 231, 231, 0.596),
     rgba(233, 233, 233, 0.527)
-  ); /* Define gradient */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  -webkit-text-fill-color: transparent; /* Make the text color transparent */
+  ); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
   letter-spacing: 70px;
-}
+} */
 
 .home-banner-text h1 {
   font-size: 55px;
