@@ -8,10 +8,10 @@
 }
 
 :root {
-  --orange-font: #f46404;
+  --red-font: #c92023;
   --black-font: black;
   --white-font: white;
-  --dark-blue-bg: #080230;
+  --dark-red-font: #9d231e;
   --dark-gray-font: rgb(61, 61, 61);
   --light-gray-bg: #f2f2f2;
   --gray-bg: gray;
@@ -27,8 +27,8 @@ body {
 /* TOP BAR */
 
 .topbar {
-  background-color: var(--dark-blue-bg);
-  padding: 20px;
+  background-color: var(--dark-red-font);
+  padding: 15px;
   display: flex;
   align-items: center;
 }
@@ -56,10 +56,10 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
+/* 
 .contact-links-div .contact-link a:hover {
-  color: var(--orange-font);
-}
+  color: var(--red-font);
+} */
 
 .contact-links-div .contact-link a i {
   padding-right: 5px;
@@ -76,6 +76,8 @@ body {
 .social-links.top-bar-links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding-top: 0;
 }
 
 .social-links.top-bar-links ul {
@@ -108,7 +110,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
-  color: var(--dark-blue-bg);
+  color: var(--dark-red-font);
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -125,7 +127,7 @@ body {
 .dropdown-item:hover,
 .navbar-expand-lg .navbar-nav .nav-item a:hover {
   background-color: transparent;
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .desktop-navbar {
@@ -327,7 +329,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
-  background-color: var(--orange-font);
+  background-color: var(--red-font);
   padding: 12px 22px;
   border: none;
   text-transform: uppercase;
@@ -342,7 +344,7 @@ body {
   line-height: 24px;
   margin-top: 25px;
   border: 2px solid transparent;
-  background-color: var(--orange-font) !important;
+  background-color: var(--red-font) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 24px;
 } */
@@ -371,14 +373,14 @@ body {
 } */
 
 /* .contact-btn a:hover {
-  color: var(--orange-font) !important;
+  color: var(--red-font) !important;
   border: 2px solid var(--white-font);
 } */
 
 /* .contact-mb-btn a:hover {
-  color: var(--orange-font) !important;
+  color: var(--red-font) !important;
   background-color: transparent;
-  border: 2px solid var(--orange-font);
+  border: 2px solid var(--red-font);
 } */
 
 /* .home-banner-btn button i, */
@@ -395,11 +397,11 @@ body {
 /* .home-banner-btn button:hover, */
 /* .about-text button:hover {
   background-color: var(--white-font);
-  color: var(--orange-font);
+  color: var(--red-font);
 } */
 
 /* .about-text button:hover {
-  border: 2px solid var(--orange-font);
+  border: 2px solid var(--red-font);
   background-color: transparent !important;
 } */
 
@@ -417,14 +419,14 @@ body {
 .slick-dots li.slick-active button:before,
 .slick-dots li button:hover,
 .slick-dots li button:focus {
-  color: var(--orange-font) !important;
+  color: var(--red-font) !important;
   background-color: var(--white-font);
   border-radius: 50%;
   border: none;
 }
 
 .slick-dots li button:before {
-  color: var(--orange-font) !important;
+  color: var(--red-font) !important;
 }
 
 /* ABOUT */
@@ -477,14 +479,14 @@ body {
 }
 
 .footer-titles.about-subtitle span {
-  background-color: var(--orange-font);
+  background-color: var(--red-font);
 }
 
 .title {
   font-size: 30px;
   line-height: 45px;
   font-weight: 600;
-  color: var(--dark-blue-bg);
+  color: var(--dark-red-font);
   padding: 20px 0;
 }
 
@@ -493,11 +495,11 @@ body {
 }
 
 .about-btn {
-  background-color: var(--orange-font);
+  background-color: var(--red-font);
   border: none;
   color: var(--white-font);
   padding: 10px 15px;
-  border: 1.5px solid var(--orange-font);
+  border: 1.5px solid var(--red-font);
   border-radius: 20px;
   font-size: 14px;
   line-height: 20px;
@@ -687,7 +689,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
-  color: var(--dark-blue-bg);
+  color: var(--dark-red-font);
   padding: 20px 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -727,7 +729,7 @@ body {
 }
 
 .counter-section .title.featured-title {
-  color: var(--dark-blue-bg);
+  color: var(--dark-red-font);
 }
 
 .counter-section .counter-text {
@@ -780,12 +782,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .counter-nos .counter-span {
   margin-left: 10px;
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 /* ACCREDITATION */
@@ -844,7 +846,7 @@ body {
 }
 
 .footer-top-div-text h6 {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .footer-logo img {
@@ -859,7 +861,7 @@ body {
 }
 
 .footer-titles.about-subtitle {
-  color: var(--orange-font);
+  color: var(--red-font);
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
@@ -901,9 +903,13 @@ body {
   transition: color ease 0.3s;
 }
 
+.social-links.top-bar-links ul li:hover a {
+  color: var(--white-font);
+}
+
 .quick-links ul li:hover a,
 .social-links ul li:hover a {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .collections-links {
@@ -920,11 +926,11 @@ body {
 }
 
 .collections-links:hover {
-  border-left: 0.5px solid var(--orange-font);
+  border-left: 0.5px solid var(--red-font);
 }
 
 .collections-links:hover a {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .copyright-text {
@@ -938,7 +944,7 @@ body {
 }
 
 .copyright-text p span {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .go-up-btn {
@@ -956,7 +962,7 @@ body {
   padding: 10px 13px;
   border-radius: 50%;
   background-color: var(--white-font);
-  color: var(--orange-font);
+  color: var(--red-font);
   border: 1px solid transparent;
   transition: color ease 0.3s, background-color ease 0.3s;
 }
@@ -1012,7 +1018,7 @@ body {
 } */
 
 .map-pin {
-  background-color: var(--orange-font);
+  background-color: var(--red-font);
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -1115,13 +1121,13 @@ body {
 
 .maps-container .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  border-bottom: 3px solid var(--orange-font) !important;
+  border-bottom: 3px solid var(--red-font) !important;
   border-radius: 0;
-  color: var(--orange-font) !important;
+  color: var(--red-font) !important;
 }
 
 .maps-container .nav-tabs .nav-item:hover .nav-link {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .map-detail-container {
@@ -1167,7 +1173,7 @@ body {
 
 .map-detail-container a:hover .map-location-detail i,
 .map-detail-container a:hover .map-location-detail p {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .location-data a {
@@ -1177,7 +1183,7 @@ body {
 }
 
 .location-data a:hover {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .location-data p {
@@ -1246,7 +1252,7 @@ body {
   position: absolute;
 }
 .btn-1 span {
-  color: var(--orange-font) !important;
+  color: var(--red-font) !important;
   border: 1px solid rgb(28, 31, 30);
   transition: 0.2s 0.1s;
 }
@@ -1303,12 +1309,12 @@ body {
 .address-text:hover p,
 .phone-mail-text:hover i,
 .phone-mail-text:hover p {
-  color: var(--orange-font);
+  color: var(--red-font);
 }
 
 .explore-button {
   position: relative;
-  background-color: var(--orange-font);
+  background-color: var(--red-font);
   border: 0.5px solid transparent; /* Orange border */
   color: var(--white-font); /* Orange text */
   padding: 10px 28px;
@@ -1336,7 +1342,7 @@ body {
 }
 
 .explore-button:hover {
-  color: var(--orange-font); /* Change text color to white when hovered */
+  color: var(--red-font); /* Change text color to white when hovered */
 }
 
 .explore-button:hover::before {
@@ -1345,12 +1351,12 @@ body {
 
 .explore-button.about-btn {
   background-color: transparent;
-  color: var(--orange-font);
-  border: 0.5px solid var(--orange-font);
+  color: var(--red-font);
+  border: 0.5px solid var(--red-font);
 }
 
 .explore-button.about-btn::before {
-  background-color: var(--orange-font);
+  background-color: var(--red-font);
 }
 
 .explore-button.about-btn:hover {
@@ -1359,14 +1365,14 @@ body {
 
 .explore-button.contact-btn {
   background-color: var(--white-font);
-  color: var(--dark-blue-bg);
+  color: var(--dark-red-font);
   border: 0.5px solid transparent;
   padding: 10px 20px;
   letter-spacing: 0;
 }
 
 .explore-button.contact-btn::before {
-  background-color: var(--dark-blue-bg);
+  background-color: var(--dark-red-font);
   border: 0.5px solid transparent;
 }
 
@@ -1377,7 +1383,7 @@ body {
 .explore-button.contact-mb-btn {
   background-color: transparent;
   color: var(--white-font);
-  border: 0.5px solid var(--dark-blue-bg);
+  border: 0.5px solid var(--dark-red-font);
   letter-spacing: 0;
   width: 45%;
   border-radius: 35px;
@@ -1387,7 +1393,7 @@ s .explore-button.contact-mb-btn a {
 }
 
 .explore-button.contact-mb-btn::before {
-  background-color: var(--dark-blue-bg);
+  background-color: var(--dark-red-font);
   border: 0.5px solid transparent;
 }
 

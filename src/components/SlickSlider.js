@@ -71,6 +71,9 @@ const SlickSlider = ({
                     ARS
                   </h2> */}
                   <img
+                    className="wow"
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
                     src="/images/Ashish Rolling Shutter Logo.png"
                     alt="logo"
                   />
