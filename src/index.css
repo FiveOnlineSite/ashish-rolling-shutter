@@ -22,6 +22,7 @@ body {
   font-family: Poppins;
   overflow-x: hidden;
   font-family: "Trebuchet MS";
+  cursor: none;
 }
 
 /* TOP BAR */
@@ -1213,6 +1214,76 @@ body {
 
 .clients-section .slick-slide img {
   margin: 0 auto;
+}
+
+.custom-cursor-dot {
+  position: fixed;
+  width: 10px; /* Dot size */
+  height: 10px;
+  background-color: var(--red-font); /* Dot color */
+  border-radius: 50%; /* Make it circular */
+  pointer-events: none; /* Prevent it from blocking clicks */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it's on top */
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Styles for the large circle (follows the dot slowly) */
+.custom-cursor-circle {
+  position: fixed;
+  width: 40px; /* Circle size */
+  height: 40px;
+  background-color: rgba(139, 0, 0, 0.2); /* Large circle color */
+  border-radius: 50%; /* Make it circular */
+  pointer-events: none; /* Prevent it from blocking clicks */
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease; /* Lag the movement */
+  z-index: 9998; /* Large circle should be below the dot */
+}
+
+.custom-cursor.hidden {
+  opacity: 0;
+}
+
+.custom-cursor.visible {
+  opacity: 1;
+}
+
+/* Ensure container is visible */
+.logo-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional */
+}
+
+/* Ensure logo styles are correct */
+.logo-loader-container img {
+  max-width: 100%; /* Ensure the image fits */
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Style for the loader (spinner or text) */
+.loader {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add the 'loaded' class to the logo after it loads */
+.logo-loader-container img.loaded {
+  opacity: 1; /* Make logo visible after loading */
 }
 
 @keyframes pulse {

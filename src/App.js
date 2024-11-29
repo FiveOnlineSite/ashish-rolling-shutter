@@ -4,6 +4,8 @@ import ScrollTop from "./components/ScrollTop";
 import { useEffect } from "react";
 import WOW from "wowjs";
 import AOS from "aos";
+import CustomCursor from "./components/CustomCursor";
+import LogoLoader from "./components/LogoLoader";
 
 function App() {
   useEffect(() => {
@@ -13,15 +15,16 @@ function App() {
   useEffect(() => {
     new WOW.WOW().init();
   }, []);
+
   return (
-    <>
-      <Router>
-        <ScrollTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <ScrollTop />
+      {/* <LogoLoader logoSrc="/images/Ashish Rolling Shutter Logo.png" /> */}
+      <CustomCursor />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
