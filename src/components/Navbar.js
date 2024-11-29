@@ -13,8 +13,7 @@ const Navbar = () => {
                 data-aos="fade-right" // Fade in as you scroll
                 data-aos-duration="1500"
               >
-                <b>ARS</b> : provides custom, durable shutters for ultimate
-                security
+                provides custom, durable shutters for ultimate security
               </h6>
             </div>
             <div className="col-lg-5">
@@ -80,8 +79,8 @@ const Navbar = () => {
             >
               <img
                 src="/images/Ashish Rolling Shutter Logo.png"
-                width={"130px"}
-                height={"100px"}
+                width={"95px"}
+                height={"75px"}
                 alt="logo"
               />
             </NavLink>
@@ -168,8 +167,7 @@ const Navbar = () => {
                   data-aos="fade-right" // Fade in as you scroll
                   data-aos-duration="1500"
                 >
-                  <b>ARS</b> : provides custom, durable shutters for ultimate
-                  security
+                  provides custom, durable shutters for ultimate security
                 </h6>
               </div>
               <div className="col-lg-5 col-md-5 col-sm-5">

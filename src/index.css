@@ -14,7 +14,7 @@
   --dark-red-font: #9d231e;
   --dark-gray-font: rgb(61, 61, 61);
   --light-gray-bg: #f2f2f2;
-  --gray-bg: gray;
+  --gray-bg: rgb(211, 211, 211);
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 .topbar {
   background-color: var(--dark-red-font);
-  padding: 15px;
+  padding: 10px;
   display: flex;
   align-items: center;
 }
@@ -52,14 +52,14 @@ body {
   align-items: center;
   font-size: 14px;
   line-height: 24px;
-  color: var(--white-font);
+  color: var(--gray-bg);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-/* 
+
 .contact-links-div .contact-link a:hover {
-  color: var(--red-font);
-} */
+  color: var(--white-font);
+}
 
 .contact-links-div .contact-link a i {
   padding-right: 5px;
@@ -268,6 +268,7 @@ body {
   width: 500px !important;
   height: 330px !important;
   object-fit: contain;
+  object-fit: 0.7;
 }
 
 /* .banner-big-title h2 {
@@ -296,21 +297,21 @@ body {
 
 .home-banner .element img {
   position: relative;
-  height: 90vh;
+  height: 93vh;
   object-fit: cover;
   width: 100%;
 }
 
 .home-banner .element video {
   position: relative;
-  height: 90vh;
+  height: 93vh;
   width: 100%;
   object-fit: cover;
 }
 
 .banner-overlay {
   position: absolute;
-  height: 90vh;
+  height: 93vh;
   width: 100%;
   opacity: 1;
   top: 0;
@@ -743,7 +744,7 @@ body {
 
 .odometer.odometer-auto-theme,
 .odometer.odometer-theme-default {
-  font-family: "Poppins" !important;
+  font-family: "Trebuchet MS" !important;
 }
 
 .counter-section .counter-div {
@@ -861,7 +862,7 @@ body {
 }
 
 .footer-titles.about-subtitle {
-  color: var(--red-font);
+  color: var(--white-font);
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
@@ -899,7 +900,7 @@ body {
 .quick-links ul li a,
 .social-links ul li a {
   text-decoration: none;
-  color: var(--white-font);
+  color: rgb(211, 211, 211);
   transition: color ease 0.3s;
 }
 
@@ -909,7 +910,7 @@ body {
 
 .quick-links ul li:hover a,
 .social-links ul li:hover a {
-  color: var(--red-font);
+  color: var(--white-font);
 }
 
 .collections-links {
@@ -930,7 +931,7 @@ body {
 }
 
 .collections-links:hover a {
-  color: var(--red-font);
+  color: var(--white-font);
 }
 
 .copyright-text {
@@ -1297,7 +1298,7 @@ body {
 .phone-mail-text i,
 .address-text p,
 .phone-mail-text p {
-  color: var(--white-font);
+  color: var(--gray-bg);
   transition: color 0.3s ease;
 }
 
@@ -1309,7 +1310,7 @@ body {
 .address-text:hover p,
 .phone-mail-text:hover i,
 .phone-mail-text:hover p {
-  color: var(--red-font);
+  color: var(--white-font);
 }
 
 .explore-button {
@@ -1528,7 +1529,7 @@ s .explore-button.contact-mb-btn a {
   }
 
   .home-banner .banner-text-row {
-    top: 32%;
+    top: 18%;
   }
 
   .home-banner .slick-prev.custom-arrow img,
@@ -1591,6 +1592,10 @@ s .explore-button.contact-mb-btn a {
     max-width: 100%;
   }
 
+  .banner-big-title {
+    justify-content: center;
+  }
+
   /* .products-section .slick-track {
     padding-right: 20%;
   } */
@@ -1599,6 +1604,15 @@ s .explore-button.contact-mb-btn a {
 @media screen and (max-width: 413px) {
   .single-map-container.india-map img {
     height: 404px;
+  }
+
+  .home-banner .banner-text-row {
+    top: 15%;
+  }
+
+  .home-banner .home-banner-text h1 {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 

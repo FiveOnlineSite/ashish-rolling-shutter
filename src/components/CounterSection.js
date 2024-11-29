@@ -34,7 +34,7 @@ const CounterSection = () => {
                       >
                         <div className="counter-icon">
                           <img
-                            src="/images/review.png"
+                            src="/images/review 1.png"
                             width={"50px"}
                             height={"50px"}
                             alt="review"
@@ -61,7 +61,7 @@ const CounterSection = () => {
                       >
                         <div className="counter-icon">
                           <img
-                            src="/images/location (1).png"
+                            src="/images/location (1) 1.png"
                             width={"50px"}
                             height={"50px"}
                             alt="graph"
@@ -88,7 +88,7 @@ const CounterSection = () => {
                       >
                         <div className="counter-icon">
                           <img
-                            src="/images/planet-earth.png"
+                            src="/images/planet-earth 1.png"
                             width={"50px"}
                             height={"50px"}
                             alt="graph"
@@ -115,7 +115,7 @@ const CounterSection = () => {
                       >
                         <div className="counter-icon">
                           <img
-                            src="/images/graph.png"
+                            src="/images/graph 1.png"
                             width={"50px"}
                             height={"50px"}
                             alt="graph"
