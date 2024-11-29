@@ -62,22 +62,22 @@ const SlickSlider = ({
             <>
               <div className="banner-overlay"></div>
               <div className="row banner-text-row">
-                <div className="col-lg-12 banner-big-title">
-                  {/* <h2
+                {/* <div className="col-lg-12 banner-big-title"> */}
+                {/* <h2
                     className="wow"
                     data-aos="zoom-in"
                     data-aos-duration="1500"
                   >
                     ARS
                   </h2> */}
-                  <img
+                {/* <img
                     className="wow"
                     data-aos="zoom-in"
                     data-aos-duration="1500"
                     src="/images/Ashish Rolling Shutter Logo.png"
                     alt="logo"
-                  />
-                </div>
+                  /> */}
+                {/* </div> */}
                 <div className="col-lg-9 col-md-9 col-12">
                   <div className="home-banner-text">
                     <h1

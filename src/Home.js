@@ -251,23 +251,42 @@ const Home = () => {
                     className="about-img2"
                     alt="about-img2"
                   />
+                  <img
+                    src="/images/round-logo.png"
+                    alt="logo-round"
+                    className="round-logo"
+                  />
                 </div>
               </div>
               <div className="col-lg-6 mt-lg-0 mt-5">
                 <div className="about-text">
-                  <h5
+                  {/* <h5
                     className="about-subtitle wow"
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-duration="1500"
                   >
                     <span></span> Since 1985
+                  </h5> */}
+
+                  <h5
+                    className="about-subtitle wow"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
+                    <span>
+                      <img src="/images/small-logo.png" alt="logo" />
+                    </span>
+                    <span>About Us</span>{" "}
+                    <span>
+                      <img src="/images/small-logo.png" alt="logo" />
+                    </span>
                   </h5>
                   <h2
                     className="title featured-title wow"
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-duration="1500" // Optional, adjust duration
                   >
-                    About Ashish Rolling Shutter
+                    Ashish Rolling Shutter
                   </h2>
                   <p
                     data-aos="fade-up" // Fade in as you scroll

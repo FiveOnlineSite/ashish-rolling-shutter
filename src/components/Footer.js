@@ -44,8 +44,10 @@ const Footer = () => {
                   >
                     <div className="footer-logo">
                       <img
-                        src="/images/Ashish Rolling Shutter Logo.png"
+                        src="/images/white-logo.png"
                         alt="logo"
+                        width={"150px"}
+                        height={"100px"}
                       />
                     </div>
                     <div className="social-links">
