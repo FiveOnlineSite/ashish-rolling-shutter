@@ -79,9 +79,9 @@ const Navbar = () => {
               data-aos-duration="1500"
             >
               <img
-                src="/images/logo 1.png"
-                width={"100px"}
-                height={"80px"}
+                src="/images/Ashish Rolling Shutter Logo.png"
+                width={"130px"}
+                height={"100px"}
                 alt="logo"
               />
             </NavLink>
@@ -234,7 +234,7 @@ const Navbar = () => {
                 data-aos-duration="1500"
               >
                 <img
-                  src="/images/logo 1.png"
+                  src="/images/Ashish Rolling Shutter Logo.png"
                   width={"100px"}
                   height={"80px"}
                   alt="logo"
@@ -266,7 +266,7 @@ const Navbar = () => {
                     data-aos-duration="1500"
                   >
                     <img
-                      src="/images/logo.jpeg"
+                      src="/images/Ashish Rolling Shutter Logo.png"
                       width={"100px"}
                       height={"80px"}
                       alt="logo"

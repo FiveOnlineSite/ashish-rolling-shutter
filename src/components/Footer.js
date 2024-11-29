@@ -43,7 +43,10 @@ const Footer = () => {
                     data-aos-duration="1500"
                   >
                     <div className="footer-logo">
-                      <img src="/images/logo 1.png" alt="logo" />
+                      <img
+                        src="/images/Ashish Rolling Shutter Logo.png"
+                        alt="logo"
+                      />
                     </div>
                     <div className="social-links">
                       <ul>
