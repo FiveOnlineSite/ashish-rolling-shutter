@@ -182,7 +182,8 @@ const Home = () => {
         breakpoint: 500,
         settings: {
           dots: filteredProducts.length > 1,
-          slidesToShow: filteredProducts.length, // Show all slides for mobile
+          slidesToShow:
+            filteredProducts.length < 2 ? filteredProducts.length : 1.5,
           slidesToScroll: 1,
           infinite: false,
           fade: filteredProducts.length === 1,
