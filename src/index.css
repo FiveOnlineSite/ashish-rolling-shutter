@@ -1484,6 +1484,10 @@ body {
   .custom-cursor-circle {
     display: none;
   }
+
+  .home-banner .home-banner-btn {
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 576px) {
