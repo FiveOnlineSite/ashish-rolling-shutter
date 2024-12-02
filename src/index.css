@@ -1194,6 +1194,10 @@ body {
   max-width: 100%; /* Ensure the image fits */
   height: auto;
   transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Style for the loader (spinner or text) */
@@ -1236,65 +1240,6 @@ body {
 .mobile-top-bar-div {
   display: none;
 }
-
-/* ::before,
-::after {
-  position: absolute;
-  content: "";
-}
-
-.custom-btn {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin: 0px 25px 15px;
-  min-width: 150px;
-}
-
-.custom-btn span {
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 20px;
-  transition: 0.3s;
-}
-
-.btn-1::before {
-  background-color: rgb(28, 31, 30);
-  transition: 0.3s ease-out;
-  content: "";
-  position: absolute;
-}
-.btn-1 span {
-  color: var(--red-font) !important;
-  border: 1px solid rgb(28, 31, 30);
-  transition: 0.2s 0.1s;
-}
-.btn-1 span:hover {
-  color: rgb(28, 31, 30);
-  transition: 0.2s 0.1s;
-}
-
-.custom-btn.hover-filled-slide-up::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-.custom-btn.hover-filled-slide-up:hover::before {
-  height: 0%;
-} */
 
 .footer-text h2 {
   color: var(--white-font);
