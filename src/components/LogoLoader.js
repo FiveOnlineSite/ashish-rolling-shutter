@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const LogoLoader = ({ logoSrc }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [logoLoaded, setLogoLoaded] = useState(false);
   const [pageLoaded, setPageLoaded] = useState(false);
 
   useEffect(() => {
@@ -23,20 +23,20 @@ const LogoLoader = ({ logoSrc }) => {
 
   const handleLogoLoad = () => {
     console.log("Logo loaded!");
-    setIsLoading(false);
+    setLogoLoaded(true);
   };
 
   return (
     <>
       {!pageLoaded && (
         <div className="logo-loader-container">
-          {isLoading}
+          {/* {isLoading} */}
           <img
             src={logoSrc}
             alt="Logo"
             onLoad={handleLogoLoad}
             style={{
-              opacity: isLoading ? 1 : 0,
+              opacity: logoLoaded ? 1 : 0,
               transition: "opacity 0.5s ease-in-out",
               width: "140px",
               display: "block",
