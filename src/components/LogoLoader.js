@@ -30,7 +30,7 @@ const LogoLoader = ({ logoSrc }) => {
     <>
       {!pageLoaded && (
         <div className="logo-loader-container">
-          {/* {isLoading} */}
+          {isLoading}
           <img
             src={logoSrc}
             alt="Logo"
