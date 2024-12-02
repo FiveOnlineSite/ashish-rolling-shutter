@@ -1152,6 +1152,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 9999; /* Ensure it's on top */
   transition: width 0.3s ease, height 0.3s ease;
+  display: block;
 }
 
 /* Styles for the large circle (follows the dot slowly) */
@@ -1165,6 +1166,7 @@ body {
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease; /* Lag the movement */
   z-index: 9998; /* Large circle should be below the dot */
+  display: block;
 }
 
 .custom-cursor.hidden {
@@ -1476,6 +1478,11 @@ body {
 
   .featured-products-section.slider-section .featured-product-text {
     padding-left: 0;
+  }
+
+  .custom-cursor-dot,
+  .custom-cursor-circle {
+    display: none;
   }
 }
 
