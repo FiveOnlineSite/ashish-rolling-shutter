@@ -314,7 +314,7 @@ const Home = () => {
                       data-aos="fade-up"
                       data-aos-duration="1500"
                     >
-                      About us
+                      Explore
                     </button>
                   </NavLink>
                 </div>
@@ -335,7 +335,19 @@ const Home = () => {
             data-aos="fade-up" // Fade in as you scroll
             data-aos-duration="1500"
           >
-            <span></span> Curated For You
+            <h5
+              className="about-subtitle wow"
+              data-aos="fade-up" // Fade in as you scroll
+              data-aos-duration="1500"
+            >
+              <span>
+                <img src="/images/small-logo.png" alt="logo" />
+              </span>
+              <span>Curated For You</span>{" "}
+              <span>
+                <img src="/images/small-logo.png" alt="logo" />
+              </span>
+            </h5>
           </h5>
           <h2
             className="title featured-title "
@@ -365,7 +377,19 @@ const Home = () => {
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-duration="1500"
                   >
-                    <span></span> Exclusive Selection
+                    <h5
+                      className="about-subtitle wow"
+                      data-aos="fade-up" // Fade in as you scroll
+                      data-aos-duration="1500"
+                    >
+                      <span>
+                        <img src="/images/small-logo.png" alt="logo" />
+                      </span>
+                      <span>Exclusive Selection</span>{" "}
+                      <span>
+                        <img src="/images/small-logo.png" alt="logo" />
+                      </span>
+                    </h5>
                   </h5>
                   <h2
                     className="title featured-title wow slideInLeft"
@@ -430,7 +454,19 @@ const Home = () => {
                   data-aos="fade-up" // Fade in as you scroll
                   data-aos-duration="1500"
                 >
-                  <span></span> Trusted Recognition
+                  <h5
+                    className="about-subtitle wow"
+                    data-aos="fade-up" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
+                    <span>
+                      <img src="/images/small-logo.png" alt="logo" />
+                    </span>
+                    <span>Trusted Recognition</span>{" "}
+                    <span>
+                      <img src="/images/small-logo.png" alt="logo" />
+                    </span>
+                  </h5>
                 </h5>
                 <h2
                   className="title featured-title "
@@ -491,7 +527,19 @@ const Home = () => {
             data-aos="fade-up" // Fade in as you scroll
             data-aos-duration="1500"
           >
-            <span></span> Partners in Success
+            <h5
+              className="about-subtitle wow"
+              data-aos="fade-up" // Fade in as you scroll
+              data-aos-duration="1500"
+            >
+              <span>
+                <img src="/images/small-logo.png" alt="logo" />
+              </span>
+              <span>Partners In Success</span>{" "}
+              <span>
+                <img src="/images/small-logo.png" alt="logo" />
+              </span>
+            </h5>{" "}
           </h5>
           <h2
             className="title featured-title"

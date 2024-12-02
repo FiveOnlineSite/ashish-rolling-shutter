@@ -4,47 +4,42 @@ const LogoLoader = ({ logoSrc }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [pageLoaded, setPageLoaded] = useState(false);
 
-  // Detect when the entire page has loaded
   useEffect(() => {
     const handleLoad = () => {
-      console.log("Page is fully loaded");
-      setPageLoaded(true); // Set pageLoaded to true when the page is fully loaded
+      console.log("Page fully loaded");
+      setPageLoaded(true);
     };
 
     if (document.readyState === "complete") {
-      setPageLoaded(true); // If the page is already loaded, just set the state
+      setPageLoaded(true);
     } else {
       window.addEventListener("load", handleLoad);
     }
 
-    // Cleanup listener on component unmount
     return () => {
       window.removeEventListener("load", handleLoad);
     };
   }, []);
 
   const handleLogoLoad = () => {
-    console.log("Logo loaded!"); // Debug if onLoad is triggered
-    setIsLoading(false); // Set loading to false when the logo has finished loading
+    console.log("Logo loaded!");
+    setIsLoading(false);
   };
 
   return (
     <>
-      {/* Only show loader if the page is not loaded yet */}
       {!pageLoaded && (
         <div className="logo-loader-container">
-          {/* Show loader while image is loading */}
-          {isLoading && <div className="loader">Loading...</div>}
-
-          {/* The logo image, hidden until it's loaded */}
+          {isLoading}
           <img
             src={logoSrc}
             alt="Logo"
             onLoad={handleLogoLoad}
             style={{
-              opacity: isLoading ? 0 : 1, // Use opacity to hide until loaded
-              transition: "opacity 0.5s ease-in-out", // Smooth fade-in
-              display: isLoading ? "block" : "none", // Ensure logo is hidden until loaded
+              opacity: isLoading ? 1 : 0,
+              transition: "opacity 0.5s ease-in-out",
+              width: "140px",
+              display: "block",
             }}
           />
         </div>

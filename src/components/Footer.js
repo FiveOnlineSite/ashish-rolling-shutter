@@ -84,7 +84,13 @@ const Footer = () => {
                       {/* <h6 className="footer-titles">Quick Links</h6> */}
 
                       <h6 className="footer-titles about-subtitle">
-                        <span></span>Quick Links
+                        <span>
+                          <img src="/images/white-small-logo.png" alt="logo" />
+                        </span>
+                        <span>Quick Links</span>{" "}
+                        <span>
+                          <img src="/images/white-small-logo.png" alt="logo" />
+                        </span>
                       </h6>
                       <ul>
                         <li>
@@ -109,7 +115,21 @@ const Footer = () => {
                   >
                     <div className="address-div">
                       <h6 className="footer-titles about-subtitle">
-                        <span></span>Find Us Here
+                        <h6 className="footer-titles about-subtitle">
+                          <span>
+                            <img
+                              src="/images/white-small-logo.png"
+                              alt="logo"
+                            />
+                          </span>
+                          <span>Find Us Here</span>{" "}
+                          <span>
+                            <img
+                              src="/images/white-small-logo.png"
+                              alt="logo"
+                            />
+                          </span>
+                        </h6>
                       </h6>
 
                       {/* <h6 className="footer-titles ">Find Us Here</h6> */}
@@ -133,7 +153,21 @@ const Footer = () => {
                     <div className="phone-mail-div">
                       {/* <h6 className="footer-titles">Reach Out</h6> */}
                       <h6 className="footer-titles about-subtitle">
-                        <span></span>Reach Out
+                        <h6 className="footer-titles about-subtitle">
+                          <span>
+                            <img
+                              src="/images/white-small-logo.png"
+                              alt="logo"
+                            />
+                          </span>
+                          <span>Reach Out</span>{" "}
+                          <span>
+                            <img
+                              src="/images/white-small-logo.png"
+                              alt="logo"
+                            />
+                          </span>
+                        </h6>
                       </h6>
 
                       <a href="tel: +91 9324874287" className="contact-links">

@@ -18,7 +18,19 @@ const MapsTabs = () => {
               data-aos="fade-up" // Fade in as you scroll
               data-aos-duration="1500"
             >
-              <span></span> Expanding Nationwide & Beyond
+              <h5
+                className="about-subtitle wow"
+                data-aos="fade-up" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <span>
+                  <img src="/images/small-logo.png" alt="logo" />
+                </span>
+                <span>Nationwide & Beyond</span>{" "}
+                <span>
+                  <img src="/images/small-logo.png" alt="logo" />
+                </span>
+              </h5>{" "}
             </h5>
             <h2
               className="title featured-title"

@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <ScrollTop />
-      {/* <LogoLoader logoSrc="/images/Ashish Rolling Shutter Logo.png" /> */}
+      <LogoLoader logoSrc="/images/Ashish Rolling Shutter Logo.png" />
       <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />

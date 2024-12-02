@@ -327,114 +327,40 @@ body {
   );
 }
 
-/* .home-banner-btn button,
-.about-text button,
-.contact-btn a,
-.contact-mb-btn a {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-  background-color: var(--red-font);
-  padding: 12px 22px;
-  border: none;
-  text-transform: uppercase;
-  color: var(--white-font);
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-} */
-
-/* .about-text button {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 25px;
-  border: 2px solid transparent;
-  background-color: var(--red-font) !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 24px;
-} */
-
-/* .contact-btn a {
-  margin-top: 0;
-  color: var(--black-font) !important;
-  border: 2px solid transparent;
-  background-color: var(--white-font);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 8px 20px;
-} */
-
-/* .contact-mb-btn {
-  width: auto;
-  display: inline-flex;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 24px;
-}
-
-.contact-mb-btn a {
-  margin-top: 10px;
-  color: var(--white-font) !important;
-  border: 2px solid transparent;
-  transition: background-color 0.3s ease, color 0.3s ease;
-} */
-
-/* .contact-btn a:hover {
-  color: var(--red-font) !important;
-  border: 2px solid var(--white-font);
-} */
-
-/* .contact-mb-btn a:hover {
-  color: var(--red-font) !important;
-  background-color: transparent;
-  border: 2px solid var(--red-font);
-} */
-
-/* .home-banner-btn button i, */
-/* .about-text button i {
-  padding-left: 10px;
-  transition: padding-left 0.1 ease;
-} */
-
-/* .home-banner-btn button:hover i, */
-/* .about-text button:hover i {
-  padding-left: 20px;
-} */
-
-/* .home-banner-btn button:hover, */
-/* .about-text button:hover {
-  background-color: var(--white-font);
-  color: var(--red-font);
-} */
-
-/* .about-text button:hover {
-  border: 2px solid var(--red-font);
-  background-color: transparent !important;
-} */
-
 .home-banner .slick-slider .slick-dots {
   bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-banner .slick-slider .slick-dots li {
+  margin: 0 20px;
+  padding: 0 5px;
 }
 
 .home-banner .slick-slider .slick-dots li button {
-  background-color: transparent;
-  border: 0.1px solid rgba(128, 128, 128, 0.719) !important;
-  border-radius: 50%;
-  transition: color 0.3s ease;
+  border: none;
+  width: 50px;
+  height: 3px;
+  background-color: var(--white-font);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  padding: 0;
+  display: inline;
 }
 
-.slick-dots li.slick-active button:before,
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  background-color: var(--white-font);
-  border-radius: 50%;
-  border: none;
+.home-banner .slick-slider .slick-dots li.slick-active button,
+.home-banner .slick-slider .slick-dots li:hover button {
+  background-color: var(--dark-red-font) !important;
 }
 
 .slick-dots li button:before {
-  content: url("../public/images/xsmall-logo.png") !important;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  opacity: 0.8;
+  content: "" !important;
 }
 
 /* ABOUT */
@@ -491,16 +417,16 @@ body {
 }
 
 .footer-titles.about-subtitle span {
-  height: 1px;
+  /* height: 1px;
   background-color: var(--dark-gray-font);
-  width: 30px;
+  width: 30px; */
   align-items: center;
   margin-right: 20px;
 }
 
-.footer-titles.about-subtitle span {
+/* .footer-titles.about-subtitle span {
   background-color: var(--red-font);
-}
+} */
 
 .title {
   font-size: 30px;
@@ -1486,9 +1412,11 @@ body {
   letter-spacing: 0;
   width: 45%;
   border-radius: 35px;
+  margin: 4px 0;
+  padding: 10px !important;
 }
-s .explore-button.contact-mb-btn a {
-  padding: 8px 15px;
+.explore-button.contact-mb-btn a {
+  padding: 8px !important;
 }
 
 .explore-button.contact-mb-btn::before {
@@ -1637,6 +1565,10 @@ s .explore-button.contact-mb-btn a {
   .home-banner .element video,
   .banner-overlay {
     height: 100vh;
+  }
+
+  .home-banner .slick-slider .slick-dots {
+    left: -8%;
   }
 }
 
