@@ -1520,6 +1520,10 @@ body {
   }
 
   .home-banner .slick-slider .slick-dots {
+    bottom: 30px;
+  }
+
+  .home-banner .slick-slider .slick-dots {
     left: -6%;
   }
 }
