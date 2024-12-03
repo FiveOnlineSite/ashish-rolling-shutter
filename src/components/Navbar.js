@@ -98,7 +98,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/about-us">
                     About Us
                   </NavLink>
                 </li>
@@ -116,30 +116,42 @@ const Navbar = () => {
                   <ul className="dropdown-menu">
                     <li>
                       <NavLink className="dropdown-item" to="/">
-                        Hangar Doors
+                        Rolling shutter
                       </NavLink>
                     </li>
                     <li>
                       <NavLink className="dropdown-item" to="/">
-                        High Speed Doors
+                        Gates
                       </NavLink>
                     </li>
 
                     <li>
                       <NavLink className="dropdown-item" to="/">
-                        Cold Storage Doors
+                        Raw materials
+                      </NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink className="dropdown-item" to="/">
+                        Sliding shutter
+                      </NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink className="dropdown-item" to="/">
+                        Rolling shutter operating system
                       </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/brochures">
                     Brochures
                   </NavLink>
                 </li>
 
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/support">
                     Support
                   </NavLink>
                 </li>
@@ -148,10 +160,11 @@ const Navbar = () => {
                   {/* <NavLink className="nav-link" to="/">
                     Contact Us
                   </NavLink> */}
-
-                  <button className="explore-button contact-btn wow">
-                    Contact us
-                  </button>
+                  <NavLink to="/contact-us">
+                    <button className="explore-button contact-btn wow">
+                      Contact Us
+                    </button>
+                  </NavLink>
                 </li>
               </ul>
             </div>
