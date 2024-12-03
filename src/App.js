@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/">
       <ScrollTop />
       <LogoLoader logoSrc="/images/Ashish Rolling Shutter Logo.png" />
       <CustomCursor />
