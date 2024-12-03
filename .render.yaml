@@ -1,0 +1,23 @@
+services:
+  - type: static
+    name: ashish-rolling-shutter
+    env: static
+    buildCommand: npm run build
+    startCommand: serve -s build
+    staticPublishPath: build
+    redirects:
+      - from: /about-us
+        to: /index.html
+        status: 200
+      - from: /brochures
+        to: /index.html
+        status: 200
+      - from: /support
+        to: /index.html
+        status: 200
+      - from: /contact-us
+        to: /index.html
+        status: 200
+      - from: /**
+        to: /index.html
+        status: 200
