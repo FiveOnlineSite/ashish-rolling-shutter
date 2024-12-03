@@ -75,7 +75,7 @@ const AboutUs = () => {
                   alt="about-img2"
                 />
                 <img
-                  src="/images/since-logo.png"
+                  src="/images/1996.png"
                   alt="logo-round"
                   className="round-logo"
                 />
