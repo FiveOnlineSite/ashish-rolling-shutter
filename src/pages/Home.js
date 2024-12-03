@@ -442,9 +442,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="counter-section">
-        <CounterSection />
-      </section>
+
+      <CounterSection bgImage="/images/counter-bg.png" />
 
       <section className="accreditations-section">
         <Accreditations />

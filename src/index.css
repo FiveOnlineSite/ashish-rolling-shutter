@@ -371,11 +371,11 @@ body {
   padding: 100px 0 50px 0;
 }
 
-.about-section .about-img-div {
+.about-img-div {
   position: relative;
 }
 
-.about-section .round-logo {
+.round-logo {
   position: absolute;
   top: -10%;
   right: 2px;
@@ -384,7 +384,7 @@ body {
   animation: 25s linear infinite rotate-logo;
 }
 
-.about-section .about-img1 {
+.about-img1 {
   position: absolute;
   left: 20px;
   width: 50%;
@@ -395,7 +395,7 @@ body {
   border-bottom-left-radius: 10px;
 }
 
-.about-section .about-img2 {
+.about-img2 {
   position: relative;
   left: 60px;
   width: 80%;

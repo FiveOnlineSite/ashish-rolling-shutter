@@ -1,10 +1,12 @@
 import React from "react";
 import Counter from "./Counter";
 
-const CounterSection = () => {
+const CounterSection = ({ bgImage }) => {
+  const counterBg = {
+    backgroundImage: `url(${bgImage})`,
+  };
   return (
-    <>
-      <div className="counter-overlay"></div>
+    <section className="counter-section" style={counterBg}>
       <div>
         <div
           className="container wow"
@@ -161,7 +163,7 @@ const CounterSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

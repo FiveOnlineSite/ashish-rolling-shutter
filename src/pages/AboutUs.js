@@ -13,6 +13,7 @@ const AboutUs = () => {
       { label: "About us", path: null, active: true },
     ],
   };
+
   return (
     <Layout>
       <section className="about-banner">
@@ -27,7 +28,7 @@ const AboutUs = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="about-img">
+              {/* <div className="about-img">
                 <h5
                   className="img-text1 wow"
                   data-aos="zoom-in" // Fade in as you scroll
@@ -55,6 +56,28 @@ const AboutUs = () => {
                   className="round-logo1 wow"
                   data-aos="zoom-in" // Fade in as you scroll
                   data-aos-duration="1500"
+                />
+              </div> */}
+
+              <div
+                className="about-img-div wow"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <img
+                  src="/images/about1.jpg"
+                  className="about-img1"
+                  alt="about-img1"
+                />
+                <img
+                  src="/images/about2.jpg"
+                  className="about-img2"
+                  alt="about-img2"
+                />
+                <img
+                  src="/images/since-logo.png"
+                  alt="logo-round"
+                  className="round-logo"
                 />
               </div>
             </div>
@@ -92,15 +115,13 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="counter-section">
-        <CounterSection />
-      </section>
+      <CounterSection bgImage="/images/about-counter.png" />
 
       <section className="about-content2">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 order-1">
-              <div className="about-img">
+              {/* <div className="about-img">
                 <h5
                   className="img-text2 wow"
                   data-aos="zoom-in" // Fade in as you scroll
@@ -129,6 +150,27 @@ const AboutUs = () => {
                   className="round-logo1 wow"
                   data-aos="zoom-in" // Fade in as you scroll
                   data-aos-duration="1500"
+                />
+              </div> */}
+              <div
+                className="about-img-div wow"
+                data-aos="fade-left" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <img
+                  src="/images/about1.jpg"
+                  className="about-img1"
+                  alt="about-img1"
+                />
+                <img
+                  src="/images/about2.jpg"
+                  className="about-img2"
+                  alt="about-img2"
+                />
+                <img
+                  src="/images/round-logo.png"
+                  alt="logo-round"
+                  className="round-logo"
                 />
               </div>
             </div>
