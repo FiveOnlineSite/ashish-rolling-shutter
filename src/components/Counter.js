@@ -30,7 +30,7 @@ const Counter = ({ target }) => {
       // Update the odometer display with the formatted count
       odometerRef.current.innerHTML = formatCount(count);
     }
-  }, [count]);
+  }, [count, formatCount]);
 
   // Automatically increment the counter every second until it reaches the target
   useEffect(() => {

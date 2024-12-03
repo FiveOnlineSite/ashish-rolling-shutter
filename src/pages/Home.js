@@ -5,8 +5,6 @@ import { NavLink } from "react-router-dom";
 import ProductData from "../components/ProductData";
 import MapsTabs from "../components/MapsTabs";
 import ClientsData from "../components/ClientsData";
-import AOS from "aos";
-import WOW from "wowjs";
 import CounterSection from "../components/CounterSection";
 import Accreditations from "../components/Accreditations";
 

@@ -134,7 +134,7 @@ const Footer = () => {
 
                       {/* <h6 className="footer-titles ">Find Us Here</h6> */}
 
-                      <a href="#" className="contact-links">
+                      <NavLink to="/" className="contact-links">
                         <div className="address-text">
                           <i class="fa-solid fa-location-dot footer-icon"></i>
                           <p>
@@ -142,7 +142,7 @@ const Footer = () => {
                             Maharashtra - 400025
                           </p>
                         </div>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                   <div
