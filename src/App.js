@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ScrollTop from "./components/ScrollTop";
-// import { useEffect } from "react";
-// import WOW from "wowjs";
-// import AOS from "aos";
+import { useEffect } from "react";
+import WOW from "wowjs";
+import AOS from "aos";
 import CustomCursor from "./components/CustomCursor";
 import LogoLoader from "./components/LogoLoader";
 import AboutUs from "./pages/AboutUs";
@@ -12,13 +12,13 @@ import Support from "./pages/Support";
 import ContactUs from "./pages/ContactUs";
 
 function App() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1500 });
-  // }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
 
-  // useEffect(() => {
-  //   new WOW.WOW().init();
-  // }, []);
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
 
   return (
     <Router basename="/">
