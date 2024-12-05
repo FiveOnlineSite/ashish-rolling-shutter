@@ -1380,6 +1380,7 @@ body {
 
 .round-logo.support {
   left: -10%;
+  top: -15%;
 }
 
 .commitment-text {
@@ -1828,6 +1829,29 @@ body {
     top: -6%;
     left: 26%;
   }
+
+  .title-div {
+    width: 57%;
+    padding: 20px;
+  }
+
+  .title-div h2,
+  .customer-care-title h2 {
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  .round-logo.support {
+    left: -4%;
+    top: -25%;
+  }
+
+  .customer-care-title {
+    top: -5%;
+    width: 95%;
+    padding: 20px;
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 508px) {
@@ -1874,10 +1898,6 @@ body {
 
   .banner-big-title {
     justify-content: center;
-  }
-
-  .title-div {
-    width: 65%;
   }
 
   /* .products-section .slick-track {
