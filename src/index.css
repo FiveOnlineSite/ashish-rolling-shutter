@@ -21,6 +21,7 @@ body {
   margin: 0;
   font-family: Poppins;
   overflow-x: hidden;
+  overflow-y: scroll !important;
   font-family: "Trebuchet MS";
   cursor: none;
 }
