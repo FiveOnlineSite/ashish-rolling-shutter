@@ -23,17 +23,20 @@ const Navbar = () => {
                 data-aos-duration="1500"
               >
                 <div className="contact-link">
-                  <a href="mailto:contact@example.com">
-                    <i class="fa-solid fa-envelope"></i>
+                  <NavLink
+                    to="mailto:contact@example.com"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-solid fa-envelope"></i>
                     <p>contact@example.com</p>
-                  </a>
+                  </NavLink>
                 </div>
 
                 <div className="contact-link">
-                  <a href="#">
-                    <i class="fa-solid fa-location-dot"></i>
+                  <NavLink to="/" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-solid fa-location-dot"></i>
                     <p>Worli, Mumbai, Maharashtra 400025/30</p>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -45,23 +48,23 @@ const Navbar = () => {
               >
                 <ul>
                   <li>
-                    <NavLink to="/">
-                      <i class="fa-brands fa-facebook-f"></i>
+                    <NavLink to="/" title="facebook">
+                      <i className="fa-brands fa-facebook-f"></i>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/">
-                      <i class="fa-brands fa-instagram"></i>
+                    <NavLink to="/" title="instagram">
+                      <i className="fa-brands fa-instagram"></i>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/">
-                      <i class="fa-brands fa-linkedin-in"></i>
+                    <NavLink to="/" title="linkedin">
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/">
-                      <i class="fa-brands fa-youtube"></i>
+                    <NavLink to="/" title="youtube">
+                      <i className="fa-brands fa-youtube"></i>
                     </NavLink>
                   </li>
                 </ul>
@@ -74,6 +77,7 @@ const Navbar = () => {
             <NavLink
               className="navbar-brand"
               to="/"
+              title="logo"
               data-aos="fade-right" // Fade in as you scroll
               data-aos-duration="1500"
             >
@@ -93,12 +97,12 @@ const Navbar = () => {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/" title="Home">
                     Home
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/about-us">
+                  <NavLink className="nav-link" to="/about-us" title="About Us">
                     About Us
                   </NavLink>
                 </li>
@@ -109,49 +113,70 @@ const Navbar = () => {
                     data-bs-toggle="dropdown"
                     to="/"
                     aria-expanded="false"
+                    title="Products"
                   >
                     Products <i className="fa-solid fa-angle-down"></i>
                   </NavLink>
 
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink
+                        className="dropdown-item"
+                        to="/"
+                        title="Rolling Shutter"
+                      >
                         Rolling shutter
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink className="dropdown-item" to="/" title="Gates">
                         Gates
                       </NavLink>
                     </li>
 
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink
+                        className="dropdown-item"
+                        to="/"
+                        title="Raw Materials"
+                      >
                         Raw materials
                       </NavLink>
                     </li>
 
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink
+                        className="dropdown-item"
+                        to="/"
+                        title="Sliding Shutter"
+                      >
                         Sliding shutter
                       </NavLink>
                     </li>
 
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink
+                        className="dropdown-item"
+                        to="/"
+                        title="Rolling Shutter Operating System"
+                      >
                         Rolling shutter operating system
                       </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/brochures">
+                  <NavLink
+                    className="nav-link"
+                    to="/brochures"
+                    title="Brochures"
+                  >
                     Brochures
                   </NavLink>
                 </li>
 
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/support">
+                  <NavLink className="nav-link" to="/support" title="Support">
                     Support
                   </NavLink>
                 </li>
@@ -160,7 +185,7 @@ const Navbar = () => {
                   {/* <NavLink className="nav-link" to="/">
                     Contact Us
                   </NavLink> */}
-                  <NavLink to="/contact-us">
+                  <NavLink to="/contact-us" title="Contact Us">
                     <button className="explore-button contact-btn wow">
                       Contact Us
                     </button>
@@ -190,17 +215,17 @@ const Navbar = () => {
                   data-aos-duration="1500"
                 >
                   <div className="contact-link">
-                    <a href="mailto:contact@example.com">
-                      <i class="fa-solid fa-envelope"></i>
+                    <NavLink to="mailto:contact@example.com" title="mailid">
+                      <i className="fa-solid fa-envelope"></i>
                       <p>contact@example.com</p>
-                    </a>
+                    </NavLink>
                   </div>
 
                   <div className="contact-link">
-                    <a href="#">
-                      <i class="fa-solid fa-location-dot"></i>
+                    <NavLink to="/" title="address">
+                      <i className="fa-solid fa-location-dot"></i>
                       <p>Worli, Mumbai, Maharashtra 400025/30</p>
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -212,23 +237,23 @@ const Navbar = () => {
                 >
                   <ul>
                     <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-facebook-f"></i>
+                      <NavLink to="/" title="facebook">
+                        <i className="fa-brands fa-facebook-f"></i>
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-instagram"></i>
+                      <NavLink to="/" title="instagram">
+                        <i className="fa-brands fa-instagram"></i>
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                      <NavLink to="/" title="linkedin">
+                        <i className="fa-brands fa-linkedin-in"></i>
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/">
-                        <i class="fa-brands fa-youtube"></i>
+                      <NavLink to="/" title="youtube">
+                        <i className="fa-brands fa-youtube"></i>
                       </NavLink>
                     </li>
                   </ul>
@@ -243,6 +268,7 @@ const Navbar = () => {
                 to="/"
                 data-aos="fade-right" // Fade in as you scroll
                 data-aos-duration="1500"
+                title="logo"
               >
                 <img
                   src="/images/Ashish Rolling Shutter Logo.png"
@@ -275,6 +301,7 @@ const Navbar = () => {
                     to="/"
                     data-aos="fade-left" // Fade in as you scroll
                     data-aos-duration="1500"
+                    title="logo"
                   >
                     <img
                       src="/images/Ashish Rolling Shutter Logo.png"
@@ -293,12 +320,12 @@ const Navbar = () => {
                 <div className="offcanvas-body">
                   <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/" title="Home">
                         Home
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/" title="About Us">
                         About Us
                       </NavLink>
                     </li>
@@ -309,43 +336,56 @@ const Navbar = () => {
                         data-bs-toggle="dropdown"
                         to="/"
                         aria-expanded="false"
+                        title="Products"
                       >
                         Products <i className="fa-solid fa-angle-down"></i>
                       </NavLink>
 
                       <ul className="dropdown-menu ">
                         <li>
-                          <NavLink className="dropdown-item" to="/">
+                          <NavLink
+                            className="dropdown-item"
+                            to="/"
+                            title="Hangar Doors"
+                          >
                             Hangar Doors
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink className="dropdown-item" to="/">
+                          <NavLink
+                            className="dropdown-item"
+                            to="/"
+                            title="High Speed Doors"
+                          >
                             High Speed Doors
                           </NavLink>
                         </li>
 
                         <li>
-                          <NavLink className="dropdown-item" to="/">
+                          <NavLink
+                            className="dropdown-item"
+                            to="/"
+                            title="Cold Storage Doors"
+                          >
                             Cold Storage Doors
                           </NavLink>
                         </li>
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/" title="Brochures">
                         Brochures
                       </NavLink>
                     </li>
 
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/" title="Support">
                         Support
                       </NavLink>
                     </li>
 
                     <li className="nav-item explore-button contact-mb-btn">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink className="nav-link" to="/" title="Contact Us">
                         Contact Us
                       </NavLink>
                     </li>
