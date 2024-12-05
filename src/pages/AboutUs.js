@@ -16,13 +16,11 @@ const AboutUs = () => {
 
   return (
     <Layout>
-      <section className="about-banner">
-        <Banner
-          bannerImg={bannerData.bannerImg}
-          title={bannerData.title}
-          breadcrumbs={bannerData.breadcrumbs}
-        />
-      </section>
+      <Banner
+        bannerImg={bannerData.bannerImg}
+        title={bannerData.title}
+        breadcrumbs={bannerData.breadcrumbs}
+      />
 
       <section className="about-content1">
         <div className="container">
@@ -88,21 +86,21 @@ const AboutUs = () => {
                 data-aos="fade-left" // Fade in as you scroll
                 data-aos-duration="1500"
               >
-                <p>
+                <p className="paragraph">
                   <span>Ashish Rolling Shutter</span> has held a lead position
                   in manufacturing as well as exporting, distributing and
                   installing Entrance Automation Systems and Loading Bay
                   Equipment that are problem free and easy to operate.
                 </p>
 
-                <p>
+                <p className="paragraph">
                   <span>Ashish Rolling Shutter</span> specializes in designing,
                   manufacturing and installing customised products conforming to
                   the highest safety standards complemented with reliability and
                   energy efficiency.
                 </p>
 
-                <p>
+                <p className="paragraph">
                   All our products are designed and manufactured with European
                   collaboration using innovative and creative engineering
                   technology. The product development team uses the latest
@@ -181,7 +179,7 @@ const AboutUs = () => {
                 data-aos="fade-right" // Fade in as you scroll
                 data-aos-duration="1500"
               >
-                <p>
+                <p className="paragraph">
                   <span>Ashish Rolling Shutter</span> We lay great emphasis on
                   exceptional customer service and provide regular programmed
                   inspections and maintenance safeguards which increases product
@@ -191,7 +189,7 @@ const AboutUs = () => {
                   Africa, North America, & South America.
                 </p>
 
-                <p>
+                <p className="paragraph">
                   Headquartered in Mumbai, the commercial capital of India, the
                   company has expanded its operations, geographical reach,
                   manufacturing capacity and customer base globally. We are a
@@ -201,7 +199,7 @@ const AboutUs = () => {
                   69 countries across the globe.
                 </p>
 
-                <p>
+                <p className="paragraph">
                   We have established a significant presence in India with over
                   1000 employees and operations spanning across 26 major cities.
                   Having a strong and efficient customer care team available 24

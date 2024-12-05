@@ -104,7 +104,8 @@ body {
 
 .navbar-expand-lg .navbar-nav .nav-item a,
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 500;
   color: var(--white-font);
   text-decoration: none;
@@ -461,7 +462,8 @@ body {
 .counter-section,
 .accreditations-section,
 .maps-tab-section,
-.clients-section {
+.clients-section,
+.commitment-section {
   padding: 50px 0;
 }
 
@@ -1222,7 +1224,7 @@ body {
 
 /* ABOUT US */
 
-.about-banner {
+.banner-div {
   padding-bottom: 50px;
 }
 
@@ -1267,7 +1269,7 @@ body {
 }
 
 .breadcrumb .breadcrumb-item.active {
-  color: var(--dark-red-font);
+  color: var(--red-font);
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
@@ -1335,20 +1337,129 @@ body {
   padding-left: 30px;
 }
 
-.about-content p {
-  font-size: 18px;
+.paragraph {
+  font-size: 20px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 30px;
   color: var(--dark-gray-font);
 }
 
-.about-content p span {
+.paragraph span {
   color: var(--dark-red-font);
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
 }
 
+/* SUPPORT */
+
+.commitment-img {
+  position: relative;
+}
+
+.title-div {
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  background-image: linear-gradient(
+    rgba(2, 2, 2, 0.63),
+    rgba(39, 39, 39, 0.39)
+  );
+  padding: 20px 40px;
+}
+
+.title-div h2 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--white-font);
+  text-transform: capitalize;
+}
+
+.round-logo.support {
+  left: -10%;
+}
+
+.commitment-text {
+  padding-left: 30px;
+}
+
+.commitment-text.expertise {
+  padding-right: 30px;
+}
+
+.customer-care-section {
+  background-image: url("/public/images/customer-care\ 2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 50px 0;
+  margin: 50px 0;
+  width: 100%;
+  position: relative;
+}
+
+.customer-care-title {
+  position: absolute;
+  top: -10%;
+  left: 10%;
+  width: auto;
+  background-image: linear-gradient(
+    rgba(2, 2, 2, 0.63),
+    rgba(39, 39, 39, 0.39)
+  );
+  padding: 20px 40px;
+}
+
+.customer-care-title h2 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--white-font);
+  text-transform: capitalize;
+}
+
+.customer-care-text {
+  padding: 40px 15px;
+}
+
+.customer-support-div {
+  margin-top: 40px;
+}
+
+.customer-support-div .customer-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: var(--white-font);
+  padding: 30px 20px;
+  margin: 20px 20px 20px 0px;
+  width: 100%;
+  box-shadow: 0 4px 12px 0 rgba(107, 107, 107, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.customer-support-div .customer-connect h5 {
+  color: var(--dark-red-font);
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.customer-support-div .customer-connect a {
+  color: var(--black-font);
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  padding-left: 10px;
+  transition: color 0.8s ease;
+}
+
+.customer-support-div .customer-connect:hover a {
+  color: var(--dark-red-font);
+  text-decoration: underline;
+}
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgb(236, 3, 3);

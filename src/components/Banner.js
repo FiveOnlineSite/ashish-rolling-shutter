@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Banner = ({ bannerImg, title, breadcrumbs }) => {
   return (
-    <div>
+    <section className="banner-div">
       <div className="row">
         <div className="banner-img">
           <img src={bannerImg} className="w-100" alt="banner-img" />
@@ -56,7 +56,7 @@ const Banner = ({ bannerImg, title, breadcrumbs }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

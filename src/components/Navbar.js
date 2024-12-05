@@ -83,8 +83,8 @@ const Navbar = () => {
             >
               <img
                 src="/images/Ashish Rolling Shutter Logo.png"
-                width={"95px"}
-                height={"75px"}
+                width={"105px"}
+                height={"85px"}
                 alt="logo"
               />
             </NavLink>

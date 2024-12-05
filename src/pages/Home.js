@@ -289,6 +289,7 @@ const Home = () => {
                     Ashish Rolling Shutter
                   </h2>
                   <p
+                    className="paragraph"
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-delay="500" // Optional, delay for the paragraph
                   >
