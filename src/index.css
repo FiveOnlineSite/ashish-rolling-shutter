@@ -1360,12 +1360,13 @@ body {
 .title-div {
   position: absolute;
   top: 0%;
-  left: 45%;
+  right: 0%;
   background-image: linear-gradient(
     rgba(2, 2, 2, 0.63),
     rgba(39, 39, 39, 0.39)
   );
   padding: 20px 40px;
+  width: 50%;
 }
 
 .title-div h2 {
@@ -1435,7 +1436,7 @@ body {
   background-color: var(--white-font);
   padding: 30px 20px;
   margin: 20px 20px 20px 0px;
-  width: 100%;
+  width: 85%;
   box-shadow: 0 4px 12px 0 rgba(107, 107, 107, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1710,6 +1711,21 @@ body {
   .banner-title {
     padding: 0;
   }
+
+  .commitment-text,
+  .commitment-text.expertise {
+    padding: 0;
+  }
+
+  .customer-care-title {
+    margin: 0 10px;
+    left: 0;
+  }
+
+  .customer-care-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1759,6 +1775,10 @@ body {
 
   .banner-content {
     padding: 0 20px;
+  }
+
+  .customer-care-section {
+    background-position: 78%;
   }
 }
 
