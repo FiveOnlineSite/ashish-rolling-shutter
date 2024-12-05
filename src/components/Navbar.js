@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  useEffect(() => {
+    const handleOffcanvasHidden = () => {
+      document.body.style.overflow = ""; // Reset the overflow
+    };
+
+    document.addEventListener("hidden.bs.offcanvas", handleOffcanvasHidden);
+
+    return () => {
+      document.removeEventListener(
+        "hidden.bs.offcanvas",
+        handleOffcanvasHidden
+      );
+    };
+  }, []);
+
   return (
     <div>
       <header>
