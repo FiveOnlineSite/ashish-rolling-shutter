@@ -20,7 +20,7 @@ const Banner = ({ bannerImg, title, breadcrumbs }) => {
                     {title}
                   </h1>
                 </div>
-                <div className="col-lg-6 d-flex align-items-center justify-content-end">
+                <div className="col-lg-6 d-flex align-items-center justify-content-lg-end justify-content-start">
                   <div
                     className="breadcrumb wow"
                     data-aos="fade-left" // Fade in as you scroll
