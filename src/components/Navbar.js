@@ -325,7 +325,11 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/" title="About Us">
+                      <NavLink
+                        className="nav-link"
+                        to="/about-us"
+                        title="About Us"
+                      >
                         About Us
                       </NavLink>
                     </li>
@@ -373,19 +377,31 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/" title="Brochures">
+                      <NavLink
+                        className="nav-link"
+                        to="/brochures"
+                        title="Brochures"
+                      >
                         Brochures
                       </NavLink>
                     </li>
 
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/" title="Support">
+                      <NavLink
+                        className="nav-link"
+                        to="/support"
+                        title="Support"
+                      >
                         Support
                       </NavLink>
                     </li>
 
                     <li className="nav-item explore-button contact-mb-btn">
-                      <NavLink className="nav-link" to="/" title="Contact Us">
+                      <NavLink
+                        className="nav-link"
+                        to="/contact-us"
+                        title="Contact Us"
+                      >
                         Contact Us
                       </NavLink>
                     </li>
