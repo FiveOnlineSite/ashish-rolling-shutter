@@ -205,12 +205,14 @@ const Home = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
       {
         breakpoint: 500,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
