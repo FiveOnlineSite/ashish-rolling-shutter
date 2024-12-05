@@ -1875,6 +1875,10 @@ body {
     justify-content: center;
   }
 
+  .title-div {
+    width: 65%;
+  }
+
   /* .products-section .slick-track {
     padding-right: 20%;
   } */
