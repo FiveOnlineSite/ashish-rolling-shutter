@@ -43,7 +43,7 @@ const Support = () => {
             </div>
             <div className="col-lg-6">
               <div className="commitment-text">
-                <p className="paragraph">
+                <p className="paragraph mt-lg-0 mt-5">
                   Our commitment to service begins with your initial enquiry,
                   and is paramount through the stages of design, manufacture,
                   sales, installation, and subsequent service of the
@@ -81,7 +81,7 @@ const Support = () => {
             </div>
             <div className="col-lg-6 order-lg-1 order-2">
               <div className="commitment-text expertise">
-                <p className="paragraph">
+                <p className="paragraph mt-lg-0 mt-5">
                   Our commitment to service begins with your initial enquiry,
                   and is paramount through the stages of design, manufacture,
                   sales, installation, and subsequent service of the
