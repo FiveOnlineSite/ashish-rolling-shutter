@@ -24,7 +24,11 @@ const Support = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="commitment-img">
+              <div
+                className="commitment-img"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
                 <img
                   src="/images/commitment-to-care.png"
                   className="w-100 support-img1"
@@ -34,15 +38,25 @@ const Support = () => {
                   src="/images/round-logo.png"
                   alt="logo-round"
                   className="round-logo support"
+                  data-aos="zoom-in" // Fade in as you scroll
+                  data-aos-duration="1500"
                 />
 
-                <div className="title-div">
+                <div
+                  className="title-div"
+                  data-aos="zoom-in" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
                   <h2>Commitment to Care</h2>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="commitment-text">
+              <div
+                className="commitment-text "
+                data-aos="fade-left" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
                 <p className="paragraph mt-lg-0 mt-5">
                   Our commitment to service begins with your initial enquiry,
                   and is paramount through the stages of design, manufacture,
@@ -62,7 +76,11 @@ const Support = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 order-1">
-              <div className="commitment-img">
+              <div
+                className="commitment-img"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
                 <img
                   src="/images/excellent-expertise.jpg"
                   className="w-100 support-img1"
@@ -72,15 +90,25 @@ const Support = () => {
                   src="/images/round-logo.png"
                   alt="logo-round"
                   className="round-logo support"
+                  data-aos="zoom-in" // Fade in as you scroll
+                  data-aos-duration="1500"
                 />
 
-                <div className="title-div">
+                <div
+                  className="title-div"
+                  data-aos="zoom-in" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
                   <h2>Excellent Expertise</h2>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 order-lg-1 order-2">
-              <div className="commitment-text expertise">
+              <div
+                className="commitment-text expertise"
+                data-aos="fade-left" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
                 <p className="paragraph mt-lg-0 mt-5">
                   Our commitment to service begins with your initial enquiry,
                   and is paramount through the stages of design, manufacture,
@@ -97,13 +125,21 @@ const Support = () => {
       </section>
 
       <section className="customer-care-section">
-        <div className="customer-care-title">
+        <div
+          className="customer-care-title"
+          data-aos="zoom-in" // Fade in as you scroll
+          data-aos-duration="1500"
+        >
           <h2>Customer Care Contact</h2>
         </div>
         <div className="container">
           <div className="col-lg-8 ">
             <div className="customer-care-text">
-              <p className="paragraph">
+              <p
+                className="paragraph"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
                 Our excellent customer care team promises to support you at
                 every step of the way. You can rely on us to ensure smooth
                 operations and help achieve your objectives. To achieve this our
@@ -112,7 +148,11 @@ const Support = () => {
               </p>
               <div className="customer-support-div col-lg-12 ">
                 <div className="row">
-                  <div className=" col-lg-6">
+                  <div
+                    className=" col-lg-6 "
+                    data-aos="fade-right" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <div className="customer-connect">
                       <h5 className="about-subtitle wow">
                         <span>
@@ -128,7 +168,11 @@ const Support = () => {
                     </div>
                   </div>
 
-                  <div className=" col-lg-6">
+                  <div
+                    className=" col-lg-6"
+                    data-aos="fade-left" // Fade in as you scroll
+                    data-aos-duration="1500"
+                  >
                     <div className="customer-connect">
                       <h5 className="about-subtitle wow">
                         <span>
