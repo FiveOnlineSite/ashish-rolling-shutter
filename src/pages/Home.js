@@ -32,48 +32,28 @@ const Home = () => {
   const ProductsSlider = [
     {
       image: "/images/products/motorised-gates.jpg",
-      productName: "Motorized Gates",
+      productName: "Rolling Shutter",
       url: "/products/motorized-gates", // Add URL here
     },
     {
       image: "/images/products/motorized-rolling-gates.jpg",
-      productName: "Motorized Rolling Gates",
+      productName: "Gates",
       url: "/products/motorized-rolling-gates",
     },
     {
       image: "/images/products/industrial-gates.jpg",
-      productName: "Industrial Gates",
+      productName: "Raw Materials",
       url: "/products/industrial-gates",
     },
     {
       image: "/images/products/fire-rated-doors.jpg",
-      productName: "Fire Rated Shutters & Doors",
+      productName: "Sliding Shutter",
       url: "/products/fire-rated-doors",
     },
     {
       image: "/images/products/hangar-doors.jpg",
-      productName: "Hangar Doors",
+      productName: "Rolling Shutter Operating System",
       url: "/products/hangar-doors",
-    },
-    {
-      image: "/images/products/fire-rated-doors.jpg",
-      productName: "Fire Rated Shutters & Doors1",
-      url: "/products/fire-rated-doors1",
-    },
-    {
-      image: "/images/products/hangar-doors.jpg",
-      productName: "Hangar Doors1",
-      url: "/products/hangar-doors1",
-    },
-    {
-      image: "/images/products/fire-rated-doors.jpg",
-      productName: "Fire Rated Shutters & Doors2",
-      url: "/products/fire-rated-doors2",
-    },
-    {
-      image: "/images/products/hangar-doors.jpg",
-      productName: "Hangar Doors2",
-      url: "/products/hangar-doors2",
     },
   ];
 
@@ -380,19 +360,13 @@ const Home = () => {
                     data-aos="fade-up" // Fade in as you scroll
                     data-aos-duration="1500"
                   >
-                    <h5
-                      className="about-subtitle wow"
-                      data-aos="fade-up" // Fade in as you scroll
-                      data-aos-duration="1500"
-                    >
-                      <span>
-                        <img src="/images/small-logo.png" alt="logo" />
-                      </span>
-                      <span>Exclusive Selection</span>{" "}
-                      <span>
-                        <img src="/images/small-logo.png" alt="logo" />
-                      </span>
-                    </h5>
+                    <span>
+                      <img src="/images/small-logo.png" alt="logo" />
+                    </span>
+                    <span>Exclusive Selection</span>
+                    <span>
+                      <img src="/images/small-logo.png" alt="logo" />
+                    </span>
                   </h5>
                   <h2
                     className="title featured-title wow slideInLeft"

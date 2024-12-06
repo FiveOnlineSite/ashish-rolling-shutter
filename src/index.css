@@ -647,6 +647,7 @@ body {
   width: 75%;
   background-color: var(--white-font);
   border-radius: 10px;
+  text-transform: capitalize;
 }
 
 .row.filter-products-slider .element {
@@ -1042,18 +1043,19 @@ body {
   object-fit: contain;
 }
 
-.maps-container .nav-tabs {
+.nav-tabs {
   width: 100%;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-.maps-container .nav-tabs .nav-item {
+.nav-tabs .nav-item {
   padding: 0 20px;
+  border-right: 0.2px solid var(--dark-gray-font);
 }
 
-.maps-container .nav-tabs .nav-item .nav-link {
+.nav-tabs .nav-item .nav-link {
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 20px;
@@ -1066,18 +1068,18 @@ body {
   background-color: transparent;
 }
 
-.maps-container .nav-tabs .nav-item:first-child {
-  border-right: 0.2px solid var(--dark-gray-font);
+.nav-tabs .nav-item:last-child {
+  border-right: none;
 }
 
-.maps-container .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   border-bottom: 3px solid var(--red-font) !important;
   border-radius: 0;
   color: var(--red-font) !important;
 }
 
-.maps-container .nav-tabs .nav-item:hover .nav-link {
+.nav-tabs .nav-item:hover .nav-link {
   color: var(--red-font);
 }
 
@@ -1368,6 +1370,7 @@ body {
   );
   padding: 20px 40px;
   width: 50%;
+  border-radius: 10px;
 }
 
 .title-div h2 {
@@ -1412,6 +1415,7 @@ body {
     rgba(39, 39, 39, 0.39)
   );
   padding: 20px 40px;
+  border-radius: 10px;
 }
 
 .customer-care-title h2 {
@@ -1435,12 +1439,13 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  background-color: var(--white-font);
+  background-color: var(--light-gray-bg);
   padding: 30px 20px;
   margin: 20px 20px 20px 0px;
   width: 85%;
   box-shadow: 0 4px 12px 0 rgba(107, 107, 107, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 .customer-support-div .customer-connect h5 {
@@ -1463,6 +1468,81 @@ body {
   color: var(--dark-red-font);
   text-decoration: underline;
 }
+
+.support-img1 {
+  border-radius: 10px;
+}
+/* BROCHURES */
+
+.brochure-col a {
+  text-decoration: none;
+}
+
+.brochure-div {
+  background-color: var(--light-gray-bg);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 10px;
+  position: relative;
+  overflow: hidden;
+  height: 410px;
+}
+
+.brochure-div img {
+  border-radius: 10px;
+  filter: brightness(1);
+  position: relative;
+  transition: filter 0.8s ease, transform 1.3s ease-in-out;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.brochure-div h4 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 20px;
+  padding: 0 10px;
+  transition: color 0.8s ease;
+  color: var(--dark-gray-font);
+  text-transform: capitalize;
+}
+
+.brochure-div:hover h4 {
+  color: var(--dark-red-font);
+}
+
+.brochure-div:hover img {
+  filter: brightness(0.5);
+  transform: scale(1.04);
+}
+
+.brochure-div .download {
+  background-color: var(--dark-red-font);
+  padding: 10px;
+  width: 70%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -100px; /* Start hidden below the div */
+  left: 15%;
+
+  transition: transform 0.8s ease-in-out, bottom 0.8s ease-in-out;
+}
+
+.brochure-div:hover .download {
+  bottom: 50%; /* Slide up into view */
+}
+
+.brochure-div .download h6 {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white-font);
+  margin: 0 auto;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgb(236, 3, 3);
@@ -1728,6 +1808,10 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+  .custom-cursor-dot,
+  .custom-cursor-circle {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1766,11 +1850,6 @@ body {
     padding-left: 0;
   }
 
-  .custom-cursor-dot,
-  .custom-cursor-circle {
-    display: none;
-  }
-
   .home-banner .home-banner-btn {
     justify-content: flex-start;
   }
@@ -1781,6 +1860,10 @@ body {
 
   .customer-care-section {
     background-position: 78%;
+  }
+
+  .brochure-div {
+    margin: 20px 0;
   }
 }
 
