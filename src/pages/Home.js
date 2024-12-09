@@ -36,8 +36,13 @@ const Home = () => {
       url: "/products/motorized-gates", // Add URL here
     },
     {
+      image: "/images/products/fire-rated-doors.jpg",
+      productName: "Sliding Shutter/Folding Shutter",
+      url: "/products/fire-rated-doors",
+    },
+    {
       image: "/images/products/motorized-rolling-gates.jpg",
-      productName: "Gates",
+      productName: "Industrial And Residential Gates",
       url: "/products/motorized-rolling-gates",
     },
     {
@@ -45,11 +50,7 @@ const Home = () => {
       productName: "Raw Materials",
       url: "/products/industrial-gates",
     },
-    {
-      image: "/images/products/fire-rated-doors.jpg",
-      productName: "Sliding Shutter",
-      url: "/products/fire-rated-doors",
-    },
+
     {
       image: "/images/products/hangar-doors.jpg",
       productName: "Rolling Shutter Operating System",
