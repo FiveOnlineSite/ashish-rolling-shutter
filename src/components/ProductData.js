@@ -97,7 +97,7 @@ const ProductData = [
   },
 
   {
-    category: "Gates",
+    category: "Industrial And Residential Gates",
     products: [
       {
         id: 14,
@@ -141,6 +141,39 @@ const ProductData = [
         brochureImg: "/images/excellent-expertise.jpg",
         productName: "Compound gate",
         url: "/products/industrial-gates/industrial-sliding-doors",
+      },
+    ],
+  },
+  {
+    category: "Sliding shutter/Folding shutter",
+    products: [
+      {
+        id: 27,
+        productImg: "/images/motorized-gates/telescopic.jpg",
+        brochureImg: "/images/excellent-expertise.jpg",
+        productName: "Sliding shutter wheels",
+        url: "/products/motorized-gates/telescopic-sliding-gates",
+      },
+      {
+        id: 28,
+        productImg: "/images/motorized-gates/cantilever.jpg",
+        brochureImg: "/images/excellent-expertise.jpg",
+        productName: "Sliding shutter GI strips",
+        url: "/products/motorized-gates/cantilever-sliding-gates",
+      },
+      {
+        id: 29,
+        productImg: "/images/motorized-gates/conventional.jpg",
+        brochureImg: "/images/excellent-expertise.jpg",
+        productName: "Sliding shutter MS channels",
+        url: "/products/motorized-gates/conventional-sliding-gates",
+      },
+      {
+        id: 30,
+        productImg: "/images/motorized-gates/motorized-swing.jpg",
+        brochureImg: "/images/excellent-expertise.jpg",
+        productName: "Sliding shutter pollycarbonate strips",
+        url: "/products/motorized-gates/motorized-sliding-gates",
       },
     ],
   },
@@ -205,39 +238,7 @@ const ProductData = [
       },
     ],
   },
-  {
-    category: "Sliding Shutter",
-    products: [
-      {
-        id: 27,
-        productImg: "/images/motorized-gates/telescopic.jpg",
-        brochureImg: "/images/excellent-expertise.jpg",
-        productName: "Sliding shutter wheels",
-        url: "/products/motorized-gates/telescopic-sliding-gates",
-      },
-      {
-        id: 28,
-        productImg: "/images/motorized-gates/cantilever.jpg",
-        brochureImg: "/images/excellent-expertise.jpg",
-        productName: "Sliding shutter GI strips",
-        url: "/products/motorized-gates/cantilever-sliding-gates",
-      },
-      {
-        id: 29,
-        productImg: "/images/motorized-gates/conventional.jpg",
-        brochureImg: "/images/excellent-expertise.jpg",
-        productName: "Sliding shutter MS channels",
-        url: "/products/motorized-gates/conventional-sliding-gates",
-      },
-      {
-        id: 30,
-        productImg: "/images/motorized-gates/motorized-swing.jpg",
-        brochureImg: "/images/excellent-expertise.jpg",
-        productName: "Sliding shutter pollycarbonate strips",
-        url: "/products/motorized-gates/motorized-sliding-gates",
-      },
-    ],
-  },
+
   {
     category: "Rolling Shutter Operating System",
     products: [
