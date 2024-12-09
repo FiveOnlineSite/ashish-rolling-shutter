@@ -26,37 +26,6 @@ const AboutUs = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              {/* <div className="about-img">
-                <h5
-                  className="img-text1 wow"
-                  data-aos="zoom-in" // Fade in as you scroll
-                  data-aos-duration="1500"
-                >
-                  Since 1996
-                </h5>
-                <img
-                  className="img1 wow"
-                  data-aos="fade-right" // Fade in as you scroll
-                  data-aos-duration="1500"
-                  src="/images/about1.jpg"
-                  alt=""
-                />
-                <img
-                  className="img2 wow"
-                  data-aos="fade-right" // Fade in as you scroll
-                  data-aos-duration="1500"
-                  src="/images/about2.jpg"
-                  alt=""
-                />
-                <img
-                  src="/images/round-logo.png"
-                  alt="logo-round"
-                  className="round-logo1 wow"
-                  data-aos="zoom-in" // Fade in as you scroll
-                  data-aos-duration="1500"
-                />
-              </div> */}
-
               <div
                 className="about-img-div wow"
                 data-aos="fade-right" // Fade in as you scroll
@@ -73,7 +42,7 @@ const AboutUs = () => {
                   alt="about-img2"
                 />
                 <img
-                  src="/images/1996.png"
+                  src="/images/since 1985.png"
                   alt="logo-round"
                   className="round-logo"
                 />
@@ -86,26 +55,76 @@ const AboutUs = () => {
                 data-aos="fade-left" // Fade in as you scroll
                 data-aos-duration="1500"
               >
+                <h2
+                  className="title featured-title wow slideInLeft"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  Welcome To Ashish Rolling Shutter
+                </h2>
                 <p className="paragraph">
-                  <span>Ashish Rolling Shutter</span> has held a lead position
-                  in manufacturing as well as exporting, distributing and
-                  installing Entrance Automation Systems and Loading Bay
-                  Equipment that are problem free and easy to operate.
+                  At <span>Ashish Rolling Shutter</span>, we’ve been crafting
+                  and exporting high-quality rolling shutters since 1985. Our
+                  journey began with a simple mission: to deliver robust,
+                  reliable, and aesthetically pleasing shutters that meet the
+                  diverse needs of our customers. Over the decades, we’ve grown
+                  into a trusted name in the industry, known for our unwavering
+                  commitment to quality and customer satisfaction.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <p className="paragraph">
-                  <span>Ashish Rolling Shutter</span> specializes in designing,
-                  manufacturing and installing customised products conforming to
-                  the highest safety standards complemented with reliability and
-                  energy efficiency.
-                </p>
+      <section className="about-content1">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 order-lg-2 order-1">
+              <div
+                className="about-img-div wow"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <img
+                  src="/images/about1.jpg"
+                  className="about-img1"
+                  alt="about-img1"
+                />
+                <img
+                  src="/images/about2.jpg"
+                  className="about-img2"
+                  alt="about-img2"
+                />
+                <img
+                  src="/images/round-logo.png"
+                  alt="logo-round"
+                  className="round-logo"
+                />
+              </div>
+            </div>
 
+            <div className="col-lg-6 mt-5 order-lg-1 order-2">
+              <div
+                className="about-content wow"
+                data-aos="fade-left" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <h2
+                  className="title featured-title wow slideInLeft"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  Our Expertise
+                </h2>
                 <p className="paragraph">
-                  All our products are designed and manufactured with European
-                  collaboration using innovative and creative engineering
-                  technology. The product development team uses the latest
-                  software combined with technologically advanced machinery to
-                  offer our customers an excellent engineered product.
+                  We specialize in manufacturing a wide range of rolling
+                  shutters designed to offer superior security and
+                  functionality. Whether you need shutters for industrial,
+                  commercial, or residential purposes, we have solutions that
+                  are tailored to your specific requirements. Our products are
+                  engineered using advanced technologies and premium materials
+                  to ensure durability and performance.
                 </p>
               </div>
             </div>
@@ -118,38 +137,60 @@ const AboutUs = () => {
       <section className="about-content2">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 order-lg-2 order-1">
-              {/* <div className="about-img">
-                <h5
-                  className="img-text2 wow"
-                  data-aos="zoom-in" // Fade in as you scroll
-                  data-aos-duration="1500"
-                >
-                  Over 1000 employees
-                </h5>
-
+            <div className="col-lg-6">
+              <div
+                className="about-img-div wow"
+                data-aos="fade-left" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
                 <img
-                  className="img1 wow"
-                  data-aos="fade-left" // Fade in as you scroll
-                  data-aos-duration="1500"
-                  src="/images/about2.jpg"
-                  alt=""
+                  src="/images/about1.jpg"
+                  className="about-img1"
+                  alt="about-img1"
                 />
                 <img
-                  className="img2 wow"
-                  data-aos="fade-left" // Fade in as you scroll
-                  data-aos-duration="1500"
-                  src="/images/about1.jpg"
-                  alt=""
+                  src="/images/about2.jpg"
+                  className="about-img2"
+                  alt="about-img2"
                 />
                 <img
                   src="/images/round-logo.png"
                   alt="logo-round"
-                  className="round-logo1 wow"
-                  data-aos="zoom-in" // Fade in as you scroll
-                  data-aos-duration="1500"
+                  className="round-logo"
                 />
-              </div> */}
+              </div>
+            </div>
+
+            <div className="col-lg-6 mt-5 ">
+              <div
+                className="about-content wow"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <h2
+                  className="title featured-title wow slideInLeft"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  Global Reach
+                </h2>
+                <p className="paragraph">
+                  With a presence in both domestic and international markets,
+                  <span> Ashish Rolling Shutter</span> is proud to serve clients
+                  across the globe. Our export operations are driven by a
+                  dedicated team that ensures timely delivery and exceptional
+                  service, no matter where you are located.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-content2">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 order-lg-2 order-1">
               <div
                 className="about-img-div wow"
                 data-aos="fade-left" // Fade in as you scroll
@@ -179,32 +220,85 @@ const AboutUs = () => {
                 data-aos="fade-right" // Fade in as you scroll
                 data-aos-duration="1500"
               >
+                <h2
+                  className="title featured-title wow slideInLeft"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  Why Choose Us?
+                </h2>
                 <p className="paragraph">
-                  <span>Ashish Rolling Shutter</span> We lay great emphasis on
-                  exceptional customer service and provide regular programmed
-                  inspections and maintenance safeguards which increases product
-                  lifetime and reduces operational cost. We have a huge team of
-                  committed and diligent engineers & technicians; many of them
-                  are trained at advanced training centres in Asia, Europe,
-                  Africa, North America, & South America.
+                  <span>Experience and Expertise:</span> Over 35 years of
+                  industry experience.
                 </p>
 
                 <p className="paragraph">
-                  Headquartered in Mumbai, the commercial capital of India, the
-                  company has expanded its operations, geographical reach,
-                  manufacturing capacity and customer base globally. We are a
-                  global ‘Make in India’ brand and proudly recognized as the
-                  STAR EXPORT HOUSE by the Government of India. Today our
-                  products are marketed by us and our distributors in more than
-                  69 countries across the globe.
+                  <span>Quality Assurance:</span> Rigorous quality control
+                  processes to guarantee top-notch products.
                 </p>
 
                 <p className="paragraph">
-                  We have established a significant presence in India with over
-                  1000 employees and operations spanning across 26 major cities.
-                  Having a strong and efficient customer care team available 24
-                  hours a day and 7 days a week reflects commitment to excellent
-                  service and customer satisfaction.
+                  <span>Customization:</span> Shutters that are customized to
+                  meet your unique needs.
+                </p>
+
+                <p className="paragraph">
+                  <span>Customer-Centric Approach:</span> Dedicated to providing
+                  outstanding service and support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-content2">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div
+                className="about-img-div wow"
+                data-aos="fade-left" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <img
+                  src="/images/about1.jpg"
+                  className="about-img1"
+                  alt="about-img1"
+                />
+                <img
+                  src="/images/about2.jpg"
+                  className="about-img2"
+                  alt="about-img2"
+                />
+                <img
+                  src="/images/round-logo.png"
+                  alt="logo-round"
+                  className="round-logo"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-6 mt-5 ">
+              <div
+                className="about-content wow"
+                data-aos="fade-right" // Fade in as you scroll
+                data-aos-duration="1500"
+              >
+                <h2
+                  className="title featured-title wow slideInLeft"
+                  data-aos="fade-up" // Fade in as you scroll
+                  data-aos-duration="1500"
+                >
+                  Our Commitment
+                </h2>
+                <p className="paragraph">
+                  At <span> Ashish Rolling Shutter</span>, we believe in
+                  building lasting relationships with our clients. Your
+                  satisfaction is our top priority, and we strive to exceed your
+                  expectations with every product we deliver. Trust us to
+                  safeguard your spaces with our reliable and stylish rolling
+                  shutters.
                 </p>
               </div>
             </div>
