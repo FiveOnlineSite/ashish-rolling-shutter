@@ -96,7 +96,7 @@ const ProductData = [
     ],
   },
   {
-    category: "Sliding shutter/Folding shutter",
+    category: "Sliding Shutter/Folding Shutter",
     products: [
       {
         id: 27,
