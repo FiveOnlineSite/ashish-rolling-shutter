@@ -329,34 +329,17 @@ const Navbar = () => {
                       </NavLink>
 
                       <ul className="dropdown-menu ">
-                        <li>
-                          <NavLink
-                            className="dropdown-item"
-                            to="/category/rollingshutter"
-                            title="Hangar Doors"
-                          >
-                            Rolling Shutter
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
-                            className="dropdown-item"
-                            to="/"
-                            title="High Speed Doors"
-                          >
-                            High Speed Doors
-                          </NavLink>
-                        </li>
-
-                        <li>
-                          <NavLink
-                            className="dropdown-item"
-                            to="/"
-                            title="Cold Storage Doors"
-                          >
-                            Cold Storage Doors
-                          </NavLink>
-                        </li>
+                        {CategoryData.map((category, index) => (
+                          <li key={index}>
+                            <NavLink
+                              className="dropdown-item"
+                              to={`/category/${category.slug}`}
+                              title={category.category}
+                            >
+                              {category.category}
+                            </NavLink>
+                          </li>
+                        ))}
                       </ul>
                     </li>
                     <li className="nav-item">
