@@ -36,7 +36,7 @@ const Category = () => {
         <div className="container">
           <div className="col-lg-12">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-7">
                 <div className="row">
                   {category.image.map((image, index) => (
                     <div
@@ -56,16 +56,16 @@ const Category = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6">
+              <div className="col-lg-5">
                 <div className="title featured-title">{category.category}</div>
-                <p className="paragraph">{category.paragraph}</p>
+                <p className="paragraph category-para">{category.paragraph}</p>
 
                 <div className="custom-operations">
                   <h4>Material Options:</h4>
                   <div className="row">
                     {category.material_options.map((material, index) => (
                       <div className="col-6">
-                        <p key={index} className="paragraph">
+                        <p key={index} className="paragraph category-para">
                           {material.option}
                         </p>
                       </div>
@@ -76,8 +76,8 @@ const Category = () => {
                 <div className="custom-operations">
                   <h4>Operation Types:</h4>
                   {category.operation_type.map((operation, index) => (
-                    <p key={index} className="paragraph">
-                      <span>{operation.type}</span>
+                    <p key={index} className="paragraph category-para">
+                      <span className="category-span"> {operation.type}</span>
                       {operation.content}
                     </p>
                   ))}
@@ -86,8 +86,9 @@ const Category = () => {
                 <div className="why-choose">
                   <h4>Why Choose Ashish Rolling Shutters?</h4>
                   {category.choose.map((choose, index) => (
-                    <p key={index} className="paragraph">
-                      <span>{choose.type}</span> {choose.content}
+                    <p key={index} className="paragraph category-para">
+                      <span className="category-span"> {choose.type}</span>{" "}
+                      {choose.content}
                     </p>
                   ))}
                 </div>
@@ -95,7 +96,9 @@ const Category = () => {
                 <div className="service">
                   <h4>Worldwide Service</h4>
                   {category.service.map((service, index) => (
-                    <p key={index}>{service.para}</p>
+                    <p key={index} className="paragraph category-para">
+                      {service.para}
+                    </p>
                   ))}
                 </div>
               </div>

@@ -1580,6 +1580,14 @@ body {
   border-color: var(--dark-red-font);
 }
 
+/* CATEGORY */
+
+.category-para,
+.category-span {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgb(236, 3, 3);

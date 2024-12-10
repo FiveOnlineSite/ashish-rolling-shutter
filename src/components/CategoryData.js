@@ -27,38 +27,38 @@ const CategoryData = [
 
     operation_type: [
       {
-        type: "Motorised Shutters",
+        type: "Motorised Shutters: ",
         content:
           " Featuring advanced mechanisms for seamless, automated operation, ideal for high-traffic areas.",
       },
       {
-        type: "Manual Shutters",
+        type: "Manual Shutters: ",
         content:
           "Equipped with easy-to-use systems, providing a cost-effective solution",
       },
       {
-        type: "Gear-Operated Rolling Shutters",
+        type: "Gear-Operated Rolling Shutters: ",
         content: "Combining robust construction with user-friendly operation.",
       },
     ],
 
     choose: [
       {
-        type: "Expert Design",
+        type: "Expert Design: ",
         content:
           "Tailored to your structural needs with space-efficient, durable designs.",
       },
       {
-        type: "Comprehensive Security",
+        type: "Comprehensive Security: ",
         content:
           "Protection against theft, vandalism, and harsh weather conditions.",
       },
       {
-        type: "Low Maintenance",
+        type: "Low Maintenance: ",
         content: "Built for long-lasting performance with minimal upkeep.",
       },
       {
-        type: "Affordable Solutions",
+        type: "Affordable Solutions: ",
         content: "Competitive pricing without compromising quality.",
       },
     ],
