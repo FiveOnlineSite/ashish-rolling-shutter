@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import CategoryData from "./CategoryData";
 
 const Navbar = () => {
   useEffect(() => {
@@ -134,50 +135,17 @@ const Navbar = () => {
                   </NavLink>
 
                   <ul className="dropdown-menu">
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/"
-                        title="Rolling Shutter"
-                      >
-                        Rolling shutter
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink className="dropdown-item" to="/" title="Gates">
-                        Gates
-                      </NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/"
-                        title="Raw Materials"
-                      >
-                        Raw materials
-                      </NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/"
-                        title="Sliding Shutter"
-                      >
-                        Sliding shutter
-                      </NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink
-                        className="dropdown-item"
-                        to="/"
-                        title="Rolling Shutter Operating System"
-                      >
-                        Rolling shutter operating system
-                      </NavLink>
-                    </li>
+                    {CategoryData.map((category, index) => (
+                      <li key={index}>
+                        <NavLink
+                          className="dropdown-item"
+                          to={`/category/${category.slug}`}
+                          title={category.category}
+                        >
+                          {category.category}
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 </li>
                 <li className="nav-item">
@@ -364,10 +332,10 @@ const Navbar = () => {
                         <li>
                           <NavLink
                             className="dropdown-item"
-                            to="/"
+                            to="/category/rollingshutter"
                             title="Hangar Doors"
                           >
-                            Hangar Doors
+                            Rolling Shutter
                           </NavLink>
                         </li>
                         <li>
