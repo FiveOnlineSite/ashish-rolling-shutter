@@ -61,7 +61,7 @@ const ContactUs = () => {
                         data-aos="fade-right" // Fade in as you scroll
                         data-aos-duration="1500"
                       >
-                        <h3>India</h3>
+                        <h3>Global</h3>
 
                         <div className="map-location-detail">
                           <i class="fa-solid fa-location-dot"></i>
@@ -91,13 +91,13 @@ const ContactUs = () => {
                 <div className="col-lg-8">
                   <div className="row">
                     <h2
-                      className="title featured-title wow"
+                      className="title featured-title px-lg-0 px-2 wow"
                       data-aos="fade-right" // Fade in as you scroll
                       data-aos-duration="1500"
                     >
                       Contact Us
                     </h2>
-                    <p className="paragraph p-0 mb-5">
+                    <p className="paragraph p-lg-0 mb-5">
                       Got a query? Kindly fill the form and we shall get back to
                       you.
                     </p>
