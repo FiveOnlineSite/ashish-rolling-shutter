@@ -58,7 +58,7 @@ const ContactUs = () => {
                     <div className="col-lg-5">
                       <div
                         className="map-detail-container"
-                        data-aos="fade-right" // Fade in as you scroll
+                        data-aos="fade-left" // Fade in as you scroll
                         data-aos-duration="1500"
                       >
                         <h3>Global</h3>
@@ -92,12 +92,16 @@ const ContactUs = () => {
                   <div className="row">
                     <h2
                       className="title featured-title px-lg-0 px-2 wow"
-                      data-aos="fade-right" // Fade in as you scroll
+                      data-aos="fade-left" // Fade in as you scroll
                       data-aos-duration="1500"
                     >
                       Contact Us
                     </h2>
-                    <p className="paragraph p-lg-0 mb-5">
+                    <p
+                      className="paragraph p-lg-0 mb-5"
+                      data-aos="fade-left" // Fade in as you scroll
+                      data-aos-duration="1500"
+                    >
                       Got a query? Kindly fill the form and we shall get back to
                       you.
                     </p>
@@ -106,7 +110,11 @@ const ContactUs = () => {
                     <div className="form-container">
                       <div className="col-lg-12">
                         <div className="row justify-content-lg-center justify-content-start">
-                          <div className="col-lg-6 col-12">
+                          <div
+                            className="col-lg-6 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="name" class="form-label paragraph">
                                 Name*
@@ -120,7 +128,11 @@ const ContactUs = () => {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6 col-12">
+                          <div
+                            className="col-lg-6 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="email" class="form-label paragraph">
                                 Email*
@@ -134,7 +146,11 @@ const ContactUs = () => {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6 col-12">
+                          <div
+                            className="col-lg-6 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="country" class="form-label paragraph">
                                 Country
@@ -363,7 +379,11 @@ const ContactUs = () => {
                             </div>
                           </div>
 
-                          <div className="col-lg-6 col-12">
+                          <div
+                            className="col-lg-6 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="phone" class="form-label paragraph">
                                 Phone*
@@ -376,7 +396,11 @@ const ContactUs = () => {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6 col-12">
+                          <div
+                            className="col-lg-6 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="state" class="form-label paragraph">
                                 State
@@ -389,7 +413,11 @@ const ContactUs = () => {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-6 col-12">
+                          <div
+                            className="col-lg-6 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="company" class="form-label paragraph">
                                 Company
@@ -402,7 +430,11 @@ const ContactUs = () => {
                               />
                             </div>
                           </div>
-                          <div className="col-lg-12 col-12">
+                          <div
+                            className="col-lg-12 col-12"
+                            data-aos="fade-right" // Fade in as you scroll
+                            data-aos-duration="1500"
+                          >
                             <div class="mb-4">
                               <label for="message" class="form-label paragraph">
                                 Message
@@ -413,6 +445,14 @@ const ContactUs = () => {
                                 rows="4"
                               />
                             </div>
+
+                            <button
+                              className="explore-button about-btn wow"
+                              data-aos="fade-up"
+                              data-aos-duration="1500"
+                            >
+                              Submit
+                            </button>
                           </div>
                         </div>
                       </div>
