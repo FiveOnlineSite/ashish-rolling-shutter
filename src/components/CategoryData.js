@@ -10,7 +10,13 @@ const CategoryData = [
         image_url: "/images/excellent-expertise.jpg",
       },
       {
-        image_url: "/images/banners/contact-bg.png",
+        image_url: "/images/excellent-expertise.jpg",
+      },
+      {
+        image_url: "/images/excellent-expertise.jpg",
+      },
+      {
+        image_url: "/images/excellent-expertise.jpg",
       },
     ],
 
@@ -80,7 +86,7 @@ const CategoryData = [
 
     image: [
       {
-        image_url: "/images/banners/contact-bg.png",
+        image_url: "/images/excellent-expertise.jpg",
       },
     ],
 

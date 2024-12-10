@@ -1588,6 +1588,14 @@ body {
   line-height: 28px;
 }
 
+.category-title {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600;
+  color: var(--dark-gray-font);
+  padding: 15px 0;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgb(236, 3, 3);
