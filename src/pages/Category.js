@@ -56,7 +56,7 @@ const Category = () => {
   const ProductsSettings = {
     dots: (category.products && category.products.length > 4) || false,
     arrows: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: Math.min(
       4,
