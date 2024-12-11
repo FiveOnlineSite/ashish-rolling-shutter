@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import CategoryData from "./CategoryData";
+import CollectionData from "./CollectionData";
 
 const Navbar = () => {
   useEffect(() => {
@@ -143,6 +144,18 @@ const Navbar = () => {
                           title={category.category}
                         >
                           {category.category}
+                        </NavLink>
+                      </li>
+                    ))}
+
+                    {CollectionData.map((productName, index) => (
+                      <li key={index}>
+                        <NavLink
+                          className="dropdown-item"
+                          to={`/${productName.category_slug}/${productName.slug}`}
+                          title={productName.productName}
+                        >
+                          {productName.productName}
                         </NavLink>
                       </li>
                     ))}
@@ -337,6 +350,18 @@ const Navbar = () => {
                               title={category.category}
                             >
                               {category.category}
+                            </NavLink>
+                          </li>
+                        ))}
+
+                        {CollectionData.map((productName, index) => (
+                          <li key={index}>
+                            <NavLink
+                              className="dropdown-item"
+                              to={`/${productName.category_slug}/${productName.slug}`}
+                              title={productName.productName}
+                            >
+                              {productName.productName}
                             </NavLink>
                           </li>
                         ))}

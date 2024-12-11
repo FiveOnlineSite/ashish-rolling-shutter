@@ -28,7 +28,7 @@ const Category = () => {
   const BannerSettings = {
     dots: true,
     arrows: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     autoplay: true,
     responsive: [

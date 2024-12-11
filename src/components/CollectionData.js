@@ -1,8 +1,9 @@
 const CollectionData = [
   {
     category: "Rolling Shutter",
-    slug: "rolling-shutter",
-    product_name: "A.M.s Rolling Shutter",
+    category_slug: "rolling-shutter",
+    slug: "ams-rolling-shutter",
+    productName: "A.M.s Rolling Shutter",
     product: [
       {
         paragraph:
@@ -206,12 +207,17 @@ const CollectionData = [
           {
             type: "Low Maintenance:",
             content:
-              "Suitable for both internal and external installations, including overhead or lateral setups.",
+              " Designed for minimal upkeep, saving time and reducing long-term costs.",
           },
           {
-            type: "Space-Efficient Operation",
+            type: "Versatile Design:",
             content:
-              "The tightly wound door curtain is perfect for areas with space constraints.",
+              " Suitable for both large industrial openings and smaller spaces, offering custom sizes and finishes.",
+          },
+          {
+            type: "Easy Operation:",
+            content:
+              "Equipped with efficient motorized options for smooth and convenient use.",
           },
         ],
 

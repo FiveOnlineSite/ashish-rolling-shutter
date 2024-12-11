@@ -10,8 +10,8 @@ import AboutUs from "./pages/AboutUs";
 import Brochures from "./pages/Brochures";
 import Support from "./pages/Support";
 import ContactUs from "./pages/ContactUs";
-import Product from "./pages/Category";
 import Category from "./pages/Category";
+import Collection from "./pages/Collection";
 
 function App() {
   useEffect(() => {
@@ -34,7 +34,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/category/:categoryName" element={<Category />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/:category_slug/:productName" element={<Collection />} />
       </Routes>
     </Router>
   );
