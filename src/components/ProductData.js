@@ -1,6 +1,6 @@
 const ProductData = [
   {
-    category: "Rolling Shutters",
+    category: "Rolling Shutter",
     products: [
       {
         id: 1,

@@ -1,86 +1,79 @@
-const CategoryData = [
+const CollectionData = [
   {
     category: "Rolling Shutter",
     slug: "rolling-shutter",
-    paragraph:
-      "At Ashish Rolling Shutters, we specialize in crafting high-quality rolling shutters that offer exceptional security, durability, and ease of use. Designed for industrial, commercial, and residential applications, our shutters combine robust materials with advanced mechanisms to meet diverse needs.",
+    product_name: "A.M.s Rolling Shutter",
+    product: [
+      {
+        paragraph:
+          "Ashish Rolling Shutters offers M.S. Rolling Shutters designed for unmatched durability and protection. Made from high-strength materials, these shutters act as a shield against burglary, vandalism, and harsh weather conditions.",
 
-    image: [
-      {
-        image_url: "/images/commitment-to-care.png",
-      },
-      {
-        image_url: "/images/excellent-expertise.jpg",
-      },
-      {
-        image_url: "/images/commitment-to-care.png",
-      },
-      {
-        image_url: "/images/excellent-expertise.jpg",
-      },
-    ],
+        image: [
+          {
+            image_url: "/images/commitment-to-care.png",
+          },
+          {
+            image_url: "/images/excellent-expertise.jpg",
+          },
+          {
+            image_url: "/images/commitment-to-care.png",
+          },
+          {
+            image_url: "/images/excellent-expertise.jpg",
+          },
+        ],
 
-    material_options: [
-      {
-        option: "Galvanized Steel",
-      },
-      { option: "Aluminum" },
-      { option: "Stainless Steel" },
-      { option: "Galvalume" },
-      { option: "Polycarbonate" },
-      { option: "M.S" },
-    ],
+        key_features: [
+          {
+            type: "Robust Construction",
+            content:
+              "Crafted with precision using high-strength metals for enhanced durability.",
+          },
+          {
+            type: "Low Maintenanc",
+            content:
+              "Requires minimal inspection and upkeep, ensuring long-lasting performance.",
+          },
+          {
+            type: "Flexible Design",
+            content:
+              "Suitable for both internal and external installations, including overhead or lateral setups.",
+          },
+          {
+            type: "Space-Efficient Operation",
+            content:
+              "The tightly wound door curtain is perfect for areas with space constraints.",
+          },
+        ],
 
-    operation_type: [
-      {
-        type: "Motorised Shutters: ",
-        content:
-          " Featuring advanced mechanisms for seamless, automated operation, ideal for high-traffic areas.",
-      },
-      {
-        type: "Manual Shutters: ",
-        content:
-          "Equipped with easy-to-use systems, providing a cost-effective solution",
-      },
-      {
-        type: "Gear-Operated Rolling Shutters: ",
-        content: "Combining robust construction with user-friendly operation.",
-      },
-    ],
-
-    choose: [
-      {
-        type: "Expert Design: ",
-        image: "/images/icons/skills.png",
-        content:
-          "Tailored to your structural needs with space-efficient, durable designs.",
-      },
-      {
-        type: "Comprehensive Security: ",
-        image: "/images/icons/secure.png",
-        content:
-          "Protection against theft, vandalism, and harsh weather conditions.",
-      },
-      {
-        type: "Low Maintenance: ",
-        image: "/images/icons/low.png",
-        content: "Built for long-lasting performance with minimal upkeep.",
-      },
-      {
-        type: "Affordable Solutions: ",
-        image: "/images/icons/low-cost.png",
-        content: "Competitive pricing without compromising quality.",
+        choose: [
+          {
+            type: "Sturdy and Reliable: ",
+            image: "/images/icons/skills.png",
+            content:
+              "In-house manufacturing ensures a simple yet sturdy design.",
+          },
+          {
+            type: "Engineered Excellence: ",
+            image: "/images/icons/secure.png",
+            content:
+              "Engineered for smooth operation and total customer satisfaction.",
+          },
+          {
+            type: "Affordable Versatility: ",
+            image: "/images/icons/low.png",
+            content:
+              "Built to meet diverse structural requirements while maintaining affordability.",
+          },
+        ],
+        trusted: [
+          {
+            para: "With a state-of-the-art facility capable of producing hundreds of units monthly, Ashish Rolling Shutters ensures timely delivery and unmatched quality for all your M.S. rolling shutter needs.",
+          },
+        ],
       },
     ],
-    service: [
-      {
-        para: "With a presence across the Globe, Ashish Rolling Shutters ensures timely delivery, installation, and support wherever you need it.",
-      },
-      {
-        para: "Choose Ashish Rolling Shutters for reliable, efficient, and secure rolling shutter solutions.",
-      },
-    ],
-    products: [
+    otherproducts: [
       {
         id: 1,
         productImg: "/images/rolling-shutters/aluminium.jpg",
@@ -176,74 +169,80 @@ const CategoryData = [
   },
 
   {
-    category: "Rolling Shutter1",
-    slug: "rolling-shutter1",
-    paragraph:
-      "At Ashish Rolling Shutters, we specialize in crafting high-quality rolling shutters that offer exceptional security, durability, and ease of use. Designed for industrial, commercial, and residential applications, our shutters combine robust materials with advanced mechanisms to meet diverse needs.",
+    category: "Rolling Shutter",
+    slug: "rolling-shutter",
+    product_name: "Galvanised rolling shutter",
+    product: [
+      {
+        paragraph:
+          "Ashish Rolling Shutters offers Galvanized Rolling Shutters that combine strength, durability, and security for industrial and commercial applications. Crafted from premium galvanized steel, these shutters provide long-lasting protection and require minimal maintenance.",
 
-    image: [
-      {
-        image_url: "/images/excellent-expertise.jpg",
-      },
-    ],
+        image: [
+          {
+            image_url: "/images/commitment-to-care.png",
+          },
+          {
+            image_url: "/images/excellent-expertise.jpg",
+          },
+          {
+            image_url: "/images/commitment-to-care.png",
+          },
+          {
+            image_url: "/images/excellent-expertise.jpg",
+          },
+        ],
 
-    material_options: [
-      {
-        option: "Galvanized Steel",
-      },
-      { option: "Aluminum" },
-      { option: "Stainless Steel" },
-      { option: "Galvalume" },
-      { option: "Polycarbonate" },
-      { option: "M.S" },
-    ],
+        key_features: [
+          {
+            type: "Premium Galvanized Steel:",
+            content:
+              "Made from high-quality galvanized steel for superior strength and rust resistance.",
+          },
+          {
+            type: "Wind Resistance: ",
+            content:
+              "Can withstand wind speeds up to 210 km/h, ensuring reliability in extreme weather conditions.",
+          },
+          {
+            type: "Low Maintenance:",
+            content:
+              "Suitable for both internal and external installations, including overhead or lateral setups.",
+          },
+          {
+            type: "Space-Efficient Operation",
+            content:
+              "The tightly wound door curtain is perfect for areas with space constraints.",
+          },
+        ],
 
-    operation_type: [
-      {
-        type: "Motorised Shutters",
-        content:
-          " Featuring advanced mechanisms for seamless, automated operation, ideal for high-traffic areas.",
-      },
-      {
-        type: "Manual Shutters",
-        content:
-          "Equipped with easy-to-use systems, providing a cost-effective solution",
-      },
-      {
-        type: "Gear-Operated Rolling Shutters",
-        content: "Combining robust construction with user-friendly operation.",
-      },
-    ],
-
-    choose: [
-      {
-        type: "Expert Design",
-        content:
-          "Tailored to your structural needs with space-efficient, durable designs.",
-      },
-      {
-        type: "Comprehensive Security",
-        content:
-          "Protection against theft, vandalism, and harsh weather conditions.",
-      },
-      {
-        type: "Low Maintenance",
-        content: "Built for long-lasting performance with minimal upkeep.",
-      },
-      {
-        type: "Affordable Solutions",
-        content: "Competitive pricing without compromising quality.",
+        choose: [
+          {
+            type: "Sturdy and Reliable: ",
+            image: "/images/icons/skills.png",
+            content:
+              "In-house manufacturing ensures a simple yet sturdy design.",
+          },
+          {
+            type: "Engineered Excellence: ",
+            image: "/images/icons/secure.png",
+            content:
+              "Engineered for smooth operation and total customer satisfaction.",
+          },
+          {
+            type: "Affordable Versatility: ",
+            image: "/images/icons/low.png",
+            content:
+              "Built to meet diverse structural requirements while maintaining affordability.",
+          },
+        ],
+        trusted: [
+          {
+            para: "With a state-of-the-art facility capable of producing hundreds of units monthly, Ashish Rolling Shutters ensures timely delivery and unmatched quality for all your M.S. rolling shutter needs.",
+          },
+        ],
       },
     ],
-    service: [
-      {
-        para: "With a presence across the Globe, Ashish Rolling Shutters ensures timely delivery, installation, and support wherever you need it.",
-      },
-      {
-        para: "Choose Ashish Rolling Shutters for reliable, efficient, and secure rolling shutter solutions.",
-      },
-    ],
-    products: [
+    otherproducts: [
       {
         id: 1,
         productImg: "/images/rolling-shutters/aluminium.jpg",
@@ -338,4 +337,5 @@ const CategoryData = [
     ],
   },
 ];
-export default CategoryData;
+
+export default CollectionData;

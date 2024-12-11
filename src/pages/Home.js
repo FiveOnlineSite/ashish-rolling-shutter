@@ -327,7 +327,7 @@ const Home = () => {
               <span>
                 <img src="/images/small-logo.png" alt="logo" />
               </span>
-              <span>Curated For You</span>{" "}
+              <span>Curated For You</span>
               <span>
                 <img src="/images/small-logo.png" alt="logo" />
               </span>
