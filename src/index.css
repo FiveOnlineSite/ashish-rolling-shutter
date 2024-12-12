@@ -1297,7 +1297,7 @@ body {
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   color: var(--white-font);
-  padding: 0 20px;
+  padding: 0 8px;
 }
 
 .about-img {
