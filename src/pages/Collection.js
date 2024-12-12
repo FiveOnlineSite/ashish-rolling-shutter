@@ -164,7 +164,7 @@ const Collection = () => {
           <div className="features">
             <h4 className="category-title">Key Features:</h4>
             {products[0].choose?.map((choose, index) => (
-              <p className="paragraph">
+              <p className="paragraph category-para">
                 <span>{choose.type}</span>
                 {choose.content}
               </p>
