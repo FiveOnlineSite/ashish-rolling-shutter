@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import CategoryData from "../components/CategoryData";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import SlickSlider from "../components/SlickSlider";
 
 const Category = () => {
@@ -93,6 +93,25 @@ const Category = () => {
     ],
   };
 
+  // WhatsApp contact number
+  const whatsappNumber = "9579068536"; // Replace with your WhatsApp number
+
+  // Determine the base URL dynamically
+  const baseUrl = window.location.origin;
+
+  // Construct the full URL dynamically
+  const productUrl = `${baseUrl}/${category.slug}`;
+
+  // Pre-filled message
+  const message = `Get quote of this ${category.category} from ${productUrl}`;
+
+  console.log(message);
+
+  // WhatsApp link
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
   return (
     <Layout>
       <Banner
@@ -142,6 +161,30 @@ const Category = () => {
                   {category.category}
                 </div>
                 <p className="paragraph category-para">{category.paragraph}</p>
+
+                <NavLink to="/">
+                  <button
+                    className="explore-button about-btn me-3 mb-3 wow"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
+                    Download Brochure
+                  </button>
+                </NavLink>
+
+                <NavLink
+                  to={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    className="explore-button about-btn mb-3 wow"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
+                    Get Qoute
+                  </button>
+                </NavLink>
 
                 <div className="custom-operations">
                   <h4 className="category-title">Material Options:</h4>

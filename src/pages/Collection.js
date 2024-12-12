@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import SlickSlider from "../components/SlickSlider";
 import CollectionData from "../components/CollectionData";
 
@@ -111,6 +111,25 @@ const Collection = () => {
 
   console.log("other", collection[0].otherproducts);
 
+  // WhatsApp contact number
+  const whatsappNumber = "9579068536"; // Replace with your WhatsApp number
+
+  // Determine the base URL dynamically
+  const baseUrl = window.location.origin;
+
+  // Construct the full URL dynamically
+  const productUrl = `${baseUrl}/${collection[0].category_slug}/${products[0].slug}`;
+
+  // Pre-filled message
+  const message = `Get quote of this ${products[0].productName} from ${productUrl}`;
+
+  console.log(message);
+
+  // WhatsApp link
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
   return (
     <Layout>
       <Banner
@@ -119,12 +138,32 @@ const Collection = () => {
         breadcrumbs={bannerData.breadcrumbs}
       />
 
-      <section className="category-banner">
+      <section className="category-banner ">
         <div className="container">
-          <div className="title featured-title pb-3 px-3">
+          <div className="title featured-title px-3">
             {products[0].productName}
           </div>
-          <p className="paragraph category-para">{products[0].paragraph}</p>
+          <p className="paragraph category-para ">{products[0].paragraph}</p>
+
+          <NavLink to="/">
+            <button
+              className="explore-button about-btn me-3 mb-3 wow"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              Download Brochure
+            </button>
+          </NavLink>
+
+          <NavLink to={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <button
+              className="explore-button about-btn mb-3 wow"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              Get Qoute
+            </button>
+          </NavLink>
         </div>
 
         <div className="row collection-row">

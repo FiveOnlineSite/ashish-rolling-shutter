@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import MapsTabs from "../components/MapsTabs";
+import { NavLink } from "react-router-dom";
 
 const ContactUs = () => {
   const bannerData = {
@@ -446,13 +447,15 @@ const ContactUs = () => {
                               />
                             </div>
 
-                            <button
-                              className="explore-button about-btn wow"
-                              data-aos="fade-up"
-                              data-aos-duration="1500"
-                            >
-                              Submit
-                            </button>
+                            <NavLink to="/">
+                              <button
+                                className="explore-button about-btn wow"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                              >
+                                Submit
+                              </button>
+                            </NavLink>
                           </div>
                         </div>
                       </div>
