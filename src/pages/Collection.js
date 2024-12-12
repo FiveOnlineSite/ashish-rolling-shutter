@@ -140,9 +140,9 @@ const Collection = () => {
 
       <section className="category-banner ">
         <div className="container">
-          <div className="title featured-title px-3">
+          {/* <div className="title featured-title px-3">
             {products[0].productName}
-          </div>
+          </div> */}
           <p className="paragraph category-para ">{products[0].paragraph}</p>
         </div>
 

@@ -157,9 +157,9 @@ const Category = () => {
               </div>
 
               <div className="col-lg-5">
-                <div className="title featured-title pb-5">
+                {/* <div className="title featured-title pb-5">
                   {category.category}
-                </div>
+                </div> */}
                 <p className="paragraph category-para">{category.paragraph}</p>
 
                 <div className="custom-operations">

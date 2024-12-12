@@ -2004,9 +2004,10 @@ body {
     top: 95%;
   }
 
-  .home-banner-text h1 {
-    font-size: 45px;
-    line-height: 58px;
+  .home-banner-text h1,
+  .banner-title {
+    font-size: 40px;
+    line-height: 50px;
     padding: 0;
   }
 
