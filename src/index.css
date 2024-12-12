@@ -2066,7 +2066,7 @@ body {
   }
 
   .breadcrumb .breadcrumb-item a,
-  .breadcrumb .breadcrumb-item.active a {
+  .breadcrumb .breadcrumb-item.active {
     font-size: 16px;
     line-height: 26px;
   }
