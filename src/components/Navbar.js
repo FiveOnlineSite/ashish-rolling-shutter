@@ -148,15 +148,18 @@ const Navbar = () => {
                       </li>
                     ))}
 
-                    {CollectionData.map((productName, index) => (
+                    {CollectionData.map((collection, index) => (
                       <li key={index}>
-                        <NavLink
-                          className="dropdown-item"
-                          to={`/${productName.category_slug}/${productName.slug}`}
-                          title={productName.productName}
-                        >
-                          {productName.productName}
-                        </NavLink>
+                        {collection.products.map((product, productIndex) => (
+                          <NavLink
+                            key={productIndex}
+                            className="dropdown-item"
+                            to={`/${collection.category_slug}/${product.slug}`}
+                            title={product.productName}
+                          >
+                            {product.productName}
+                          </NavLink>
+                        ))}
                       </li>
                     ))}
                   </ul>
@@ -354,15 +357,20 @@ const Navbar = () => {
                           </li>
                         ))}
 
-                        {CollectionData.map((productName, index) => (
+                        {CollectionData.map((collection, index) => (
                           <li key={index}>
-                            <NavLink
-                              className="dropdown-item"
-                              to={`/${productName.category_slug}/${productName.slug}`}
-                              title={productName.productName}
-                            >
-                              {productName.productName}
-                            </NavLink>
+                            {collection.products.map(
+                              (product, productIndex) => (
+                                <NavLink
+                                  key={productIndex}
+                                  className="dropdown-item"
+                                  to={`/${collection.category_slug}/${product.slug}`}
+                                  title={product.productName}
+                                >
+                                  {product.productName}
+                                </NavLink>
+                              )
+                            )}
                           </li>
                         ))}
                       </ul>

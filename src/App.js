@@ -34,7 +34,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/category/:categoryName" element={<Category />} />
-        <Route path="/:category_slug/:productName" element={<Collection />} />
+        <Route path="/:category_slug/:slug" element={<Collection />} />
       </Routes>
     </Router>
   );

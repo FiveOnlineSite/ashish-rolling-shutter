@@ -2,10 +2,10 @@ const CollectionData = [
   {
     category: "Rolling Shutter",
     category_slug: "rolling-shutter",
-    slug: "ams-rolling-shutter",
-    productName: "A.M.s Rolling Shutter",
-    product: [
+    products: [
       {
+        productName: "A.M.s Rolling Shutter",
+        slug: "ams-rolling-shutter",
         paragraph:
           "Ashish Rolling Shutters offers M.S. Rolling Shutters designed for unmatched durability and protection. Made from high-strength materials, these shutters act as a shield against burglary, vandalism, and harsh weather conditions.",
 
@@ -75,13 +75,13 @@ const CollectionData = [
       },
     ],
     otherproducts: [
-      {
-        id: 1,
-        productImg: "/images/rolling-shutters/aluminium.jpg",
-        brochureImg: "/images/excellent-expertise.jpg",
-        productName: "Ms Rolling shutter",
-        url: "/products/motorized-rolling-gates/aluminium-rolling-shutters",
-      },
+      // {
+      //   id: 1,
+      //   productImg: "/images/rolling-shutters/aluminium.jpg",
+      //   brochureImg: "/images/excellent-expertise.jpg",
+      //   productName: "Ms Rolling shutter",
+      //   url: "/products/motorized-rolling-gates/aluminium-rolling-shutters",
+      // },
       {
         id: 2,
         productImg: "/images/rolling-shutters/galvalume.jpg",
@@ -171,10 +171,12 @@ const CollectionData = [
 
   {
     category: "Rolling Shutter",
-    slug: "rolling-shutter",
-    product_name: "Galvanised rolling shutter",
-    product: [
+    category_slug: "rolling-shutter",
+
+    products: [
       {
+        productName: "Galvanised rolling shutter",
+        slug: "galvanised-rolling-shutter",
         paragraph:
           "Ashish Rolling Shutters offers Galvanized Rolling Shutters that combine strength, durability, and security for industrial and commercial applications. Crafted from premium galvanized steel, these shutters provide long-lasting protection and require minimal maintenance.",
 
