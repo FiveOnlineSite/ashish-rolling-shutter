@@ -94,7 +94,7 @@ const Category = () => {
   };
 
   // WhatsApp contact number
-  const whatsappNumber = "8850366693"; // Replace with your WhatsApp number
+  const whatsappNumber = "+91 88503 66693"; // Replace with your WhatsApp number
 
   // Determine the base URL dynamically
   const baseUrl = window.location.origin;
