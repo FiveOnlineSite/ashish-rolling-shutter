@@ -94,7 +94,7 @@ const Category = () => {
   };
 
   // WhatsApp contact number
-  const whatsappNumber = "9579068536"; // Replace with your WhatsApp number
+  const whatsappNumber = "8850366693"; // Replace with your WhatsApp number
 
   // Determine the base URL dynamically
   const baseUrl = window.location.origin;
@@ -103,7 +103,7 @@ const Category = () => {
   const productUrl = `${baseUrl}/${category.slug}`;
 
   // Pre-filled message
-  const message = `Get quote of this ${category.category} from ${productUrl}`;
+  const message = `Hi, I was on your website and want to know more about this project: ${productUrl}`;
 
   console.log(message);
 
@@ -162,30 +162,6 @@ const Category = () => {
                 </div>
                 <p className="paragraph category-para">{category.paragraph}</p>
 
-                <NavLink to="/">
-                  <button
-                    className="explore-button about-btn me-3 mb-3 wow"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    Download Brochure
-                  </button>
-                </NavLink>
-
-                <NavLink
-                  to={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button
-                    className="explore-button about-btn mb-3 wow"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    Get Qoute
-                  </button>
-                </NavLink>
-
                 <div className="custom-operations">
                   <h4 className="category-title">Material Options:</h4>
                   <div className="row">
@@ -241,6 +217,32 @@ const Category = () => {
                       {service.para}
                     </p>
                   ))}
+                </div>
+
+                <div className="container mt-4">
+                  <NavLink to="/">
+                    <button
+                      className="explore-button about-btn me-3 mb-3 wow"
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
+                    >
+                      Download Brochure
+                    </button>
+                  </NavLink>
+
+                  <NavLink
+                    to={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      className="explore-button about-btn mb-3 wow"
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
+                    >
+                      Get Quote
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>
