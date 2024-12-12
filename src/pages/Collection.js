@@ -39,7 +39,11 @@ const Collection = () => {
     bannerImg: "/images/banners/about-us-banner.jpg", // Example banner image
     title: products[0].productName,
     breadcrumbs: [
-      { label: collection[0].category, path: "/", active: false },
+      {
+        label: "Home",
+        path: `/`,
+        active: false,
+      },
       { label: products[0].productName, path: null, active: true },
     ],
   };
@@ -117,59 +121,69 @@ const Collection = () => {
 
       <section className="category-banner">
         <div className="container">
-          <div className="col-lg-12">
-            <div className="row align-items-center">
-              <div className="title featured-title pb-3 px-3">
-                {products[0].productName}
-              </div>
-              <p className="paragraph category-para">{products[0].paragraph}</p>
-            </div>
+          <div className="title featured-title pb-3 px-3">
+            {products[0].productName}
+          </div>
+          <p className="paragraph category-para">{products[0].paragraph}</p>
+        </div>
 
-            <div className="row collection-row">
-              <SlickSlider
-                settings={BannerSettings}
-                hasText={false}
-                showProductName={false}
-                filterdProducts={false}
-                items={products[0].image.map((image) => ({
-                  image: image.image_url,
-                }))}
-              />
-            </div>
+        <div className="row collection-row">
+          <SlickSlider
+            settings={BannerSettings}
+            hasText={false}
+            showProductName={false}
+            filterdProducts={false}
+            items={products[0].image.map((image) => ({
+              image: image.image_url,
+            }))}
+          />
+        </div>
+      </section>
 
+      <section className="key-features-section">
+        <div className="container">
+          <div className="features">
+            <h4 className="category-title">Key Features:</h4>
+            {products[0].choose?.map((choose, index) => (
+              <p className="paragraph">
+                <span>{choose.type}</span>
+                {choose.content}
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="why-choose-section">
+        <div className="container">
+          <div className="why-choose">
+            <h4 className="category-title">
+              Why Choose Ashish {products[0].productName}?
+            </h4>
             <div className="row">
-              <div className="col-lg-12">
-                <div className="why-choose">
-                  <h4 className="category-title">
-                    Why Choose Ashish {products[0].productName}?
-                  </h4>
-                  <div className="row">
-                    {products[0].choose?.map((choose, index) => (
-                      <div className="col-lg-3" key={index}>
-                        <div className="choose-div">
-                          <img src={choose.image} alt={choose.type} />
-                          <h6>{choose.type}</h6>
-                          <p className="paragraph category-para">
-                            {choose.content}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
+              {products[0].choose?.map((choose, index) => (
+                <div className="col-lg-3" key={index}>
+                  <div className="choose-div">
+                    <img src={choose.image} alt={choose.type} />
+                    <h6>{choose.type}</h6>
+                    <p className="paragraph category-para">{choose.content}</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="col-lg-12">
-                <div className="service">
-                  <h4 className="category-title">Trusted Manufacturing</h4>
-                  {products[0].trusted?.map((trusted, index) => (
-                    <p key={index} className="paragraph category-para mb-0">
-                      {trusted.para}
-                    </p>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="trusted-section">
+        <div className="container">
+          <div className="service">
+            <h4 className="category-title">Trusted Manufacturing</h4>
+            {products[0].trusted?.map((trusted, index) => (
+              <p key={index} className="paragraph category-para mb-0">
+                {trusted.para}
+              </p>
+            ))}
           </div>
         </div>
       </section>

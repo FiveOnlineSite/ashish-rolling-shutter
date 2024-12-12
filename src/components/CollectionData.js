@@ -4,8 +4,8 @@ const CollectionData = [
     category_slug: "rolling-shutter",
     products: [
       {
-        productName: "A.M.s Rolling Shutter",
-        slug: "ams-rolling-shutter",
+        productName: "M.s Rolling Shutter",
+        slug: "ms-rolling-shutter",
         paragraph:
           "Ashish Rolling Shutters offers M.S. Rolling Shutters designed for unmatched durability and protection. Made from high-strength materials, these shutters act as a shield against burglary, vandalism, and harsh weather conditions.",
 
@@ -75,13 +75,13 @@ const CollectionData = [
       },
     ],
     otherproducts: [
-      // {
-      //   id: 1,
-      //   productImg: "/images/rolling-shutters/aluminium.jpg",
-      //   brochureImg: "/images/excellent-expertise.jpg",
-      //   productName: "Ms Rolling shutter",
-      //   url: "/products/motorized-rolling-gates/aluminium-rolling-shutters",
-      // },
+      {
+        id: 1,
+        productImg: "/images/rolling-shutters/aluminium.jpg",
+        brochureImg: "/images/excellent-expertise.jpg",
+        productName: "Ms Rolling shutter",
+        url: "/products/motorized-rolling-gates/aluminium-rolling-shutters",
+      },
       {
         id: 2,
         productImg: "/images/rolling-shutters/galvalume.jpg",
@@ -171,6 +171,7 @@ const CollectionData = [
 
   {
     category: "Rolling Shutter",
+
     category_slug: "rolling-shutter",
 
     products: [
