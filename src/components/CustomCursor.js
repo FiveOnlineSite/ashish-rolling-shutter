@@ -34,6 +34,7 @@ const CustomCursor = () => {
   // Hover events for anchor tags
   const handleMouseEnter = () => setIsHovered(true); // Mouse enter on anchor
   const handleMouseLeave = () => setIsHovered(false); // Mouse leave from anchor
+  const handleMouseDown = () => setIsHovered(false); // Reset on click
 
   useEffect(() => {
     window.addEventListener("mousemove", updatePosition);
@@ -45,6 +46,7 @@ const CustomCursor = () => {
     anchorTags.forEach((anchor) => {
       anchor.addEventListener("mouseenter", handleMouseEnter);
       anchor.addEventListener("mouseleave", handleMouseLeave);
+      anchor.addEventListener("mousedown", handleMouseDown); // Add mousedown listener
     });
 
     return () => {
@@ -56,6 +58,7 @@ const CustomCursor = () => {
       anchorTags.forEach((anchor) => {
         anchor.removeEventListener("mouseenter", handleMouseEnter);
         anchor.removeEventListener("mouseleave", handleMouseLeave);
+        anchor.removeEventListener("mousedown", handleMouseDown); // Remove mousedown listener
       });
     };
   }, []); // Run only once
