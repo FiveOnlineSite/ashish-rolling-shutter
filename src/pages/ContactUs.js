@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import MapsTabs from "../components/MapsTabs";
-import { NavLink } from "react-router-dom";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
