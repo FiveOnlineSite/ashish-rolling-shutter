@@ -311,17 +311,17 @@ My name is ${formData.name}, and I can be reached at ${formData.email} and ${for
                                   rows="4"
                                 />
                               </div>
+                            </div>
 
-                              <div className="container">
-                                <button
-                                  type="submit"
-                                  className="explore-button about-btn wow"
-                                  data-aos="fade-up"
-                                  data-aos-duration="1500"
-                                >
-                                  Submit
-                                </button>
-                              </div>
+                            <div className="container">
+                              <button
+                                type="submit"
+                                className="explore-button about-btn wow"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                              >
+                                Submit
+                              </button>
                             </div>
                           </div>
                         </div>
