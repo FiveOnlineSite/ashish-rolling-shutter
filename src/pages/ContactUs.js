@@ -193,6 +193,7 @@ My name is ${formData.name}, and I can be reached at ${formData.email} and ${for
                                   value={formData.company}
                                   onChange={handleChange}
                                   id="company"
+                                  required
                                   placeholder="Ashish Rolling Shutter"
                                 />
                               </div>
@@ -205,7 +206,7 @@ My name is ${formData.name}, and I can be reached at ${formData.email} and ${for
                             >
                               <div class="mb-4">
                                 <label for="state" class="form-label paragraph">
-                                  Location
+                                  Location*
                                 </label>
                                 <input
                                   type="text"
@@ -301,7 +302,7 @@ My name is ${formData.name}, and I can be reached at ${formData.email} and ${for
                                   for="message"
                                   class="form-label paragraph"
                                 >
-                                  Message
+                                  Message*
                                 </label>
                                 <textarea
                                   class="form-control"
@@ -309,6 +310,7 @@ My name is ${formData.name}, and I can be reached at ${formData.email} and ${for
                                   value={formData.message}
                                   onChange={handleChange}
                                   rows="4"
+                                  required
                                 />
                               </div>
                             </div>
